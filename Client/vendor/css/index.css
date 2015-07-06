@@ -1,12 +1,9 @@
 body
 {
-    background-image: url("../pictures/background2.jpg");
+    background-image: url("../pictures/background7.jpg");
+    padding: 30px;
 }
-.all-content
+.custom-navbar
 {
-    background-color: gray;
-}
-.header
-{
-    color: #2b669a;
+    background-color: rgba(0, 0, 0, 0.5);
 }
