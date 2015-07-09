@@ -1,3 +1,8 @@
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
+
+users_new:
+    pattern:     /users/create
+    defaults: { _controller: AppBundle:User:new }
+
