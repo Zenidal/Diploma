@@ -7,3 +7,12 @@ body
 {
     background-color: rgba(0, 0, 0, 0.5);
 }
+.app-text-color
+{
+    color: darkgrey;
+}
+.app-text-color input[type=text], input[type=password]
+{
+    background-color: #080808;
+    color: darkgrey;
+}

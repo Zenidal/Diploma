@@ -1,5 +1,5 @@
 <!doctype html>
-<html ng-app>
+<html ng-app="diplomaApp">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="vendor/css/index.css">
 </head>
 <body>
-    <div ng-include="'vendor/headers/header.html'"></div>
+    <header ng-include="'vendor/headers/header.html'"></header>
 
     <div ng-view></div>
 
@@ -18,7 +18,10 @@
     <script src="node_modules/angular/angular.min.js"></script>
     <script src="node_modules/angular-route/angular-route.min.js"></script>
     <script src="node_modules/angular-resource/angular-resource.min.js"></script>
+
     <script src="vendor/js/main.js"></script>
+    <script src="vendor/js/services/UserService.js"></script>
+    <script src="vendor/js/controllers/HomeCtrl.js"></script>
     <script src="vendor/js/controllers/RegistrationCtrl.js"></script>
 </body>
 </html>
