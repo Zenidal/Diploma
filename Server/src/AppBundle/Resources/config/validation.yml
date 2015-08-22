@@ -1,0 +1,22 @@
+AppBundle\Entity\User:
+    constraints:
+        - Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity:
+            fields: [username]
+            message: 'This user is already exists.'
+    properties:
+        password:
+        - NotBlank:
+            message: 'Pasword should not be blank.'
+        - Length:
+            min: 6
+            max: 100
+            minMessage: 'An password value should be in the range of 6 to 100 characters.'
+            maxMessage: 'An password value should be in the range of 6 to 100 characters.'
+        username:
+        - NotBlank:
+            message: 'Username should not be blank.'
+        - Length:
+            min: 6
+            max: 100
+            minMessage: 'An username value should be in the range of 6 to 100 characters.'
+            maxMessage: 'An username value should be in the range of 6 to 100 characters.'

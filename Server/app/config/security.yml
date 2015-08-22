@@ -1,4 +1,12 @@
 security:
+    encoders:
+            AppBundle\Entity\User:
+                algorithm: bcrypt
+
+    providers:
+        our_db_provider:
+            entity:
+                class: AppBundle:User
 
     providers:
         in_memory:

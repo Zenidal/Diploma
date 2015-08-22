@@ -2,7 +2,10 @@ app:
     resource: "@AppBundle/Controller/"
     type:     annotation
 
-users_new:
-    pattern:     /users/create
-    defaults: { _controller: AppBundle:User:new }
+default:
+    pattern:     /
+    defaults: { _controller: AppBundle:Default:index }
 
+registration:
+    pattern:     /register
+    defaults: { _controller: AppBundle:User:registerGet }
