@@ -2,6 +2,7 @@
 
 namespace AppBundle\Entity;
 
+use AppBundle\Form\Type\RoleType;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\Role\RoleInterface;
 use Doctrine\Common\Collections\ArrayCollection;
@@ -37,6 +38,7 @@ class Role implements RoleInterface
      */
     public function __construct()
     {
+        $this->name = RoleType::ROLE_GAMER;
         $this->users = new ArrayCollection();
     }
 

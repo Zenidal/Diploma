@@ -30,5 +30,5 @@ diplomaApp.config(['$routeProvider', '$provide', function ($routeProvider, $prov
 }]);
 
 diplomaApp.run(['$rootScope', function($rootScope){
-    $rootScope.serverPath = 'http://127.0.0.1:8000';
+    $rootScope.serverPath = 'http://gvint.api.loc:666/';
 }]);
