@@ -4,7 +4,15 @@ parameters:
 #    parameter_name: value
 
 services:
-  kernel.event_listener.json_request_transformer:
-    class: Qandidate\Common\Symfony\HttpKernel\EventListener\JsonRequestTransformerListener
-    tags:
-      - { name: kernel.event_listener, event: kernel.request, method: onKernelRequest, priority: 100 }
+    kernel.event_listener.json_request_transformer:
+        class: Qandidate\Common\Symfony\HttpKernel\EventListener\JsonRequestTransformerListener
+        tags:
+            - { name: kernel.event_listener, event: kernel.request, method: onKernelRequest, priority: 100 }
+
+    api_key_user_provider:
+        class: AppBundle\Security\ApiKeyUserProvider
+        arguments: ['@doctrine.orm.entity_manager']
+
+    apikey_authenticator:
+        class:  AppBundle\Security\ApiKeyAuthenticator
+        public: false

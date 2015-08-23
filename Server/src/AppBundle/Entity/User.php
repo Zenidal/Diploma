@@ -62,6 +62,11 @@ class User implements UserInterface, \Serializable
     private $isActive = true;
 
     /**
+     * @ORM\OneToOne(targetEntity="Token", mappedBy="user", cascade={"persist", "remove"})
+     */
+    private $token;
+
+    /**
      * Constructor
      */
     public function __construct()
@@ -263,5 +268,28 @@ class User implements UserInterface, \Serializable
     public function getUserSets()
     {
         return $this->userSets;
+    }
+
+    /**
+     * Set token
+     *
+     * @param \AppBundle\Entity\Token $token
+     * @return User
+     */
+    public function setToken(\AppBundle\Entity\Token $token = null)
+    {
+        $this->token = $token;
+
+        return $this;
+    }
+
+    /**
+     * Get token
+     *
+     * @return \AppBundle\Entity\Token 
+     */
+    public function getToken()
+    {
+        return $this->token;
     }
 }

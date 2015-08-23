@@ -6,6 +6,10 @@ default:
     pattern:     /
     defaults: { _controller: AppBundle:Default:index }
 
-registration:
-    pattern:     /register
+registrationGet:
+    pattern:     /registerGet
     defaults: { _controller: AppBundle:User:registerGet }
+
+authorizeGet:
+    pattern:     /authorizeGet
+    defaults: { _controller: AppBundle:Authorization:authorizeGet }
