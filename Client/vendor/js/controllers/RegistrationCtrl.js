@@ -1,34 +1,36 @@
-'use strict';
+(function () {
+    'use strict';
 
-diplomaControllers.controller('RegistrationCtrl', ['$scope', '$location', 'UserService',
-    function ($scope, $location, UserService) {
-        $scope.register = register;
+    angular.module('diplomaControllers')
+        .controller('RegistrationCtrl', RegistrationCtrl);
 
-        function register() {
-            if ($scope.user.password != $scope.user.passwordConfirmation) {
-                $scope.passwordMismatch = true;
+    RegistrationCtrl.$inject = ['UserService', 'NotificationService'];
+
+    function RegistrationCtrl(UserService, NotificationService) {
+        var vm = this;
+        vm.register = function () {
+            if (vm.user.password != vm.user.passwordConfirmation) {
+                NotificationService.addErrorMessage('Passwords mismatch.');
             } else {
                 var User = new UserService;
-                User.username = $scope.user.username;
-                User.password = $scope.user.password;
-                User.passwordConfirmation = $scope.user.passwordConfirmation;
+                User.username = vm.user.username;
+                User.password = vm.user.password;
+                User.passwordConfirmation = vm.user.passwordConfirmation;
                 User.$save(
                     function (data) {
-                        if (data.errorMessage !== null) {
-                            $scope.hasError = true;
-                            $scope.error = data.errorMessage;
+                        if (data.errorMessage !== undefined && data.errorMessage !== null) {
+                            NotificationService.addErrorMessage(data.errorMessage);
                         }
-                        if (data.message !== null) {
-                            $scope.hasMessage = true;
-                            $scope.message = data.message;
+                        if (data.message !== undefined && data.message !== null) {
+                            console.log(data.message);
+                            NotificationService.addMessage(data.message);
                         }
                     },
                     function (error) {
-                        $scope.hasError = true;
-                        $scope.error = error;
+                        NotificationService.addErrorMessage(data.errorMessage);
                     }
                 );
             }
         }
     }
-]);
+})();

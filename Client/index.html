@@ -9,18 +9,25 @@
     <link rel="stylesheet" href="vendor/css/index.css">
 </head>
 <body>
-<header ng-include="'vendor/views/header.html'"></header>
-<div ng-view></div>
+<header class="header" ng-include="'vendor/views/notifications.html'"></header>
+<div class="main-wrapper">
+    <header class="header" ng-include="'vendor/views/header.html'"></header>
+    <div ui-view class="site-background"></div>
+</div>
 
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="node_modules/angular/angular.min.js"></script>
 <script src="node_modules/angular-route/angular-route.min.js"></script>
+<script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
 <script src="node_modules/angular-resource/angular-resource.min.js"></script>
 
 <script src="vendor/js/main.js"></script>
+<script src="vendor/js/states.js"></script>
 <script src="vendor/js/services/UserService.js"></script>
+<script src="vendor/js/services/NotificationService.js"></script>
 <script src="vendor/js/controllers/HomeCtrl.js"></script>
 <script src="vendor/js/controllers/RegistrationCtrl.js"></script>
+<script src="vendor/js/controllers/NotificationCtrl.js"></script>
 </body>
 </html>

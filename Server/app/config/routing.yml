@@ -7,8 +7,15 @@ default:
     defaults: { _controller: AppBundle:Default:index }
 
 registrationGet:
-    pattern:     /registerGet
+    pattern:     /users
     defaults: { _controller: AppBundle:User:registerGet }
+    methods:  [GET]
+
+registrationPost:
+    pattern:     /users
+    defaults: { _controller: AppBundle:User:registerPost }
+    methods:  [POST]
+
 
 authorizeGet:
     pattern:     /authorizeGet
