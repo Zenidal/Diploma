@@ -17,6 +17,7 @@ registrationPost:
     methods:  [POST]
 
 
-authorizeGet:
-    pattern:     /authorizeGet
-    defaults: { _controller: AppBundle:Authorization:authorizeGet }
+authorizePost:
+    pattern:     /authorize
+    defaults: { _controller: AppBundle:Authorization:authorizePost }
+    methods:  [POSt]

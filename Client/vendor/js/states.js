@@ -1,4 +1,5 @@
-diplomaApp.config(['$stateProvider', function ($stateProvider) {
+diplomaApp.config(['$stateProvider', '$httpProvider', function ($stateProvider, $httpProvider) {
+    $httpProvider.interceptors.push('AuthInterceptorService');
     $stateProvider
         .state('index',
         {
@@ -15,5 +16,10 @@ diplomaApp.config(['$stateProvider', function ($stateProvider) {
             url: '/signup',
             templateUrl: 'vendor/views/registration.html',
             controller: 'RegistrationCtrl as vm'
+        })
+        .state('authorize', {
+            url: '/signin',
+            templateUrl: 'vendor/views/authorization.html',
+            controller: 'AuthorizationCtrl as vm'
         });
 }]);

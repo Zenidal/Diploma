@@ -16,7 +16,7 @@ security:
 
     firewalls:
         public:
-            pattern:  ^/(default|users|authorizeGet)$
+            pattern:  ^/(default|users|authorize)$
             security: false
             anonymous: ~
 

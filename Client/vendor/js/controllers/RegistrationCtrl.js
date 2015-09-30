@@ -17,17 +17,16 @@
                 User.password = vm.user.password;
                 User.passwordConfirmation = vm.user.passwordConfirmation;
                 User.$save(
-                    function (data) {
-                        if (data.errorMessage !== undefined && data.errorMessage !== null) {
-                            NotificationService.addErrorMessage(data.errorMessage);
+                    function (response) {
+                        if (response.errorMessage !== undefined && response.errorMessage !== null) {
+                            NotificationService.addErrorMessage(response.errorMessage);
                         }
-                        if (data.message !== undefined && data.message !== null) {
-                            console.log(data.message);
-                            NotificationService.addMessage(data.message);
+                        if (response.message !== undefined && response.message !== null) {
+                            NotificationService.addMessage(response.message);
                         }
                     },
-                    function (error) {
-                        NotificationService.addErrorMessage(data.errorMessage);
+                    function (response) {
+                        NotificationService.addErrorMessage(response.errorMessage);
                     }
                 );
             }

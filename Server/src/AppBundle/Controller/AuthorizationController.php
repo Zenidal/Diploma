@@ -14,12 +14,14 @@ use AppBundle\Helpers\ApiKeyGenerator;
 
 class AuthorizationController extends Controller
 {
-    public function authorizeGetAction(Request $request)
+    public function authorizePostAction(Request $request)
     {
+        $response = new Response();
+        $data = json_decode($request->getContent(), true);
         $username = null;
         $password = null;
-        $username = $request->get('username');
-        $password = $request->get('password');
+        $username = $data['username'];
+        $password = $data['password'];
         if (!isset($username) || !isset($password)) {
             throw new BadRequestHttpException("You must pass username and password fields");
         }
@@ -28,14 +30,14 @@ class AuthorizationController extends Controller
         $repository = $em->getRepository('AppBundle\Entity\User');
         $user = $repository->loadUserByUsername($username);
         if (!$user instanceof User) {
-            throw new AccessDeniedHttpException("No matching user account found");
+            return $response->setContent(json_encode(['errorMessage' => "No matching user account found"]));
         }
         $encoderFactory = $this->get('security.encoder_factory');
         /** @var PasswordEncoderInterface $encoder */
         $encoder = $encoderFactory->getEncoder($user);
         $encodedPassword = $encoder->encodePassword($password, $user->getSalt());
         if ($encodedPassword != $user->getPassword()) {
-            throw new AccessDeniedHttpException("Bad credentials.");
+            return $response->setContent(json_encode(['errorMessage' => "Bad credentials."]));
         }
         $token = $user->getToken();
         if (!$token) {
@@ -51,8 +53,8 @@ class AuthorizationController extends Controller
             $user->setToken($token);
             $em->flush();
         }
-        $response = new Response();
         return $response->setContent(json_encode([
+            'message' => 'User successfully authorized.',
             'apiKey' => $token->getValue(),
             'id' => $user->getId(),
             'username' => $user->getUsername(),
