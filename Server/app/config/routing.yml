@@ -20,4 +20,4 @@ registrationPost:
 authorizePost:
     pattern:     /authorize
     defaults: { _controller: AppBundle:Authorization:authorizePost }
-    methods:  [POSt]
+    methods:  [POST]

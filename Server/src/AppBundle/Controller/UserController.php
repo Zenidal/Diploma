@@ -29,11 +29,7 @@ class UserController extends Controller
             $user->setRole(new Role());
             $user->setIsActive(false);
             $user->setUsername($request->get('username'));
-
-            /** @var PasswordEncoderInterface $encoder */
-            $encoder = $factory->getEncoder($user);
-            $password = $encoder->encodePassword($request->get('password'), $user->getSalt());
-            $user->setPassword($password);
+            $user->setPassword($request->get('password'));
 
             /** @var Validator $validator */
             $validator = $this->get('validator');
@@ -46,6 +42,10 @@ class UserController extends Controller
                 }
                 return $response->setContent(json_encode(['errorMessage' => $errorMessage]));
             } else {
+                /** @var PasswordEncoderInterface $encoder */
+                $encoder = $factory->getEncoder($user);
+                $password = $encoder->encodePassword($request->get('password'), $user->getSalt());
+                $user->setPassword($password);
                 $em->persist($user);
                 $em->flush();
                 return $response->setContent(json_encode(['message' => 'User successfully has registered.']));
@@ -68,11 +68,7 @@ class UserController extends Controller
             $user->setRole(new Role());
             $user->setIsActive(false);
             $user->setUsername($data['username']);
-
-            /** @var PasswordEncoderInterface $encoder */
-            $encoder = $factory->getEncoder($user);
-            $password = $encoder->encodePassword($data['password'], $user->getSalt());
-            $user->setPassword($password);
+            $user->setPassword($data['password']);
 
             /** @var Validator $validator */
             $validator = $this->get('validator');
@@ -85,6 +81,10 @@ class UserController extends Controller
                 }
                 return $response->setContent(json_encode(['errorMessage' => $errorMessage]));
             } else {
+                /** @var PasswordEncoderInterface $encoder */
+                $encoder = $factory->getEncoder($user);
+                $password = $encoder->encodePassword($data['password'], $user->getSalt());
+                $user->setPassword($password);
                 $em->persist($user);
                 $em->flush();
                 return $response->setContent(json_encode(['message' => 'User successfully has registered.']));

@@ -11,6 +11,6 @@ class ApiKeyGenerator
         for ($i = 0; $i < 64; $i++) {
             $apiKey .= $characters[rand(0, strlen($characters) - 1)];
         }
-        return base64_encode(sha1(uniqid('ue' . rand(rand(), rand())) . $apiKey));
+        return md5(md5($apiKey));
     }
 }

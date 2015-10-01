@@ -4,19 +4,19 @@ AppBundle\Entity\User:
             fields: [username]
             message: 'This user is already exists.'
     properties:
-        password:
-        - NotBlank:
-            message: 'Pasword should not be blank.'
-        - Length:
-            min: 6
-            max: 100
-            minMessage: 'An password value should be in the range of 6 to 100 characters.'
-            maxMessage: 'An password value should be in the range of 6 to 100 characters.'
         username:
         - NotBlank:
             message: 'Username should not be blank.'
         - Length:
             min: 6
             max: 100
-            minMessage: 'An username value should be in the range of 6 to 100 characters.'
-            maxMessage: 'An username value should be in the range of 6 to 100 characters.'
+            minMessage: 'Username value should be in the range of 6 to 100 characters.'
+            maxMessage: 'Username value should be in the range of 6 to 100 characters.'
+        password:
+        - NotBlank:
+            message: 'Password should not be blank.'
+        - Length:
+            min: 6
+            max: 100
+            minMessage: 'Password value should be in the range of 6 to 100 characters.'
+            maxMessage: 'Password value should be in the range of 6 to 100 characters.'

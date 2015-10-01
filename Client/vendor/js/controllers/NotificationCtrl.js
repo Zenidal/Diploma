@@ -4,9 +4,9 @@
     angular.module('diplomaControllers')
         .controller('NotificationCtrl', NotificationCtrl);
 
-    NotificationCtrl.$inject = ['NotificationService', '$scope'];
+    NotificationCtrl.$inject = ['NotificationService'];
 
-    function NotificationCtrl(NotificationService, $scope) {
+    function NotificationCtrl(NotificationService) {
         var vm = this;
 
         vm.errors = NotificationService.errors;

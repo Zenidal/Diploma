@@ -4,9 +4,9 @@
     angular.module('diplomaControllers')
         .controller('AuthorizationCtrl', AuthorizationCtrl);
 
-    AuthorizationCtrl.$inject = ['$rootScope', '$http', 'NotificationService', 'AppUserService'];
+    AuthorizationCtrl.$inject = ['$rootScope', '$http', 'NotificationService', 'AppUserService', '$state'];
 
-    function AuthorizationCtrl($rootScope, $http, NotificationService, AppUserService) {
+    function AuthorizationCtrl($rootScope, $http, NotificationService, AppUserService, $state) {
         var vm = this;
         vm.authorize = function () {
             $http({
@@ -23,6 +23,10 @@
                 if (response.data.message !== undefined && response.data.message !== null) {
                     NotificationService.addMessage(response.data.message);
                     AppUserService.addUser(response.data.username, response.data.roleName, response.data.apiKey, response.data.id);
+                    $rootScope.user = AppUserService.user;
+
+                    $state.go('home');
+                    event.preventDefault();
                 }
             }, function errorCallback(response) {
                 NotificationService.addErrorMessage(response.data.errorMessage);
