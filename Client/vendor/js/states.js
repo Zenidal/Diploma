@@ -1,15 +1,22 @@
 diplomaApp.config(['$stateProvider', '$httpProvider', function ($stateProvider, $httpProvider) {
     $httpProvider.interceptors.push('AuthInterceptorService');
     $stateProvider
-        .state('index',
+        .state('root',
         {
             url: '',
-            abstract: true
+            abstract: true,
+            templateUrl: 'vendor/views/home.html'
         })
-        .state('home',
+        .state('root.home',
         {
-            url: '/homepage',
+            url: '/',
             templateUrl: 'vendor/views/home.html',
             controller: 'HomeCtrl as vm'
+        })
+        .state('root.games',
+        {
+            url: '/games',
+            templateUrl: 'vendor/views/games.html',
+            controller: 'GamesCtrl as vm'
         })
 }]);

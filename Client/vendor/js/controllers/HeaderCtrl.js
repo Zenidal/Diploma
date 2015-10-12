@@ -32,7 +32,7 @@
                     AppUserService.addUser(response.data.username, response.data.roleName, response.data.apiKey, response.data.id);
                     $rootScope.user = AppUserService.user;
 
-                    $state.go('home');
+                    $state.go('root.home');
                     event.preventDefault();
                 }
                 $('#singInModal').modal('hide');

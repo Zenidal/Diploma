@@ -10,11 +10,15 @@ input {
     padding: 3% 5% 5%;
 }
 
-.modal{
+.modal {
     padding-top: 5%;
     padding-left: 10%;
     padding-right: 10%;
     width: 90%;
+}
+
+.modal .btn-link {
+    color: white;
 }
 
 .modal-work-surface {
@@ -22,6 +26,14 @@ input {
     color: white;
     padding: 20px;
     border-radius: 20px;
+    background-image: url('../pictures/modal.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.modal-work-surface input[type=text], input[type=password] {
+    background-color: transparent;
+    color: white;
 }
 
 .site-background {
@@ -40,11 +52,40 @@ input {
     z-index: 1;
 }
 
+.notifications .alert-danger {
+    background-color: darkred;
+    color: white;
+}
+
+.notifications .alert-success {
+    background-color: olivedrab;
+    color: white;
+}
+
+.home-thumb{
+    height: 350px;
+    text-align: center;
+    background-color: darkgray;
+    color: white;
+}
+
+.home-thumb img{
+    margin-top: 10px;
+    height: 200px;
+}
+
+.homepage h1{
+    text-align: center;
+    margin-bottom: 30px;
+    color: darkgray;
+}
+
 @media screen and (min-width: 900px) {
     .main-wrapper {
         padding: 3% 20% 20%;
     }
-    .modal{
+
+    .modal {
         padding-top: 5%;
         padding-left: 25%;
         padding-right: 25%;
