@@ -1,7 +1,6 @@
 'use strict';
 
 var diplomaApp = angular.module('diplomaApp', [
-    'ui.router',
     'ngRoute',
     'ngResource',
     'diplomaControllers'

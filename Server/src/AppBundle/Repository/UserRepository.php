@@ -30,7 +30,7 @@ class UserRepository extends EntityRepository implements UserProviderInterface
             ->getOneOrNullResult();
         if (null === $user) {
             $message = sprintf(
-                'Unable to find an active admin AppBundle:User object identified by "%s".',
+                'Unable to find user with username "%s".',
                 $username
             );
             throw new UsernameNotFoundException($message);

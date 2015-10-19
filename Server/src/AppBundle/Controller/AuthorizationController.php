@@ -11,6 +11,7 @@ use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
 use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;
 use Symfony\Component\Security\Core\Encoder\PasswordEncoderInterface;
 use AppBundle\Helpers\ApiKeyGenerator;
+use Symfony\Component\Security\Core\Exception\UsernameNotFoundException;
 
 class AuthorizationController extends Controller
 {
@@ -28,7 +29,11 @@ class AuthorizationController extends Controller
         $em = $this->getDoctrine()->getManager();
         /** @var UserRepository $repository */
         $repository = $em->getRepository('AppBundle\Entity\User');
-        $user = $repository->loadUserByUsername($username);
+        try {
+            $user = $repository->loadUserByUsername($username);
+        } catch(UsernameNotFoundException $exception) {
+            return $response->setContent(json_encode(['errorMessage' => $exception->getMessage()]));
+        }
         if (!$user instanceof User) {
             return $response->setContent(json_encode(['errorMessage' => "No matching user account found"]));
         }
