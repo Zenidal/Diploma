@@ -12,7 +12,6 @@
             if ($rootScope.user && $rootScope.user.isAuthorized) {
                 NotificationService.addMessage('You successfully logged out.');
                 AppUserService.removeUser();
-                $rootScope.user = undefined;
                 $location.path( "/home" );
             }
         };
@@ -31,7 +30,6 @@
                 if (response.data.message !== undefined && response.data.message !== null) {
                     NotificationService.addMessage(response.data.message);
                     AppUserService.addUser(response.data.username, response.data.roleName, response.data.apiKey, response.data.id);
-                    $rootScope.user = AppUserService.user;
                     $location.path( "/home" );
                 }
                 $('#singInModal').modal('hide');

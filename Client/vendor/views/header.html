@@ -16,14 +16,15 @@
                     </a>
                 </div>
                 <div class="collapse navbar-collapse" id="navbar-collapse-9">
-                    <ul class="nav navbar-nav">
+                    <ul ng-if="user.isAuthorized" class="nav navbar-nav">
+                        <li><a ng-href="#/games" class="btn btn-link">Games</a></li>
                     </ul>
                     <ul ng-if="!user.isAuthorized" class="nav navbar-nav navbar-right">
                         <li><a class="btn btn-link" data-toggle="modal" data-target="#singInModal">Sign in</a></li>
                         <li><a class="btn btn-link" data-toggle="modal" data-target="#singUpModal">Sign up</a></li>
                     </ul>
                     <ul ng-if="user.isAuthorized" class="nav navbar-nav navbar-right">
-                        <li><a ng-href="#/games" class="btn btn-link">Games</a></li>
+                        <li><a ng-href="#/profile" class="btn btn-link">Profile</a></li>
                         <li><a class="btn btn-link" ng-click="vm.logout()">Logout</a></li>
                     </ul>
                 </div>

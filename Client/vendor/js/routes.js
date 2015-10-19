@@ -14,6 +14,14 @@ diplomaApp.config(['$routeProvider', '$httpProvider', function ($routeProvider, 
                 isUser: isUser
             }
         })
+        .when('/profile',
+        {
+            templateUrl: 'vendor/views/profile.html',
+            controller: 'ProfileCtrl as vm',
+            resolve: {
+                isUser: isUser
+            }
+        })
         .otherwise({
             redirectTo: '/home'
         });
