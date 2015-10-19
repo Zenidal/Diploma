@@ -62,22 +62,52 @@ input {
     color: white;
 }
 
-.home-thumb{
+.home-thumb {
     height: 350px;
     text-align: center;
     background-color: darkgray;
     color: white;
 }
 
-.home-thumb img{
+.home-thumb img {
     margin-top: 10px;
     height: 200px;
 }
 
-.homepage h1{
+.homepage h1 {
     text-align: center;
     margin-bottom: 30px;
     color: darkgray;
+}
+
+.created-games {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 3px solid;
+    border-radius: 5px;
+    height: 400px;
+}
+
+.created-games-list {
+    margin-top: 10px;
+    height: 330px;
+    overflow: auto;
+}
+
+.your-games {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 3px solid;
+    border-radius: 5px;
+    height: 400px;
+}
+
+.your-games input {
+    text-align: center;
+}
+
+.your-games-form{
+    margin-top: 10px;
 }
 
 @media screen and (min-width: 900px) {

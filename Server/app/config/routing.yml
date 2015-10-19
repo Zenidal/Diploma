@@ -21,3 +21,9 @@ authorizePost:
     pattern:     /authorize
     defaults: { _controller: AppBundle:Authorization:authorizePost }
     methods:  [POST]
+
+
+createGameGet:
+    pattern:     /createGame
+    defaults: { _controller: AppBundle:Game:createGet }
+    methods:  [GET]

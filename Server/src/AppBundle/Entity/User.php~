@@ -67,6 +67,16 @@ class User implements UserInterface, \Serializable
     private $token;
 
     /**
+     * @ORM\OneToOne(targetEntity="Game", mappedBy="visitor", cascade={"persist", "remove"})
+     */
+    private $visitedGame;
+
+    /**
+     * @ORM\OneToOne(targetEntity="Game", mappedBy="creator", cascade={"persist", "remove"})
+     */
+    private $createdGame;
+
+    /**
      * Constructor
      */
     public function __construct()
@@ -291,5 +301,51 @@ class User implements UserInterface, \Serializable
     public function getToken()
     {
         return $this->token;
+    }
+
+    /**
+     * Set visitedGame
+     *
+     * @param \AppBundle\Entity\Game $visitedGame
+     * @return User
+     */
+    public function setVisitedGame(\AppBundle\Entity\Game $visitedGame = null)
+    {
+        $this->visitedGame = $visitedGame;
+
+        return $this;
+    }
+
+    /**
+     * Get visitedGame
+     *
+     * @return \AppBundle\Entity\Game 
+     */
+    public function getVisitedGame()
+    {
+        return $this->visitedGame;
+    }
+
+    /**
+     * Set createdGame
+     *
+     * @param \AppBundle\Entity\Game $createdGame
+     * @return User
+     */
+    public function setCreatedGame(\AppBundle\Entity\Game $createdGame = null)
+    {
+        $this->createdGame = $createdGame;
+
+        return $this;
+    }
+
+    /**
+     * Get createdGame
+     *
+     * @return \AppBundle\Entity\Game 
+     */
+    public function getCreatedGame()
+    {
+        return $this->createdGame;
     }
 }

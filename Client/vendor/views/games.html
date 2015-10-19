@@ -1,3 +1,19 @@
 <div class="games">
-    <h1>Games</h1>
+    <div class="row">
+        <div class="your-games col-md-6 col-xs-12">
+            Create new game
+            <div class="form-group your-games-form">
+                <input class="form-control" type="text" placeholder="Name of the game"/>
+                <button class="form-control btn btn-warning" type="submit">Create</button>
+            </div>
+        </div>
+        <div class="created-games col-md-6 col-xs-12">
+            Created games
+            <div class="created-games-list">
+                <div ng-repeat="game in vm.createdGames track by game.id" class="form-control">
+                    <strong>{{game.creatorUsername}}</strong>: {{game.id}}
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
