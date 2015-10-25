@@ -3,15 +3,21 @@
         <div class="your-games col-md-6 col-xs-12">
             Create new game
             <div class="form-group your-games-form">
-                <input class="form-control" type="text" placeholder="Name of the game"/>
-                <button class="form-control btn btn-warning" type="submit">Create</button>
+                <form ng-submit="vm.createGame()">
+                    <input class="form-control" ng-model="vm.game.name" type="text" placeholder="Name of the game"/>
+                    <button class="form-control btn btn-warning" type="submit">Create</button>
+                </form>
             </div>
         </div>
         <div class="created-games col-md-6 col-xs-12">
             Created games
             <div class="created-games-list">
-                <div ng-repeat="game in vm.createdGames track by game.id" class="form-control">
-                    <strong>{{game.creatorUsername}}</strong>: {{game.id}}
+                <div ng-if="vm.createdGames" ng-repeat="game in vm.createdGames track by game.id">
+                    <a class="btn form-control created-game" ng-click="vm.acceptGame(game.id)"><strong>{{game.creator.username}}</strong>:
+                        {{game.name}}</a>
+                </div>
+                <div ng-if="!vm.createdGames" class="form-control disabled">
+                    Games not exists.
                 </div>
             </div>
         </div>

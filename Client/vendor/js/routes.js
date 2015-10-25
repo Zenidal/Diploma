@@ -11,6 +11,12 @@ diplomaApp.config(['$routeProvider', '$httpProvider', function ($routeProvider, 
             templateUrl: 'vendor/views/games.html',
             controller: 'GamesCtrl as vm',
             resolve: {
+                games: ['GameService', function (GameService) {
+                    return GameService.resource.get().$promise
+                        .then(function (responce) {
+                            return responce.games;
+                        })
+                }],
                 isUser: isUser
             }
         })

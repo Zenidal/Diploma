@@ -27,3 +27,19 @@ createGameGet:
     pattern:     /createGame
     defaults: { _controller: AppBundle:Game:createGet }
     methods:  [GET]
+
+
+createGamePost:
+    pattern:     /games
+    defaults: { _controller: AppBundle:Game:createPost }
+    methods:  [POST]
+
+indexGamesGet:
+    pattern:     /games
+    defaults: { _controller: AppBundle:Game:indexGet }
+    methods:  [GET]
+
+acceptGame:
+    pattern:     /games/{id}/accept
+    defaults: { _controller: AppBundle:Game:accept }
+    methods:  [GET, POST]

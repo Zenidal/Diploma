@@ -13,9 +13,9 @@ class ApiKeyAuthenticator implements SimplePreAuthenticatorInterface, Authentica
 {
     public function createToken(Request $request, $providerKey)
     {
-        $apiKey = $request->headers->get('Token');
+        $apiKey = $request->headers->get('user-token');
         if(!$apiKey){
-            $apiKey = $request->query->get('Token');
+            $apiKey = $request->query->get('user-token');
         }
         if (!$apiKey) {
             throw new BadCredentialsException('No API key found');

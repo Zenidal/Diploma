@@ -1,5 +1,5 @@
 body {
-    background-image: url("../pictures/background.jpg");
+    background-image: url("../pictures/background6.jpg");
 }
 
 input {
@@ -41,6 +41,12 @@ input {
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 20px;
     color: white;
+    width: 100%;
+}
+.loading-image{
+    margin-left: 30%;
+    margin-right: 30%;
+    width: 40%;
 }
 
 .notifications {
@@ -92,6 +98,10 @@ input {
     margin-top: 10px;
     height: 330px;
     overflow: auto;
+}
+
+.created-game:hover{
+    background-color: rgb(240,173,78);
 }
 
 .your-games {

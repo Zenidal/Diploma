@@ -4,9 +4,9 @@
     angular.module('diplomaControllers')
         .controller('HeaderCtrl', HeaderCtrl);
 
-    HeaderCtrl.$inject = ['$rootScope', '$http', '$location', 'NotificationService', 'AppUserService', 'UserService'];
+    HeaderCtrl.$inject = ['$rootScope', '$http', '$location', 'NotificationService', 'AppUserService', 'UserService', 'PATHS'];
 
-    function HeaderCtrl($rootScope, $http, $location, NotificationService, AppUserService, UserService) {
+    function HeaderCtrl($rootScope, $http, $location, NotificationService, AppUserService, UserService, PATHS) {
         var vm = this;
         vm.logout = function () {
             if ($rootScope.user && $rootScope.user.isAuthorized) {
@@ -18,7 +18,7 @@
         vm.authorize = function () {
             $http({
                 method: 'POST',
-                url: $rootScope.serverPath + '/authorize',
+                url: PATHS.SERVER_PATH + '/authorize',
                 data: {
                     username: vm.user.username,
                     password: vm.user.password
