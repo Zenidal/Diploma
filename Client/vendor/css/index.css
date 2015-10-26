@@ -22,12 +22,10 @@ input {
 }
 
 .modal-work-surface {
-    background-color: rgba(0, 0, 0, 0.7);
     color: white;
     padding: 20px;
     border-radius: 20px;
-    background-image: url('../pictures/modal.jpg');
-    background-repeat: no-repeat;
+    background: rgba(0, 0, 0, 0.7) url('../pictures/modal.jpg') no-repeat;
     background-size: cover;
 }
 
@@ -43,7 +41,8 @@ input {
     color: white;
     width: 100%;
 }
-.loading-image{
+
+.loading-image {
     margin-left: 30%;
     margin-right: 30%;
     width: 40%;
@@ -100,8 +99,142 @@ input {
     overflow: auto;
 }
 
-.created-game:hover{
-    background-color: rgb(240,173,78);
+.created-game:hover {
+    background-color: rgb(240, 173, 78);
+}
+
+.score {
+    position: absolute;
+    left: 45%;
+    width: 10%;
+    margin-top: -40px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.realized-card-blank{
+    width: 7%;
+    display: inline-block;
+}
+
+.card-blank {
+    width: 10%;
+    display: inline-block;
+}
+
+.my-score {
+    color: red;
+    border-top: 2px solid rgb(240, 173, 78);
+    border-left: 2px solid rgb(240, 173, 78);
+    border-right: 2px solid rgb(240, 173, 78);
+    border-top-left-radius: 200%;
+    border-top-right-radius: 200%;
+    background-color: black;
+}
+
+.opponent-score {
+    color: green;
+    border-bottom: 2px solid rgb(240, 173, 78);
+    border-left: 2px solid rgb(240, 173, 78);
+    border-right: 2px solid rgb(240, 173, 78);
+    border-bottom-left-radius: 200%;
+    border-bottom-right-radius: 200%;
+    background-color: black;
+}
+
+.my-part {
+    margin-bottom: 15px;
+}
+
+.my-part .table-line {
+    background-color: rgba(0, 255, 0, 0.3);
+}
+
+.opponent-part {
+    background-color: rgba(255, 0, 0, 0.3);
+}
+
+.table-line {
+    height: 70px;
+    width: 100%;
+    padding: 5px;
+    border: 2px solid rgb(240, 173, 78);
+    border-radius: 2px;
+    margin-bottom: 5px;
+}
+
+.cards-line {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 5px;
+    height: 160px;
+    width: 100%;
+    border: 2px solid rgb(240, 173, 78);
+    border-radius: 2px;
+    margin-bottom: 20px;
+}
+
+.realized-image {
+    height: 60px;
+}
+
+.army-type {
+    height: 56px;
+    width: 56px;
+    border: 2px solid rgb(240, 173, 78);
+    border-radius: 2px;
+    display: inline-block;
+}
+
+.realized-cards {
+    display: inline-block;
+    height: 100%;
+    padding: 5px;
+    width: 65%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.melee-type {
+    background-image: url('../pictures/sword.jpg');
+    background-size: 100% 100%;
+}
+
+.range-type {
+    background-image: url('../pictures/bow.jpg');
+    background-size: 100% 100%;
+}
+
+.siege-type {
+    background-image: url('../pictures/siege-weapon.jpg');
+    background-size: 100% 100%;
+}
+
+.army-power {
+    padding-top: 7px;
+    z-index: 1;
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: 2px solid white;
+    margin-top: -20px;
+    margin-left: -20px;
+    position: absolute;
+    text-align: center;
+    color: white;
+}
+
+.gain {
+    height: 56px;
+    width: 56px;
+    right: 5%;
+    position: absolute;
+    background-image: url('../pictures/gain.png');
+    border-radius: 28px;
+    background-size: 100% 100%;
 }
 
 .your-games {
@@ -116,8 +249,35 @@ input {
     text-align: center;
 }
 
-.your-games-form{
+.your-games-form {
     margin-top: 10px;
+}
+
+@media screen and (min-width: 600px) {
+    .realized-cards {
+        display: inline-block;
+        height: 100%;
+        padding: 5px;
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .realized-cards {
+        display: inline-block;
+        height: 100%;
+        padding: 5px;
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 1180px) {
+    .realized-cards {
+        display: inline-block;
+        height: 100%;
+        padding: 5px;
+        width: 80%;
+    }
 }
 
 @media screen and (min-width: 900px) {

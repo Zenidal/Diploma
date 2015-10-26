@@ -28,6 +28,10 @@ diplomaApp.config(['$routeProvider', '$httpProvider', function ($routeProvider, 
                 isUser: isUser
             }
         })
+        .when('/test',
+        {
+            templateUrl: 'vendor/views/gameTable.html'
+        })
         .otherwise({
             redirectTo: '/home'
         });
