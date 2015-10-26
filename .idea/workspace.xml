@@ -1,11 +1,188 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e2343e40-f46c-470a-bff3-557d21a034d4" name="Default" comment="Added authorization API.&#10;&#10;Added authorization API with services and provider.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/views/gameTable.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/vendor/css/index.css" afterPath="$PROJECT_DIR$/Client/vendor/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/vendor/js/routes.js" afterPath="$PROJECT_DIR$/Client/vendor/js/routes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    <list default="true" id="e2343e40-f46c-470a-bff3-557d21a034d4" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/bow.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/bow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/bugle.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/gain.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/icon.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/siege-weapon.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/sword.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/woman.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Альбрых.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Ассире.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Баллиста.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Баллиста2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Барклай.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Бес.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Боец Синих Полосок.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Бригада Импера.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Бригада.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Бьянка.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Вампир1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Вампиры 2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Вангемар.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Ваттье.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Ведьма Шептуха.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Ведьма кухарка.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Ведьма пряха.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Вернон Роше.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нейтральные карты/Весемир.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Виверна.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Виллохвост.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Вреемде.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Врихедд.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Гавенкерc.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Гаргулья.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Гарпия.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Гарпияя.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нейтральные карты/Геральт.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Главоглаз огромный.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Главоглаз.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Главоглаз1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Главоглазопять.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Гуль.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Гулька.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Деннис Кранмер.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Детмольд.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Дийкстра.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Доброволец.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Добровольцыы.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нейтральные карты/Дракон убийца.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Драуг.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Застрель4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Застрельw.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Застрельщик краснолюд.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Застрельщик.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Застрельщикк.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Зигфрид.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нейтральные карты/Золтан.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Игоша.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Ида.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Изенгрим.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Имлерих.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Иорвет.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нейтральные карты/Йеннифер.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Кавалерия.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Кагыропять.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Кадет.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нейтральные карты/Казнь.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Кайран.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Катапульта.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Кейра.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Киаран.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Краснолюд.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Ледяной великан.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Лекарь .jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Лекарь 2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Лекарь.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Лекарь.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Лето.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Леший.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нейтральные карты/Ливень.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Лидер 1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Лидер 1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Лидер 2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Лидер 2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Лидер 3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Лидер 3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Лидер 3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Лидер 4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Лидер 4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Лидер 4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Лидер1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Лучник.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Лучник.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нейтральные карты/Лютик.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нейтральные карты/Мгла.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Менно.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Мехакамские добровольцы.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Мехакамские добровольцы2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Мехакамские добровольцы3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Мильва.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Морвран.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Моровая Дева.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нейтральные карты/Мороз.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Мортейзен.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Накер.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/ОсПодд.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Осадная башня.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Осадный мастер.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Пехотинец Реданский.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Пехтура.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Пехтура2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Пехтура3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Поддержка 2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Поддержка.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Поддержка.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Поддержка2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Посланник.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Посланника.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Принц Стеннис.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Пугач.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Путт.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Райнфарн.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Реданский пехотинец.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Ренуальд.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Риордайин.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нейтральные карты/Рог.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Рубайлы.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Сабрина.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Сае.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Сапер.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Свирс.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Сгнившая петрария.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Скорп.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Скорп2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Следопыт.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Следопыт2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Следопытнаглый.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Стефан.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нейтральные карты/Таинственный эльф.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Талер.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Тибор.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Торувьель.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Требушет.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Требушет2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нейтральные карты/Трисс.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Туманник.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Фила.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Филиппа.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Фольтест 2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Фольтест 3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Фольтест 4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Фольтест1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Фрингилия.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Цинтия.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нейтральные карты/Цири.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/ЧудоЛучник.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нейтральные карты/Чучело.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Шеала.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Шелдон.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Шилярд.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Эитне.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Элементаль земли.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Элементаль огня.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нейтральные карты/Эмиель.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Эндриага.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Эстерад.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Яевинн.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Ян.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Ярпен.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нейтральные карты/Ясное небо.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/вампир 2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/вампиры 3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/василиск.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/волколак.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/грифон.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/гуль2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/лидер 2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/мастер.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/накер 2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/накер 3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/осадный.jpg" />
     </list>
     <ignored path="Diploma.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,8 +217,8 @@
       <file leaf-file-name="gameTable.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Client/vendor/views/gameTable.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4988662">
-              <caret line="48" column="22" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.54864866">
+              <caret line="47" column="30" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#1;n#div#3;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -125,6 +302,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="Alexandr Miskevich &lt;a.miskevich@itransition.com&gt;" />
         <option value="Miskevich Alexandr" />
       </list>
     </option>
@@ -679,24 +857,30 @@
       <option name="project" value="LOCAL" />
       <updated>1440329352159</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Started stylization of game table.&#10;&#10;Started stylization of game table.&#10;">
+      <created>1445871224329</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1445871224329</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23015873" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19754978" sideWeight="0.5214286" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295964" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3062787" sideWeight="0.51428574" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30733946" sideWeight="0.4888889" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3062787" sideWeight="0.4857143" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295964" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -721,7 +905,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added registration API.&#10;&#10;Added registration API with validation." />
     <MESSAGE value="Added authorization API.&#10;&#10;Added authorization API with services and provider." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added authorization API.&#10;&#10;Added authorization API with services and provider." />
+    <MESSAGE value="Started stylization of game table.&#10;&#10;Started stylization of game table.&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Started stylization of game table.&#10;&#10;Started stylization of game table.&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1087,8 +1272,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Client/vendor/views/gameTable.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4988662">
-          <caret line="48" column="22" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.54864866">
+          <caret line="47" column="30" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#1;n#div#3;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
