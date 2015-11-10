@@ -1,6 +1,12 @@
 <?php
 namespace AppBundle\Controller;
 
+use Ratchet\MessageComponentInterface;
+use Ratchet\ConnectionInterface;
+
+// Make sure composer dependencies have been installed
+require '/vendor/autoload.php';
+
 use AppBundle\Entity\Game;
 use AppBundle\Entity\User;
 use AppBundle\Repository\GameRepository;
@@ -130,5 +136,10 @@ class GameController extends Controller
             return $response->setContent(json_encode(['games' => null]));
         }
         return $response->setContent(json_encode(['games' => $games]));
+    }
+
+    public function myAction()
+    {
+
     }
 }

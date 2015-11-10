@@ -1,4 +1,5 @@
 diplomaApp.config(['$routeProvider', '$httpProvider', function ($routeProvider, $httpProvider) {
+    $httpProvider.interceptors.push('ResponseObserverService');
     $httpProvider.interceptors.push('AuthInterceptorService');
     $routeProvider
         .when('/home',

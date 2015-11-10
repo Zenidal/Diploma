@@ -1,41 +1,6 @@
 <div class="game-table">
     <div class="row">
         <div class="table-part col-lg-12 col-md-12 col-xs-12">
-            <div class="cards-line">
-                <div ng-repeat="n in [1,2,3,4,5,6,7,8,9,10,11,12]" class="card-blank">
-                    <a href="" class="thumbnail">
-                        <img ng-src="vendor/pictures/cards/monsters/woman.jpg">
-                    </a>
-                </div>
-            </div>
-            <div class="my-part">
-                <div class="table-line">
-                    <div class="army-power">7</div>
-                    <div class="gain"></div>
-                    <div class="army-type melee-type"></div>
-                </div>
-                <div class="table-line">
-                    <div class="army-power">23</div>
-                    <div class="gain"></div>
-                    <div class="army-type range-type"></div>
-                    <div class="realized-cards">
-                        <div ng-repeat="n in [1,2,3,4,5,6,7,8,9,10,11,12,13,14]" class="realized-card-blank">
-                            <a href="">
-                                <img class="realized-image" ng-src="vendor/pictures/cards/monsters/woman.jpg">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="table-line">
-                    <div class="army-power">4</div>
-                    <div class="gain" style="background-color: wheat"></div>
-                    <div class="army-type siege-type"></div>
-                </div>
-            </div>
-            <div class="score">
-                <div class="my-score">34</div>
-                <div class="opponent-score">75</div>
-            </div>
             <div class="opponent-part">
                 <div class="table-line">
                     <div class="army-power">36</div>
@@ -52,12 +17,47 @@
                     <div class="gain"></div>
                     <div class="army-type melee-type"></div>
                     <div class="realized-cards">
-                        <div ng-repeat="n in [1,2,3,4,5,6,7,8]" class="realized-card-blank">
+                        <div ng-repeat="n in [1,2,3,4,5,6,7,8,9,10,11,12,13]" class="realized-card-blank">
                             <a href="">
                                 <img class="realized-image" ng-src="vendor/pictures/cards/monsters/woman.jpg">
                             </a>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="score">
+                <div class="opponent-score">75</div>
+                <div class="my-score">34</div>
+            </div>
+            <div class="my-part">
+                <div class="table-line">
+                    <div class="army-power">7</div>
+                    <div class="gain"></div>
+                    <div class="army-type melee-type"></div>
+                </div>
+                <div class="table-line">
+                    <div class="army-power">23</div>
+                    <div class="gain"></div>
+                    <div class="army-type range-type"></div>
+                    <div class="realized-cards">
+                        <div ng-repeat="n in [1,2,3,4,5,6,7,8,9,10,11,12]" class="realized-card-blank">
+                            <a  ng-href="vendor/pictures/cards/monsters/woman.jpg" rel="lightbox">
+                                <img class="realized-image" ng-src="vendor/pictures/cards/monsters/woman.jpg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-line">
+                    <div class="army-power">4</div>
+                    <div class="gain" style="background-color: wheat"></div>
+                    <div class="army-type siege-type"></div>
+                </div>
+            </div>
+            <div class="cards-line">
+                <div ng-repeat="n in [1,2,3,4,5,6,7,8,9,10]" class="card-blank">
+                    <a ng-href="vendor/pictures/cards/monsters/woman.jpg" rel="lightbox" class="thumbnail">
+                        <img ng-src="vendor/pictures/cards/monsters/woman.jpg">
+                    </a>
                 </div>
             </div>
         </div>

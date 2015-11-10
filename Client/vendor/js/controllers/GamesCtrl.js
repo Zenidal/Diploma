@@ -4,10 +4,22 @@
     angular.module('diplomaControllers')
         .controller('GamesCtrl', GamesCtrl);
 
-    GamesCtrl.$inject = ['NotificationService', 'GameService', 'games'];
+    GamesCtrl.$inject = ['NotificationService', 'GameService', 'PATHS', 'games'];
 
-    function GamesCtrl(NotificationService, GameService, games) {
+    function GamesCtrl(NotificationService, GameService, PATHS, games) {
         var vm = this;
+
+        var myClank = Clank.connect(PATHS.SOCKET_PATH + '/game');
+        myClank.on("socket/connect", function(session){
+            //session is an Autobahn JS WAMP session.
+
+            console.log("Successfully Connected!");
+        });
+        myClank.on("socket/disconnect", function(error){
+            //error provides us with some insight into the disconnection: error.reason and error.code
+
+            console.log("Disconnected for " + error.reason + " with code " + error.code);
+        });
 
         vm.createdGames = games;
         vm.createGame = createGame;
