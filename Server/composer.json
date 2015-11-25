@@ -4,7 +4,7 @@
     "type": "project",
     "autoload": {
         "psr-4": {
-            "": "src/",
+            "MyApp": "src/",
             "SymfonyStandard\\": "app/SymfonyStandard/"
         }
     },
@@ -23,7 +23,7 @@
         "qandidate/symfony-json-request-transformer": "*",
         "doctrine/doctrine-fixtures-bundle": "^2.2",
         "nelmio/cors-bundle": "^1.4",
-        "jdare/clank-bundle": "0.1.*"
+        "cboden/ratchet": "^0.3.3"
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3"

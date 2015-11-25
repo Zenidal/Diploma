@@ -9,21 +9,22 @@
     function GamesCtrl(NotificationService, GameService, PATHS, games) {
         var vm = this;
 
-        var myClank = Clank.connect(PATHS.SOCKET_PATH + '/game');
-        myClank.on("socket/connect", function(session){
-            //session is an Autobahn JS WAMP session.
-
-            console.log("Successfully Connected!");
-        });
-        myClank.on("socket/disconnect", function(error){
-            //error provides us with some insight into the disconnection: error.reason and error.code
-
-            console.log("Disconnected for " + error.reason + " with code " + error.code);
-        });
-
         vm.createdGames = games;
         vm.createGame = createGame;
         vm.acceptGame = acceptGame;
+        vm.wsConnection = new WebSocket('ws://localhost:333');
+
+        vm.wsConnection.onopen = function (event) {
+            console.log("Connection established!");
+        };
+
+        vm.wsConnection.onerror = function(event) {
+            console.log("The connection could not be established due to an error.");
+        };
+
+        vm.wsConnection.onmessage = function (event) {
+            console.log(event.data);
+        };
 
         function createGame() {
             var Game = new GameService.resource;
