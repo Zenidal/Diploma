@@ -16,7 +16,7 @@
                     <a class="btn form-control created-game" ng-click="vm.acceptGame(game.id)"><strong>{{game.creator.username}}</strong>:
                         {{game.name}}</a>
                 </div>
-                <div ng-if="!vm.createdGames" class="form-control disabled">
+                <div ng-if="!vm.createdGames || vm.createdGames.length == 0" class="form-control disabled">
                     Games not exists.
                 </div>
             </div>

@@ -4,45 +4,49 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Gvint</title>
-    <link rel="icon" type="image/x-icon" href="vendor/pictures/favicon.ico"/>
+    <link rel="icon" type="image/x-icon" href="vendor/pictures/favicon.ico" />
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="libs/lightbox2-master/dist/css/lightbox.css">
     <link rel="stylesheet" href="vendor/css/index.css">
 </head>
 <body>
-<header class="header" ng-include="'vendor/views/notifications.html'"></header>
-<div class="main-wrapper">
-    <header class="header" ng-include="'vendor/views/header.html'"></header>
-    <div class="site-background" ng-if="isViewLoading">
-        <img class="loading-image" src="vendor/pictures/loading.gif"/>
+    <header class="header" ng-include="'vendor/views/notifications.html'"></header>
+    <div class="main-wrapper">
+        <header class="header" ng-include="'vendor/views/header.html'"></header>
+        <div class="site-background" ng-if="isViewLoading">
+            <img class="loading-image" src="vendor/pictures/loading.gif" />
+        </div>
+        <div class="site-background" ng-if="!isViewLoading">
+            <div ng-view></div>
+        </div>
     </div>
-    <div class="site-background" ng-if="!isViewLoading">
-        <div ng-view></div>
-    </div>
-</div>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="libs/lightbox2-master/dist/js/lightbox-plus-jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="//ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/jquery-ui.min.js"></script>
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-route/angular-route.min.js"></script>
+    <script src="node_modules/angular-resource/angular-resource.min.js"></script>
+    <script src="node_modules/angular-bootstrap/ui-bootstrap.min.js"></script>
 
-<script src="node_modules/jquery/dist/jquery.min.js"></script>
-<script src="libs/lightbox2-master/dist/js/lightbox-plus-jquery.min.js"></script>
-<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="node_modules/angular/angular.min.js"></script>
-<script src="node_modules/angular-route/angular-route.min.js"></script>
-<script src="node_modules/angular-resource/angular-resource.min.js"></script>
-<script src="node_modules/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script src="vendor/js/libraries/autobahn.min.js"></script>
+    <script src="vendor/js/libraries/gos_web_socket_client.js"></script>
 
-<script src="vendor/js/main.js"></script>
-<script src="vendor/js/routes.js"></script>
-<script src="vendor/js/constants/PATHS.js"></script>
-<script src="vendor/js/resources/UserService.js"></script>
-<script src="vendor/js/resources/GameService.js"></script>
-<script src="vendor/js/services/AppUserService.js"></script>
-<script src="vendor/js/services/NotificationService.js"></script>
-<script src="vendor/js/services/HttpInspectorService.js"></script>
-<script src="vendor/js/services/ResponseObserverService.js"></script>
-<script src="vendor/js/controllers/HeaderCtrl.js"></script>
-<script src="vendor/js/controllers/NotificationCtrl.js"></script>
-<script src="vendor/js/controllers/HomeCtrl.js"></script>
-<script src="vendor/js/controllers/GamesCtrl.js"></script>
-<script src="vendor/js/controllers/ProfileCtrl.js"></script>
-<script src="vendor/js/helpers/AccountHelper.js"></script>
+    <script src="vendor/js/main.js"></script>
+    <script src="vendor/js/routes.js"></script>
+    <script src="vendor/js/constants/PATHS.js"></script>
+    <script src="vendor/js/resources/UserService.js"></script>
+    <script src="vendor/js/resources/GameService.js"></script>
+    <script src="vendor/js/services/AppUserService.js"></script>
+    <script src="vendor/js/services/NotificationService.js"></script>
+    <script src="vendor/js/services/HttpInspectorService.js"></script>
+    <script src="vendor/js/services/ResponseObserverService.js"></script>
+    <script src="vendor/js/controllers/HeaderCtrl.js"></script>
+    <script src="vendor/js/controllers/NotificationCtrl.js"></script>
+    <script src="vendor/js/controllers/HomeCtrl.js"></script>
+    <script src="vendor/js/controllers/GamesCtrl.js"></script>
+    <script src="vendor/js/controllers/ActualGameCtrl.js"></script>
+    <script src="vendor/js/controllers/ProfileCtrl.js"></script>
+    <script src="vendor/js/helpers/accountHelper.js"></script>
 </body>
 </html>

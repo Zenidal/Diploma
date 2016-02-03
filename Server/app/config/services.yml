@@ -16,3 +16,11 @@ services:
     apikey_authenticator:
         class:  AppBundle\Security\ApiKeyAuthenticator
         public: false
+
+    app.topic_game_service:
+        class: AppBundle\Topic\GameTopic
+        arguments: [ @doctrine.orm.entity_manager ]
+
+    app.rpc_game_service:
+        class: AppBundle\RPC\GameService
+        arguments: [ @doctrine.orm.entity_manager ]

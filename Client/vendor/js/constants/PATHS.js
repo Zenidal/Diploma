@@ -1,4 +1,4 @@
 angular.module('diplomaApp').constant('PATHS', {
-    'SERVER_PATH': 'http://gvint.api.loc:666',
-    'SOCKET_PATH': 'ws://127.0.0.1:333'
+    'SERVER_PATH': 'http://gvint.api.dev',
+    'SOCKET_PATH': 'ws://gvint.api.dev:8080'
 });

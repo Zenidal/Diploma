@@ -4,27 +4,32 @@
     angular.module('diplomaControllers')
         .controller('GamesCtrl', GamesCtrl);
 
-    GamesCtrl.$inject = ['NotificationService', 'GameService', 'PATHS', 'games'];
+    GamesCtrl.$inject = ['NotificationService', 'GameService', 'PATHS', 'games', '$scope'];
 
-    function GamesCtrl(NotificationService, GameService, PATHS, games) {
+    function GamesCtrl(NotificationService, GameService, PATHS, games, $rootScope) {
         var vm = this;
 
         vm.createdGames = games;
         vm.createGame = createGame;
         vm.acceptGame = acceptGame;
-        vm.wsConnection = new WebSocket('ws://localhost:333');
 
-        vm.wsConnection.onopen = function (event) {
-            console.log("Connection established!");
-        };
-
-        vm.wsConnection.onerror = function(event) {
-            console.log("The connection could not be established due to an error.");
-        };
-
-        vm.wsConnection.onmessage = function (event) {
-            console.log(event.data);
-        };
+        vm.webSocket = WS.connect(PATHS.SOCKET_PATH);
+        vm.webSocket.on("socket/connect", function (session) {
+            session.subscribe('app/channel', function (uri, payload) {
+                if (payload.games) {
+                    vm.createdGames = [];
+                    for(var i = 0; i < payload.games.length; i++) {
+                        if (payload.games[i].creator.id != $rootScope.user.id) {
+                            vm.createdGames.push(payload.games[i]);
+                        }
+                    }
+                    $rootScope.$apply();
+                }
+            });
+        });
+        vm.webSocket.on("socket/disconnect", function (error) {
+            console.log("Disconnected for " + error.reason + " with code " + error.code);
+        });
 
         function createGame() {
             var Game = new GameService.resource;

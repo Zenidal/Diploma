@@ -30,6 +30,8 @@ framework:
         handler_id:  ~
     fragments:       ~
     http_method_override: true
+    session:
+        handler_id: session.handler.pdo
 
 # Twig Configuration
 twig:
@@ -94,3 +96,16 @@ nelmio_cors:
         allow_headers: ['origin', 'content-type', 'user-token']
         allow_methods: ['POST', 'PUT', 'GET', 'DELETE','OPTIONS']
         max_age: 3600
+
+# Web Socket Configuration
+gos_web_socket:
+    server:
+        port: 8080 #The port the socket server will listen on
+        host: 127.0.0.1 #The host ip to bind to
+        router:
+            resources:
+                - @AppBundle/Resources/config/pubsub/routing.yml
+    topics:
+        - @app.topic_game_service
+    rpc:
+        - @app.rpc_game_service

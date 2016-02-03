@@ -6,10 +6,6 @@ input {
     max-width: 100%;
 }
 
-.main-wrapper {
-    padding: 3% 5% 5%;
-}
-
 .modal {
     padding-top: 5%;
     padding-left: 10%;
@@ -37,7 +33,6 @@ input {
 .site-background {
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 20px;
     color: white;
     width: 100%;
 }
@@ -76,7 +71,6 @@ input {
 
 .home-thumb img {
     margin-top: 10px;
-    height: 200px;
 }
 
 .homepage h1 {
@@ -107,19 +101,9 @@ input {
     position: absolute;
     left: 45%;
     width: 10%;
-    margin-top: -50px;
+    margin-top: -35px;
     text-align: center;
     font-size: 20px;
-}
-
-.realized-card-blank {
-    width: 7%;
-    display: inline-block;
-}
-
-.card-blank {
-    width: 10%;
-    display: inline-block;
 }
 
 .my-score {
@@ -152,44 +136,56 @@ input {
 }
 
 .table-line {
-    height: 70px;
     width: 100%;
-    padding: 5px;
     border: 2px solid rgb(240, 173, 78);
     border-radius: 2px;
     margin-bottom: 5px;
 }
 
 .cards-line {
-    overflow-x: auto;
-    overflow-y: hidden;
-    white-space: nowrap;
+    overflow: auto;
     padding: 5px;
-    height: 100px;
     width: 100%;
+    height: 140px;
     border: 2px solid rgb(240, 173, 78);
     border-radius: 2px;
     margin-bottom: 20px;
 }
 
-.realized-image {
-    height: 45px;
+.cards-line img {
+    height: 125px;
 }
 
-.army-type {
-    height: 56px;
-    width: 56px;
-    border: 2px solid rgb(240, 173, 78);
-    border-radius: 2px;
+.card-blank {
     display: inline-block;
+    margin-right: 5px;
+    vertical-align: top;
 }
 
 .realized-cards {
     display: inline-block;
     height: 100%;
-    padding: 5px;
-    width: 65%;
+    width: 80%;
     overflow: auto;
+}
+
+.realized-cards img {
+    height: 70px;
+}
+
+.realized-card-blank {
+    display: inline-block;
+    margin-right: 3px;
+    vertical-align: top;
+}
+
+.army-type {
+    vertical-align: top;
+    height: 70px;
+    width: 70px;
+    border: 2px solid rgb(240, 173, 78);
+    border-radius: 2px;
+    display: inline-block;
 }
 
 .melee-type {
@@ -223,12 +219,12 @@ input {
 }
 
 .gain {
-    height: 56px;
-    width: 56px;
-    right: 5%;
+    height: 70px;
+    width: 70px;
+    right: 3%;
     position: absolute;
     background-image: url('../pictures/gain.png');
-    border-radius: 28px;
+    border-radius: 35px;
     background-size: 100% 100%;
 }
 
@@ -246,57 +242,4 @@ input {
 
 .your-games-form {
     margin-top: 10px;
-}
-
-@media screen and (min-width: 600px) {
-    .cards-line {
-        height: 160px;
-    }
-
-    .realized-cards {
-        display: inline-block;
-        height: 100%;
-        padding: 5px;
-        width: 70%;
-    }
-}
-
-@media screen and (min-width: 800px) {
-
-    .realized-cards {
-        display: inline-block;
-        height: 100%;
-        padding: 5px;
-        width: 75%;
-    }
-}
-
-@media screen and (min-width: 1180px) {
-    .realized-cards {
-        display: inline-block;
-        height: 100%;
-        padding: 5px;
-        width: 80%;
-    }
-}
-
-@media screen and (min-width: 900px) {
-    .main-wrapper {
-        padding: 3% 20% 20%;
-    }
-
-    .modal {
-        padding-top: 5%;
-        padding-left: 25%;
-        padding-right: 25%;
-        width: 75%;
-    }
-
-    .notifications {
-        position: fixed;
-        width: 15%;
-        margin-left: 3%;
-        margin-top: 3%;
-        z-index: 1;
-    }
 }

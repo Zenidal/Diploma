@@ -14,8 +14,8 @@ diplomaApp.config(['$routeProvider', '$httpProvider', function ($routeProvider, 
             resolve: {
                 games: ['GameService', function (GameService) {
                     return GameService.resource.get().$promise
-                        .then(function (responce) {
-                            return responce.games;
+                        .then(function (response) {
+                            return response.games;
                         })
                 }],
                 isUser: isUser
