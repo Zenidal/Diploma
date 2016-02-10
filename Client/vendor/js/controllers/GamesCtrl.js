@@ -4,12 +4,14 @@
     angular.module('diplomaControllers')
         .controller('GamesCtrl', GamesCtrl);
 
-    GamesCtrl.$inject = ['NotificationService', 'GameService', 'PATHS', 'games', '$scope'];
+    GamesCtrl.$inject = ['NotificationService', 'GameService', 'PATHS', '$scope', '$location', '$http'];
 
-    function GamesCtrl(NotificationService, GameService, PATHS, games, $rootScope) {
+    function GamesCtrl(NotificationService, GameService, PATHS, $rootScope, $location, $http) {
         var vm = this;
 
-        vm.createdGames = games;
+        vm.gamesLoaded = false;
+        vm.createdGames = [];
+        vm.myGame = null;
         vm.createGame = createGame;
         vm.acceptGame = acceptGame;
 
@@ -19,16 +21,23 @@
                 if (payload.games) {
                     vm.createdGames = [];
                     for(var i = 0; i < payload.games.length; i++) {
-                        if (payload.games[i].creator.id != $rootScope.user.id) {
+                        if (payload.games[i].creator && payload.games[i].creator.id != $rootScope.user.id) {
                             vm.createdGames.push(payload.games[i]);
+                        } else if (payload.games[i].creator && payload.games[i].creator.id == $rootScope.user.id) {
+                            vm.myGame = payload.games[i];
+                            if(vm.myGame.visitor && vm.myGame.visitor.username){
+                                $location.path("/actual_game");
+                                vm.webSocket.off();
+                            }
                         }
                     }
+                    vm.gamesLoaded = true;
                     $rootScope.$apply();
                 }
             });
         });
         vm.webSocket.on("socket/disconnect", function (error) {
-            console.log("Disconnected for " + error.reason + " with code " + error.code);
+            NotificationService.addErrorMessage('WebSocketError:' + error.reason + '. Try later');
         });
 
         function createGame() {
@@ -50,7 +59,22 @@
         }
 
         function acceptGame(id) {
-            GameService.acceptGame(id);
+            $http({
+                method: 'POST',
+                url: PATHS.SERVER_PATH + '/games/' + id + '/accept'
+            }).then(function successCallback(response) {
+                if (response.data.errorMessage !== undefined && response.data.errorMessage !== null) {
+                    NotificationService.addErrorMessage(response.data.errorMessage);
+                }
+                if (response.data.message !== undefined && response.data.message !== null) {
+                    NotificationService.addMessage(response.data.message);
+                    $location.path("/actual_game");
+                    vm.webSocket.off();
+                }
+            }, function errorCallback(response) {
+                NotificationService.addErrorMessage(response.data.errorMessage);
+            });
+            $('#acceptGameModal').modal('hide');
         }
     }
 })();

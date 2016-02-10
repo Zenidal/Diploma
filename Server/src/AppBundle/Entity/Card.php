@@ -26,7 +26,7 @@ class Card
     private $power;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="string", length=255)
      */
     private $name;
 
@@ -49,7 +49,7 @@ class Card
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -72,7 +72,7 @@ class Card
     /**
      * Get power
      *
-     * @return integer 
+     * @return integer
      */
     public function getPower()
     {
@@ -95,7 +95,7 @@ class Card
     /**
      * Get name
      *
-     * @return integer 
+     * @return integer
      */
     public function getName()
     {
@@ -118,7 +118,7 @@ class Card
     /**
      * Get attackType
      *
-     * @return integer 
+     * @return integer
      */
     public function getAttackType()
     {
@@ -141,7 +141,7 @@ class Card
     /**
      * Get isUnique
      *
-     * @return boolean 
+     * @return boolean
      */
     public function getIsUnique()
     {
@@ -164,7 +164,7 @@ class Card
     /**
      * Get ability
      *
-     * @return integer 
+     * @return integer
      */
     public function getAbility()
     {

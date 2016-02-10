@@ -43,3 +43,7 @@ acceptGame:
     pattern:     /games/{id}/accept
     defaults: { _controller: AppBundle:Game:accept }
     methods:  [GET, POST]
+
+checkActualGame:
+    pattern:     /checkGame
+    defaults: { _controller: AppBundle:Game:checkActualGame }

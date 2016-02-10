@@ -61,20 +61,25 @@ class GameController extends Controller
 		$game = $gameRepository->find($id);
 		if(!$game) {
 			return $response->setContent(json_encode(['errorMessage' => 'Game not found.']));
-		} else {
-			if($user->getVisitedGame()) {
-				return $response->setContent(json_encode(['errorMessage' => 'You can\'t visit this game.']));
-			}
-			if($game->getCreator() && !$game->getVisitor()) {
-				$game->setVisitor($user);
-				$user->setVisitedGame($game);
+		}
+		if($game->getVisitor() && $game->getVisitor()->getId()) {
+			return $response->setContent(json_encode(['errorMessage' => 'Game is already busy.']));
+		}
+		if($game->getCreator() && !$game->getVisitor()) {
+			if($user->getCreatedGame()) {
+				$removableGame = $user->getCreatedGame();
+				$user->setCreatedGame(null);
+				$em->remove($removableGame);
 				$em->flush();
-
-				return $response->setContent(json_encode(['message' => 'Game successfully accepted.']));
 			}
+			$game->setVisitor($user);
+			$user->setVisitedGame($game);
+			$em->flush();
+
+			return $response->setContent(json_encode(['message' => 'Game successfully accepted.']));
 		}
 
-		return $response->setContent(json_encode(['errorMessage' => 'Game is already busy.']));
+		return $response->setContent(json_encode(['errorMessage' => 'You can\'t accept your game.']));
 	}
 
 	public function createPostAction(Request $request)
@@ -136,5 +141,44 @@ class GameController extends Controller
 		}
 
 		return $response->setContent(json_encode(['games' => $games]));
+	}
+
+	public function checkActualGameAction()
+	{
+		$em = $this->getDoctrine()->getManager();
+		/** @var GameRepository $gameRepository */
+		$gameRepository = $em->getRepository('AppBundle\Entity\Game');
+		$gameQueryBuilder = $gameRepository->createQueryBuilder('games');
+
+		/** @var UserRepository $userRepository */
+		$userRepository = $em->getRepository('AppBundle\Entity\User');
+		/** @var User $user */
+		$user = $userRepository->loadUserByUsername($this->getUser()->getUsername());
+
+		$games = $gameQueryBuilder
+			->select('games, creator, visitor')
+			->innerJoin('games.creator', 'creator')
+			->innerJoin('games.visitor', 'visitor')
+			->where('creator.id = games.creator')
+			->where('visitor.id = games.visitor')
+			->where($gameQueryBuilder->expr()->isNotNull('games.visitor'))
+			->where($gameQueryBuilder->expr()->isNotNull('games.creator'))
+			->where('games.creator = :creator')
+			->orWhere('games.visitor = :visitor')
+			->setParameters(
+				[
+					'creator' => $user->getId(),
+					'visitor' => $user->getId(),
+				]
+			)
+			->getQuery()
+			->getArrayResult();
+
+		$response = new Response();
+		if(count($games) !== 0) {
+			return $response->setContent(json_encode(['isExist' => true]));
+		} else {
+			return $response->setContent(json_encode(['isExist' => false]));
+		}
 	}
 }
