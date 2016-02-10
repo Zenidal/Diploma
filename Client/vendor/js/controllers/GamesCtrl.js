@@ -37,7 +37,6 @@
             });
         });
         vm.webSocket.on("socket/disconnect", function (error) {
-            NotificationService.addErrorMessage('WebSocketError:' + error.reason + '. Try later');
         });
 
         function createGame() {
