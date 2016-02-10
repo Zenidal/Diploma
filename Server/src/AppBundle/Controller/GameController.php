@@ -137,4 +137,43 @@ class GameController extends Controller
 
 		return $response->setContent(json_encode(['games' => $games]));
 	}
+
+	public function checkActualGameAction()
+	{
+		$em = $this->getDoctrine()->getManager();
+		/** @var GameRepository $gameRepository */
+		$gameRepository = $em->getRepository('AppBundle\Entity\Game');
+		$gameQueryBuilder = $gameRepository->createQueryBuilder('games');
+
+		/** @var UserRepository $userRepository */
+		$userRepository = $em->getRepository('AppBundle\Entity\User');
+		/** @var User $user */
+		$user = $userRepository->loadUserByUsername($this->getUser()->getUsername());
+
+		$games = $gameQueryBuilder
+			->select('games, creator, visitor')
+			->innerJoin('games.creator', 'creator')
+			->innerJoin('games.visitor', 'visitor')
+			->where('creator.id = games.creator')
+			->where('visitor.id = games.visitor')
+			->where($gameQueryBuilder->expr()->isNotNull('games.visitor'))
+			->where($gameQueryBuilder->expr()->isNotNull('games.creator'))
+			->where('games.creator = :creator')
+			->orWhere('games.visitor = :visitor')
+			->setParameters(
+				[
+					'creator' => $user->getId(),
+					'visitor' => $user->getId(),
+				]
+			)
+			->getQuery()
+			->getArrayResult();
+
+		$response = new Response();
+		if(count($games) !== 0) {
+			return $response->setContent(json_encode(['isExist' => true]));
+		} else {
+			return $response->setContent(json_encode(['isExist' => false]));
+		}
+	}
 }

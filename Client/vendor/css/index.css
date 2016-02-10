@@ -88,7 +88,6 @@ input {
 }
 
 .created-games-list {
-    margin-top: 10px;
     height: 330px;
     overflow: auto;
 }
@@ -242,4 +241,14 @@ input {
 
 .your-games-form {
     margin-top: 10px;
+}
+
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+#gameAcceptationMessage {
+    margin-bottom: 15px;
+    font-size: 20pt;
+    text-align: center;
 }

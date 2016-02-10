@@ -37,8 +37,10 @@ class GameTopic implements TopicInterface, TopicPeriodicTimerInterface
 		$this->periodicTimer->addPeriodicTimer(
 			$this, 'game', 2, function() use ($topic) {
 			$gameRepository = $this->em->getRepository('AppBundle:Game');
-			/** @var Game[] $allGames */
-			$games = $gameRepository->findAll();
+			/** @var Game[] $games */
+			$gamesQueryBuilder = $gameRepository->createQueryBuilder('games');
+			$games = $gamesQueryBuilder->where($gamesQueryBuilder->expr()->isNull('games.visitor'))->getQuery()
+				->getResult();
 			$topic->broadcast(array('games' => GameToArrayConverter::convertMany($games)));
 		}
 		);

@@ -1,395 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e2343e40-f46c-470a-bff3-557d21a034d4" name="Default" comment="Continued stylization of game table and added WebSocket bundle.&#10;&#10;Continued stylization of game table, resolved bug with authorization and added WebSocket bundle.&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/ballista.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/ballista2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/bjyanka.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/boec_sinih_polosok.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/detmoljd.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/diykstra.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/esterad.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/filippa.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/foljtest1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/foljtest_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/foljtest_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/foljtest_4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/katapuljta.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/keyra.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/lekarj.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/master.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/osadnaya_bashnya.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/osadnyy.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/osadnyy_master.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/pehotinec_redanskiy.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/pehtura.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/pehtura2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/pehtura3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/princ_stennis.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/redanskiy_pehotinec.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/rubayly.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/sabrina.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/sheala.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/sheldon.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/taler.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/trebushet.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/trebushet2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/vernon_roshe.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/yan.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/yarpen.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/zigfrid.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/baba.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/bes.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/draug.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/elementalj_ognya.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/elementalj_zemli.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/endriaga.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/garguljya.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/garpiya.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/garpiyaya.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/glavoglaz.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/glavoglaz1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/glavoglaz_ogromnyy.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/glavoglazopyatj.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/grifon.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/gulj.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/gulj2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/guljka.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/igosha.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/imlerih.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/kayran.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/ledyanoy_velikan.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/leshiy.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/lider1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/lider_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/lider_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/lider_4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/morovaya_deva.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/naker.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/naker_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/naker_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/pugach.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/tumannik.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/vampir1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/vampir_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/vampiry_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/vampiry_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/vasilisk.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/vedjma_kuharka.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/vedjma_pryaha.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/vedjma_sheptuha.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/villohvost.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/viverna.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/volkolak.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/neytraljnye_karty/chuchelo.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/neytraljnye_karty/ciri.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/neytraljnye_karty/drakon_ubiyca.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/neytraljnye_karty/emielj.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/neytraljnye_karty/geraljt.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/neytraljnye_karty/kaznj.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/neytraljnye_karty/livenj.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/neytraljnye_karty/lyutik.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/neytraljnye_karty/mgla.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/neytraljnye_karty/moroz.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/neytraljnye_karty/rog.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/neytraljnye_karty/tainstvennyy_eljf.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/neytraljnye_karty/triss.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/neytraljnye_karty/vesemir.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/neytraljnye_karty/yasnoe_nebo.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/neytraljnye_karty/yennifer.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/neytraljnye_karty/zoltan.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/aljbryh.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/assire.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/brigada_impera.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/chudoluchnik.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/cintiya.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/fringiliya.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/kagyropyatj.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/kavaleriya.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/leto.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/lider_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/lider_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/lider_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/lider_4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/luchnik.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/menno.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/morteyzen.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/morvran.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/ospodd.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/podderzhka.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/podderzhka_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/poslannik.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/poslannika.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/putt.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/raynfarn.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/renualjd.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/saper.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/sgnivshaya_petrariya.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/shilyard.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/skorp.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/skorp2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/stefan.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/svirs.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/tibor.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/vangemar.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/vattje.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/vreemde.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/barklay.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/brigada.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/dennis_kranmer.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/dobrovolec.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/dobrovoljcyy.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/eitne.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/fila.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/gavenkerc.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/ida.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/iorvet.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/izengrim.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/kadet.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/kiaran.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/krasnolyud.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/lekarj.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/lekarj_.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/lekarj_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/lider_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/lider_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/lider_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/lider_4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/luchnik.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/mehakamskie_dobrovoljcy.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/mehakamskie_dobrovoljcy2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/mehakamskie_dobrovoljcy3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/miljva.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/podderzhka.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/podderzhka2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/riordayin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/sae.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/sledopyt.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/sledopyt2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/sledopytnaglyy.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/toruvjelj.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/vrihedd.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/yaevinn.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/zastrelj4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/zastreljw.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/zastreljщik.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/zastreljщik_krasnolyud.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/zastreljщikk.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/frameworkRootSettings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/js/controllers/ActualGameCtrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/js/libraries/autobahn.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/vendor/js/libraries/gos_web_socket_client.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/src/AppBundle/Helpers/GameToArrayConverter.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/src/AppBundle/RPC/GameService.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/src/AppBundle/Resources/config/pubsub/routing.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/src/AppBundle/Topic/GameTopic.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Баба.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Бес.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Вампир1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Вампиры 2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Ведьма Шептуха.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Ведьма кухарка.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Ведьма пряха.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Виверна.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Виллохвост.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Гаргулья.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Гарпия.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Гарпияя.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Главоглаз огромный.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Главоглаз.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Главоглаз1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Главоглазопять.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Гуль.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Гулька.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Драуг.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Игоша.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Имлерих.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Кайран.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Ледяной великан.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Леший.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Лидер 3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Лидер 4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Лидер1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Моровая Дева.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Накер.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Пугач.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Туманник.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Элементаль земли.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Элементаль огня.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/Эндриага.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/вампир 2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/вампиры 3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/василиск.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/волколак.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/грифон.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/гуль2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/лидер 2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/накер 2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/накер 3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Баллиста.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Баллиста2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Боец Синих Полосок.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Бьянка.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Вернон Роше.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Детмольд.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Дийкстра.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Зигфрид.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Катапульта.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Кейра.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Лекарь.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Осадная башня.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Осадный мастер.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Пехотинец Реданский.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Пехтура.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Пехтура2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Пехтура3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Принц Стеннис.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Реданский пехотинец.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Рубайлы.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Сабрина.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Талер.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Требушет.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Требушет2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Филиппа.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Фольтест 2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Фольтест 3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Фольтест 4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Фольтест1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Шеала.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Шелдон.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Эстерад.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Ян.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/Ярпен.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/мастер.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Королевства Севера/осадный.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нейтральные карты/Весемир.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нейтральные карты/Геральт.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нейтральные карты/Дракон убийца.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нейтральные карты/Золтан.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нейтральные карты/Йеннифер.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нейтральные карты/Казнь.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нейтральные карты/Ливень.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нейтральные карты/Лютик.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нейтральные карты/Мгла.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нейтральные карты/Мороз.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нейтральные карты/Рог.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нейтральные карты/Таинственный эльф.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нейтральные карты/Трисс.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нейтральные карты/Цири.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нейтральные карты/Чучело.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нейтральные карты/Эмиель.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нейтральные карты/Ясное небо.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Альбрых.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Ассире.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Бригада Импера.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Вангемар.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Ваттье.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Вреемде.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Кавалерия.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Кагыропять.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Лето.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Лидер 1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Лидер 2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Лидер 3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Лидер 4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Лучник.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Менно.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Морвран.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Мортейзен.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/ОсПодд.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Поддержка 2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Поддержка.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Посланник.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Посланника.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Путт.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Райнфарн.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Ренуальд.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Сапер.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Свирс.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Сгнившая петрария.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Скорп.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Скорп2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Стефан.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Тибор.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Фрингилия.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Цинтия.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/ЧудоЛучник.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Нильфгаард/Шилярд.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Барклай.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Бригада.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Врихедд.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Гавенкерc.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Деннис Кранмер.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Доброволец.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Добровольцыы.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Застрель4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Застрельw.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Застрельщик краснолюд.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Застрельщик.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Застрельщикк.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Ида.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Изенгрим.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Иорвет.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Кадет.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Киаран.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Краснолюд.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Лекарь .jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Лекарь 2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Лекарь.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Лидер 1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Лидер 2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Лидер 3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Лидер 4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Лучник.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Мехакамские добровольцы.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Мехакамские добровольцы2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Мехакамские добровольцы3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Мильва.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Поддержка.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Поддержка2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Риордайин.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Сае.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Следопыт.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Следопыт2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Следопытнаглый.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Торувьель.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Фила.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Эитне.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Скоятаэлли/Яевинн.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Server/src/MyApp/GameSocket.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Diploma.iml" afterPath="$PROJECT_DIR$/.idea/Diploma.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="e2343e40-f46c-470a-bff3-557d21a034d4" name="Default" comment="Added WebSockets and game creation by WebSockets.&#10;&#10;Added WebSockets (WebSocketBundle) and game creation by WebSockets (periodic timer).">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/src/AppBundle/DataFixtures/ORM/CardData.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/src/AppBundle/DataFixtures/ORM/LoadCardData.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/src/AppBundle/DataFixtures/ORM/UserData.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/Monsters/woman.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Server/src/AppBundle/Entity/Deck.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Server/src/AppBundle/Entity/UserSet.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Server/src/AppBundle/Repository/DeckRepository.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Server/src/AppBundle/Repository/UserSetRepository.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/index.html" afterPath="$PROJECT_DIR$/Client/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/vendor/css/index.css" afterPath="$PROJECT_DIR$/Client/vendor/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/vendor/js/constants/PATHS.js" afterPath="$PROJECT_DIR$/Client/vendor/js/constants/PATHS.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/vendor/js/controllers/GamesCtrl.js" afterPath="$PROJECT_DIR$/Client/vendor/js/controllers/GamesCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/vendor/js/resources/GameService.js" afterPath="$PROJECT_DIR$/Client/vendor/js/resources/GameService.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/vendor/js/routes.js" afterPath="$PROJECT_DIR$/Client/vendor/js/routes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/vendor/views/gameTable.html" afterPath="$PROJECT_DIR$/Client/vendor/views/gameTable.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/vendor/views/games.html" afterPath="$PROJECT_DIR$/Client/vendor/views/games.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/vendor/views/home.html" afterPath="$PROJECT_DIR$/Client/vendor/views/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/app/AppKernel.php" afterPath="$PROJECT_DIR$/Server/app/AppKernel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/app/SymfonyRequirements.php" afterPath="$PROJECT_DIR$/Server/app/SymfonyRequirements.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/app/check.php" afterPath="$PROJECT_DIR$/Server/app/check.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/app/config/config.yml" afterPath="$PROJECT_DIR$/Server/app/config/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/app/config/parameters.yml.dist" afterPath="$PROJECT_DIR$/Server/app/config/parameters.yml.dist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/app/config/services.yml" afterPath="$PROJECT_DIR$/Server/app/config/services.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/composer.json" afterPath="$PROJECT_DIR$/Server/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/composer.lock" afterPath="$PROJECT_DIR$/Server/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/src/AppBundle/Controller/AuthorizationController.php" afterPath="$PROJECT_DIR$/Server/src/AppBundle/Controller/AuthorizationController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/src/AppBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/Server/src/AppBundle/Controller/DefaultController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/app/config/routing.yml" afterPath="$PROJECT_DIR$/Server/app/config/routing.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/src/AppBundle/Controller/GameController.php" afterPath="$PROJECT_DIR$/Server/src/AppBundle/Controller/GameController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/src/AppBundle/DataFixtures/ORM/LoadUserData.php" afterPath="$PROJECT_DIR$/Server/src/AppBundle/DataFixtures/ORM/LoadUserData.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/src/AppBundle/Entity/Card.php" afterPath="$PROJECT_DIR$/Server/src/AppBundle/Entity/Card.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/src/AppBundle/Entity/Deck.php" afterPath="$PROJECT_DIR$/Server/src/AppBundle/Entity/Deck.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/src/AppBundle/Entity/Game.php" afterPath="$PROJECT_DIR$/Server/src/AppBundle/Entity/Game.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/src/AppBundle/Entity/Role.php" afterPath="$PROJECT_DIR$/Server/src/AppBundle/Entity/Role.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/src/AppBundle/Entity/Token.php" afterPath="$PROJECT_DIR$/Server/src/AppBundle/Entity/Token.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/src/AppBundle/Entity/User.php" afterPath="$PROJECT_DIR$/Server/src/AppBundle/Entity/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/src/AppBundle/Entity/UserSet.php" afterPath="$PROJECT_DIR$/Server/src/AppBundle/Entity/UserSet.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/web/config.php" afterPath="$PROJECT_DIR$/Server/web/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/src/AppBundle/Security/ApiKeyAuthenticator.php" afterPath="$PROJECT_DIR$/Server/src/AppBundle/Security/ApiKeyAuthenticator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/src/AppBundle/Topic/GameTopic.php" afterPath="$PROJECT_DIR$/Server/src/AppBundle/Topic/GameTopic.php" />
     </list>
     <ignored path="Diploma.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -414,8 +47,8 @@
       <file leaf-file-name="GamesCtrl.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Client/vendor/js/controllers/GamesCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.965517">
-              <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="27" column="70" selection-start-line="27" selection-start-column="70" selection-end-line="27" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -424,84 +57,92 @@
       <file leaf-file-name="games.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Client/vendor/views/games.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.9622642">
-              <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+            <state vertical-scroll-proportion="-36.615383">
+              <caret line="56" column="30" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Client/vendor/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.30591258">
-              <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+            <state vertical-scroll-proportion="-5.0">
+              <caret line="89" column="21" selection-start-line="89" selection-start-column="21" selection-end-line="89" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameTopic.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/Topic/GameTopic.php">
+      <file leaf-file-name="routes.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Client/vendor/js/routes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.8846154">
-              <caret line="40" column="47" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
+            <state vertical-scroll-proportion="0.53125">
+              <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Client/vendor/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Client/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.461538">
+              <caret line="16" column="75" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="75" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoadCardData.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/DataFixtures/ORM/LoadCardData.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-16.807692">
+              <caret line="29" column="26" selection-start-line="17" selection-start-column="8" selection-end-line="29" selection-end-column="26" />
               <folding>
-                <element signature="e#35#61#0#PHP" expanded="true" />
+                <element signature="e#45#71#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameToArrayConverter.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/Helpers/GameToArrayConverter.php">
+      <file leaf-file-name="UserData.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/DataFixtures/ORM/UserData.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.0">
-              <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+            <state vertical-scroll-proportion="-10.269231">
+              <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ApiKeyGenerator.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/Helpers/ApiKeyGenerator.php">
+      <file leaf-file-name="LoadUserData.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/DataFixtures/ORM/LoadUserData.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.3076923">
-              <caret line="2" column="28" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="services.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/app/config/services.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/Controller/GameController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.5">
-              <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+            <state vertical-scroll-proportion="-26.807692">
+              <caret line="41" column="86" selection-start-line="41" selection-start-column="86" selection-end-line="41" selection-end-column="86" />
               <folding>
-                <element signature="e#370#1415#0#PHP" expanded="false" />
-                <element signature="e#1418#2499#0#PHP" expanded="false" />
-                <element signature="e#2502#3496#0#PHP" expanded="false" />
+                <element signature="e#45#85#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/app/config/config.yml">
+      <file leaf-file-name="ApiKeyAuthenticator.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/Security/ApiKeyAuthenticator.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="110" column="31" selection-start-line="110" selection-start-column="31" selection-end-line="110" selection-end-column="31" />
+            <state vertical-scroll-proportion="-7.1538463">
+              <caret line="76" column="35" selection-start-line="76" selection-start-column="35" selection-end-line="76" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -512,6 +153,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="Zenidal &lt;1ochka1994@mail.ru&gt;" />
         <option value="Alexandr Miskevich &lt;a.miskevich@itransition.com&gt;" />
         <option value="Miskevich Alexandr" />
       </list>
@@ -522,15 +164,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Client/vendor/js/services/HttpInspectorService.js" />
-        <option value="$PROJECT_DIR$/Client/vendor/js/services/AppUserService.js" />
-        <option value="$PROJECT_DIR$/Client/vendor/js/services/ResponseObserver.js" />
-        <option value="$PROJECT_DIR$/Client/vendor/js/services/ResponseObserverService.js" />
-        <option value="$PROJECT_DIR$/Client/vendor/js/constants/ServerPath.js" />
-        <option value="$PROJECT_DIR$/Server/app/config/routing.yml" />
-        <option value="$PROJECT_DIR$/Server/src/AppBundle/WebSockets/GameWSServer.php" />
-        <option value="$PROJECT_DIR$/Server/src/AppBundle/EventListeners/GameWSServer.php" />
-        <option value="$PROJECT_DIR$/Server/src/AppBundle/Topic/MyTopic.php" />
         <option value="$PROJECT_DIR$/Server/src/AppBundle/EventListeners/GameClientEventListener.php" />
         <option value="$PROJECT_DIR$/Server/src/AppBundle/Periodic/AppPeriodic.php" />
         <option value="$PROJECT_DIR$/Server/src/AppBundle/RPC/AppService.php" />
@@ -546,22 +179,17 @@
         <option value="$PROJECT_DIR$/Server/src/AppBundle/Response/UserResponse.php" />
         <option value="$PROJECT_DIR$/Server/src/AppBundle/Controller/AuthorizationController.php" />
         <option value="$PROJECT_DIR$/Server/src/AppBundle/Controller/DefaultController.php" />
-        <option value="$PROJECT_DIR$/Server/src/AppBundle/Controller/GameController.php" />
         <option value="$PROJECT_DIR$/Server/src/AppBundle/Controller/UserController.php" />
         <option value="$PROJECT_DIR$/Client/vendor/views/home.html" />
         <option value="$PROJECT_DIR$/Client/vendor/js/controllers/ActualGameCtrl.js" />
-        <option value="$PROJECT_DIR$/Client/vendor/css/index.css" />
         <option value="$PROJECT_DIR$/Client/vendor/views/gameTable.html" />
         <option value="$PROJECT_DIR$/Client/vendor/js/librarys/vendor/autobahn.min.js" />
-        <option value="$PROJECT_DIR$/Client/index.html" />
         <option value="$PROJECT_DIR$/Server/src/AppBundle/Resources/config/pubsub/routing.yml" />
         <option value="$PROJECT_DIR$/Server/src/AppBundle/Entity/Session.php" />
-        <option value="$PROJECT_DIR$/Client/vendor/js/routes.js" />
         <option value="$PROJECT_DIR$/Server/test.php" />
         <option value="$PROJECT_DIR$/Server/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/Client/vendor/js/constants/PATHS.js" />
         <option value="$PROJECT_DIR$/Server/app/AppKernel.php" />
-        <option value="$PROJECT_DIR$/Client/vendor/js/resources/GameService.js" />
         <option value="$PROJECT_DIR$/Server/src/AppBundle/RPC/GameService.php" />
         <option value="$PROJECT_DIR$/Server/src/AppBundle/Periodic/GamesPeriodic.php" />
         <option value="$PROJECT_DIR$/Server/src/AppBundle/Periodic/GamePeriodic.php" />
@@ -571,8 +199,22 @@
         <option value="$PROJECT_DIR$/Server/src/AppBundle/Helpers/GameToStringConverter.php" />
         <option value="$PROJECT_DIR$/Server/src/AppBundle/Helpers/GameToArrayConverter.php" />
         <option value="$PROJECT_DIR$/Server/src/AppBundle/Topic/GameTopic.php" />
-        <option value="$PROJECT_DIR$/Client/vendor/js/controllers/GamesCtrl.js" />
+        <option value="$PROJECT_DIR$/Server/app/config/routing.yml" />
+        <option value="$PROJECT_DIR$/Server/src/AppBundle/Controller/GameController.php" />
+        <option value="$PROJECT_DIR$/Client/vendor/js/helpers/gameHelper.js" />
+        <option value="$PROJECT_DIR$/Client/index.html" />
+        <option value="$PROJECT_DIR$/Client/vendor/js/resources/GameService.js" />
+        <option value="$PROJECT_DIR$/Server/src/AppBundle/DataFixtures/ORM/LoadCardData.php" />
+        <option value="$PROJECT_DIR$/Server/src/AppBundle/DataFixtures/ORM/CardData.php" />
+        <option value="$PROJECT_DIR$/Server/src/AppBundle/Entity/User.php" />
+        <option value="$PROJECT_DIR$/Server/src/AppBundle/Entity/Card.php" />
+        <option value="$PROJECT_DIR$/Server/src/AppBundle/DataFixtures/ORM/UserData.php" />
+        <option value="$PROJECT_DIR$/Server/src/AppBundle/DataFixtures/ORM/LoadUserData.php" />
+        <option value="$PROJECT_DIR$/Server/src/AppBundle/Security/ApiKeyAuthenticator.php" />
+        <option value="$PROJECT_DIR$/Client/vendor/js/routes.js" />
+        <option value="$PROJECT_DIR$/Client/vendor/css/index.css" />
         <option value="$PROJECT_DIR$/Client/vendor/views/games.html" />
+        <option value="$PROJECT_DIR$/Client/vendor/js/controllers/GamesCtrl.js" />
       </list>
     </option>
   </component>
@@ -629,8 +271,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -646,6 +286,260 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Diploma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Diploma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Diploma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Diploma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Diploma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Diploma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Diploma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AppBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Diploma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Diploma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AppBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Topic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Diploma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Diploma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AppBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Security" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Diploma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Diploma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AppBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Diploma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Diploma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AppBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Entity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Diploma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Diploma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AppBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataFixtures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ORM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Diploma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Diploma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AppBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Diploma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Diploma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Diploma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Diploma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -680,15 +574,83 @@
               <option name="myItemId" value="vendor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Diploma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Diploma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Diploma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Diploma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Diploma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Diploma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../modules/php/PHP-5.6/php.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="SearchEverywhereHistoryKey" value="plugins&#9;null&#9;null&#10;line&#9;ACTION&#9;EditorToggleShowLineNumbers" />
     <property name="recentsLimit" value="5" />
@@ -782,7 +744,13 @@
       <option name="project" value="LOCAL" />
       <updated>1447147812356</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added WebSockets and game creation by WebSockets.&#10;&#10;Added WebSockets (WebSocketBundle) and game creation by WebSockets (periodic timer).">
+      <created>1454511945598</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1454511945598</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -793,22 +761,22 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39826304" sideWeight="0.52177066" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4317618" sideWeight="0.4722222" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43076923" sideWeight="0.4722222" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4987593" sideWeight="0.46879536" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39826304" sideWeight="0.4782293" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295964" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39826304" sideWeight="0.4782293" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -827,206 +795,23 @@
     <MESSAGE value="Added authorization API.&#10;&#10;Added authorization API with services and provider." />
     <MESSAGE value="Started stylization of game table.&#10;&#10;Started stylization of game table.&#10;" />
     <MESSAGE value="Continued stylization of game table and added WebSocket bundle.&#10;&#10;Continued stylization of game table, resolved bug with authorization and added WebSocket bundle.&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Continued stylization of game table and added WebSocket bundle.&#10;&#10;Continued stylization of game table, resolved bug with authorization and added WebSocket bundle.&#10;" />
+    <MESSAGE value="Added WebSockets and game creation by WebSockets.&#10;&#10;Added WebSockets (WebSocketBundle) and game creation by WebSockets (periodic timer)." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added WebSockets and game creation by WebSockets.&#10;&#10;Added WebSockets (WebSocketBundle) and game creation by WebSockets (periodic timer)." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="19" />
+      <option name="time" value="21" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Client/vendor/js/services/NotificationService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/Resources/config/validation.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/Form/Type/RoleType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/app/console">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/Security/ApiKeyUserProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.2307692">
-          <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.32578397">
-          <caret line="7" column="55" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/Security/ApiKeyAuthenticator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20345744">
-          <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/web/app_dev.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38430852">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/AppBundle.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1356383">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/vendor/views/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15824468">
-          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/vendor/views/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33909574">
-          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/Controller/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.615385">
-          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/vendor/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.2545455">
-          <caret line="145" column="19" selection-start-line="145" selection-start-column="19" selection-end-line="145" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/vendor/views/gameTable.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.730769">
-          <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#3;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/vendor/js/controllers/ActualGameCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="51" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/app/SymfonyRequirements.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.305851">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/vendor/js/libraries/gos_web_socket_client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="4" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/Entity/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.9230769">
-          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="33" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/Entity/UserSet.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/Entity/Role.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="17" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/Entity/Game.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/Resources/config/pubsub/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="16" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/web/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/Controller/AuthorizationController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.47331786">
           <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1034,15 +819,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/vendor/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51641136">
-          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1050,7 +826,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1058,7 +833,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1074,7 +848,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.961538">
           <caret line="23" column="75" selection-start-line="23" selection-start-column="75" selection-end-line="23" selection-end-column="75" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1086,35 +859,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.923077">
-          <caret line="31" column="42" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/vendor/js/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="26" selection-start-line="15" selection-start-column="27" selection-end-line="18" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/vendor/js/resources/GameService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Server/vendor/react/event-loop/LoopInterface.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.4242021">
           <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1122,7 +870,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3444149">
           <caret line="68" column="20" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1130,7 +877,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.09042553">
           <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1138,7 +884,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.09042553">
           <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1146,7 +891,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="110" column="31" selection-start-line="110" selection-start-column="31" selection-end-line="110" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1154,7 +898,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.09042553">
           <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1162,7 +905,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33909574">
           <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1170,47 +912,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-12.423077">
           <caret line="19" column="5" selection-start-line="13" selection-start-column="1" selection-end-line="19" selection-end-column="5" />
-          <folding>
-            <element signature="e#33#59#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/app/config/services.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/Controller/GameController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.5">
-          <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
-          <folding>
-            <element signature="e#370#1415#0#PHP" expanded="false" />
-            <element signature="e#1418#2499#0#PHP" expanded="false" />
-            <element signature="e#2502#3496#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/Helpers/ApiKeyGenerator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3076923">
-          <caret line="2" column="28" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/Topic/GameTopic.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8846154">
-          <caret line="40" column="47" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
-          <folding>
-            <element signature="e#35#61#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1218,30 +919,276 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-17.0">
           <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/vendor/js/controllers/GamesCtrl.js">
+    <entry file="file://$PROJECT_DIR$/Server/app/config/services.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.965517">
-          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.2622108">
+          <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/Topic/GameTopic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.384615">
+          <caret line="43" column="89" selection-start-line="43" selection-start-column="89" selection-end-line="43" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/vendor/views/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.95478725">
+          <caret line="83" column="49" selection-start-line="83" selection-start-column="49" selection-end-line="83" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/Helpers/ApiKeyGenerator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.3076923">
+          <caret line="2" column="28" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/Security/ApiKeyUserProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5891089">
+          <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="47" column="27" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/Controller/GameController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.961538">
+          <caret line="176" column="9" selection-start-line="176" selection-start-column="9" selection-end-line="176" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/vendor/js/helpers/accountHelper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="9" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/vendor/js/controllers/NotificationCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/vendor/js/controllers/ProfileCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/vendor/js/controllers/HomeCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/vendor/js/controllers/ActualGameCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="51" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/web/bundles/goswebsocket/js/gos_web_socket_client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-61.551723">
+          <caret line="105" column="15" selection-start-line="105" selection-start-column="8" selection-end-line="105" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/vendor/js/resources/GameService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="61" selection-start-line="3" selection-start-column="61" selection-end-line="3" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/Repository/GameRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/DataFixtures/ORM/LoadRoleData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="43" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../static_html/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.5565553">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/Entity/Token.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="32.23077">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/Entity/Game.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="11.769231">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/Entity/Role.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.8461537">
+          <caret line="27" column="7" selection-start-line="25" selection-start-column="4" selection-end-line="27" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/Entity/Card.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.769231">
+          <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.7465565">
+          <caret line="180" column="0" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/DataFixtures/ORM/CardData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/DataFixtures/ORM/LoadCardData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.807692">
+          <caret line="29" column="26" selection-start-line="17" selection-start-column="8" selection-end-line="29" selection-end-column="26" />
+          <folding>
+            <element signature="e#45#71#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/DataFixtures/ORM/UserData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.269231">
+          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/DataFixtures/ORM/LoadUserData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-26.807692">
+          <caret line="41" column="86" selection-start-line="41" selection-start-column="86" selection-end-line="41" selection-end-column="86" />
+          <folding>
+            <element signature="e#45#85#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/Security/ApiKeyAuthenticator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.1538463">
+          <caret line="76" column="35" selection-start-line="76" selection-start-column="35" selection-end-line="76" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/vendor/js/controllers/HeaderCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.3894231">
+          <caret line="34" column="41" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/vendor/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.461538">
+          <caret line="16" column="75" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/vendor/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.0">
+          <caret line="89" column="21" selection-start-line="89" selection-start-column="21" selection-end-line="89" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Client/vendor/views/games.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.9622642">
-          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+        <state vertical-scroll-proportion="-36.615383">
+          <caret line="56" column="30" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/Client/vendor/js/controllers/GamesCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30591258">
-          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="70" selection-start-line="27" selection-start-column="70" selection-end-line="27" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/vendor/js/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.53125">
+          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
           <folding />
         </state>
       </provider>
