@@ -21,6 +21,9 @@
                 if (payload.games) {
                     vm.createdGames = [];
                     for(var i = 0; i < payload.games.length; i++) {
+                        if(!$rootScope.user){
+                            session.unsubscribe('app/channel');
+                        }
                         if (payload.games[i].creator && payload.games[i].creator.id != $rootScope.user.id) {
                             vm.createdGames.push(payload.games[i]);
                         } else if (payload.games[i].creator && payload.games[i].creator.id == $rootScope.user.id) {
