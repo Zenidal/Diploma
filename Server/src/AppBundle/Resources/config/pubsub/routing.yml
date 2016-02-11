@@ -1,7 +1,10 @@
 game_topic:
-    channel: app/channel
+    channel: app/channel/{user_id}
     handler:
         callback: 'game.topic' #related to the getName() of your topic
+    requirements:
+        user_id:
+            pattern: "\d+"
 
 game_rpc:
     channel: game/{method}

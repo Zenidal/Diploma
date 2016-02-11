@@ -17,30 +17,30 @@
 
         vm.webSocket = WS.connect(PATHS.SOCKET_PATH);
         vm.webSocket.on("socket/connect", function (session) {
-            session.subscribe('app/channel', function (uri, payload) {
-                if (payload.games) {
-                    vm.createdGames = [];
-                    for(var i = 0; i < payload.games.length; i++) {
-                        if(!$rootScope.user){
-                            session.unsubscribe('app/channel');
-                        }
-                        if (payload.games[i].creator && payload.games[i].creator.id != $rootScope.user.id) {
+            session.subscribe('app/channel/' + $rootScope.user.id, function (uri, payload) {
+                if (!$rootScope.user) {
+                    session.unsubscribe('app/channel/' + $rootScope.user.id);
+                }
+                vm.createdGames = [];
+                for(var i = 0; payload.games && i < payload.games.length; i++) {
+                    if ($rootScope.user && payload.games[i].creator) {
+                        if (payload.games[i].creator.id != $rootScope.user.id) {
                             vm.createdGames.push(payload.games[i]);
-                        } else if (payload.games[i].creator && payload.games[i].creator.id == $rootScope.user.id) {
+                        } else {
                             vm.myGame = payload.games[i];
-                            if(vm.myGame.visitor && vm.myGame.visitor.username){
+                            if (vm.myGame.visitor && vm.myGame.visitor.username) {
                                 $location.path("/actual_game");
                                 vm.webSocket.off();
                             }
                         }
                     }
-                    vm.gamesLoaded = true;
-                    $rootScope.$apply();
                 }
+                vm.gamesLoaded = true;
+                $rootScope.$apply();
             });
         });
         vm.webSocket.on("socket/disconnect", function (error) {
-            NotificationService.addErrorMessage('WebSocketError: ' + error.reason + ' Try later');
+            NotificationService.addErrorMessage('WebSocket Error: ' + error.reason + ' Try later');
         });
 
         function createGame() {

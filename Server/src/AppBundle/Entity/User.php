@@ -28,6 +28,11 @@ class User implements UserInterface, \Serializable
 	private $id;
 
 	/**
+	 * @ORM\Column(type="string", length=255)
+	 */
+	private $wsId;
+
+	/**
 	 * @ORM\Column(type="string", length=100, unique=true)
 	 */
 	private $username;
@@ -309,4 +314,27 @@ class User implements UserInterface, \Serializable
 	{
 		return $this->createdGame;
 	}
+
+    /**
+     * Set wsId
+     *
+     * @param string $wsId
+     * @return User
+     */
+    public function setWsId($wsId)
+    {
+        $this->wsId = $wsId;
+
+        return $this;
+    }
+
+    /**
+     * Get wsId
+     *
+     * @return string 
+     */
+    public function getWsId()
+    {
+        return $this->wsId;
+    }
 }

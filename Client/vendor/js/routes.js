@@ -13,17 +13,22 @@ diplomaApp.config(['$routeProvider', '$httpProvider', function ($routeProvider, 
                 controller: 'GamesCtrl as vm',
                 resolve: {
                     isUser: isUser,
-                    gameExists: ['$http', '$location', 'NotificationService', 'PATHS', function ($http, $location, NotificationService, PATHS) {
+                    gameExists: ['$http', '$location', '$q', 'NotificationService', 'PATHS', function ($http, $location, $q, NotificationService, PATHS) {
+                        var deferred = $q.defer();
                         $http({
                             method: 'GET',
                             url: PATHS.SERVER_PATH + '/checkGame'
                         }).then(function successCallback(response) {
                             if (response.data.isExist) {
                                 $location.path('/actual_game');
+                                deferred.reject();
+                            } else {
+                                deferred.resolve();
                             }
                         }, function errorCallback(response) {
                             NotificationService.addErrorMessage(response.data.errorMessage);
                         });
+                        return deferred.promise;
                     }]
                 }
             })
@@ -40,17 +45,22 @@ diplomaApp.config(['$routeProvider', '$httpProvider', function ($routeProvider, 
                 templateUrl: 'vendor/views/gameTable.html',
                 resolve: {
                     isUser: isUser,
-                    gameExists: ['$http', '$location', 'NotificationService', 'PATHS', function ($http, $location, NotificationService, PATHS) {
+                    gameExists: ['$http', '$location', 'NotificationService', 'PATHS', '$q', function ($http, $location, NotificationService, PATHS, $q) {
+                        var deferred = $q.defer();
                         $http({
                             method: 'GET',
                             url: PATHS.SERVER_PATH + '/checkGame'
                         }).then(function successCallback(response) {
                             if (!response.data.isExist) {
                                 $location.path('/games');
+                                deferred.reject();
+                            } else {
+                                deferred.resolve();
                             }
                         }, function errorCallback(response) {
                             NotificationService.addErrorMessage(response.data.errorMessage);
                         });
+                        return deferred.promise;
                     }]
                 }
             })
