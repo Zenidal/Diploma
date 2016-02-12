@@ -17,26 +17,30 @@
 
         vm.webSocket = WS.connect(PATHS.SOCKET_PATH);
         vm.webSocket.on("socket/connect", function (session) {
-            session.subscribe('app/channel/' + $rootScope.user.id, function (uri, payload) {
+            localStorage['channel'] = 'app/channel/' + $rootScope.user.id;
+            session.subscribe(localStorage['channel'], function (uri, payload) {
                 if (!$rootScope.user) {
-                    session.unsubscribe('app/channel/' + $rootScope.user.id);
+                    session.unsubscribe(localStorage['channel']);
+                    delete localStorage['channel'];
                 }
-                vm.createdGames = [];
-                for(var i = 0; payload.games && i < payload.games.length; i++) {
-                    if ($rootScope.user && payload.games[i].creator) {
-                        if (payload.games[i].creator.id != $rootScope.user.id) {
-                            vm.createdGames.push(payload.games[i]);
-                        } else {
-                            vm.myGame = payload.games[i];
-                            if (vm.myGame.visitor && vm.myGame.visitor.username) {
-                                $location.path("/actual_game");
-                                vm.webSocket.off();
+                if (payload.games) {
+                    vm.createdGames = [];
+                    for(var i = 0; i < payload.games.length; i++) {
+                        if ($rootScope.user && payload.games[i].creator) {
+                            if (payload.games[i].creator.id != $rootScope.user.id) {
+                                vm.createdGames.push(payload.games[i]);
+                            } else {
+                                vm.myGame = payload.games[i];
+                                if (vm.myGame.visitor && vm.myGame.visitor.username) {
+                                    $location.path("/actual_game");
+                                    vm.webSocket.off();
+                                }
                             }
                         }
                     }
+                    vm.gamesLoaded = true;
+                    $rootScope.$apply();
                 }
-                vm.gamesLoaded = true;
-                $rootScope.$apply();
             });
         });
         vm.webSocket.on("socket/disconnect", function (error) {

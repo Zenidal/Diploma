@@ -30,7 +30,7 @@ class User implements UserInterface, \Serializable
 	/**
 	 * @ORM\Column(type="string", length=255)
 	 */
-	private $wsId;
+	private $wsId = '';
 
 	/**
 	 * @ORM\Column(type="string", length=100, unique=true)
@@ -331,7 +331,7 @@ class User implements UserInterface, \Serializable
     /**
      * Get wsId
      *
-     * @return string 
+     * @return string
      */
     public function getWsId()
     {
