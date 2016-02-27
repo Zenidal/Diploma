@@ -14,16 +14,14 @@ diplomaApp.config(['$routeProvider', '$httpProvider', function ($routeProvider, 
                 resolve: {
                     isUser: isUser,
                     isGameExists: ['$http', '$location', '$q', 'NotificationService', 'PATHS', function ($http, $location, $q, NotificationService, PATHS) {
-                        var deferred = $q.defer();
-                        var isExist = isActualGameExist($http, NotificationService, PATHS);
-
-                        if (isExist) {
-                            deferred.reject();
-                            $location.path('/actual_game');
-                        } else {
-                            deferred.resolve();
-                        }
-                        return deferred.promise;
+                        return isActualGameExist($http, NotificationService, PATHS).then(function (isExist) {
+                            if (isExist) {
+                                $location.path('/actual_game');
+                                return $q.reject();
+                            } else {
+                                return $q.resolve();
+                            }
+                        }).promise;
                     }]
                 }
             })
@@ -41,16 +39,14 @@ diplomaApp.config(['$routeProvider', '$httpProvider', function ($routeProvider, 
                 resolve: {
                     isUser: isUser,
                     isGameExists: ['$http', '$location', 'NotificationService', 'PATHS', '$q', function ($http, $location, NotificationService, PATHS, $q) {
-                        var deferred = $q.defer();
-                        var isExist = isActualGameExist($http, NotificationService, PATHS);
-
-                        if (isExist) {
-                            deferred.resolve();
-                        } else {
-                            deferred.reject();
-                            $location.path('/games');
-                        }
-                        return deferred.promise;
+                        return isActualGameExist($http, NotificationService, PATHS).then(function (isExist) {
+                            if (isExist) {
+                                return $q.resolve();
+                            } else {
+                                $location.path('/games');
+                                return $q.reject();
+                            }
+                        }).promise;
                     }]
                 }
             })

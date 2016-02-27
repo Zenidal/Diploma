@@ -65,16 +65,6 @@ class GameTopic implements TopicInterface, TopicPeriodicTimerInterface
 	 */
 	public function onSubscribe(ConnectionInterface $connection, Topic $topic, WampRequest $request)
 	{
-		$userRepository = $this->em->getRepository('AppBundle:User');
-		$user_id = $request->getAttributes()->get('user_id');
-		if($user_id){
-			/** @var User $user */
-			$user = $userRepository->find($user_id);
-			if($user){
-				$user->setWsId($connection->WAMP->sessionId);
-				$this->em->flush();
-			}
-		}
 		//this will broadcast the message to ALL subscribers of this topic.
 		$topic->broadcast(['msg' => $connection->resourceId." has joined ".$topic->getId()]);
 	}

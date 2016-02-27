@@ -9,7 +9,6 @@
     function GamesCtrl(NotificationService, GameService, PATHS, $rootScope, $location, $http) {
         var vm = this;
 
-        vm.gamesLoaded = false;
         vm.createdGames = [];
         vm.myGame = null;
         vm.createGame = createGame;
@@ -17,7 +16,7 @@
 
         vm.webSocket = WS.connect(PATHS.SOCKET_PATH);
         vm.webSocket.on("socket/connect", function (session) {
-            localStorage['channel'] = 'app/channel/' + $rootScope.user.id;
+            localStorage['channel'] = 'app/channel';
             session.subscribe(localStorage['channel'], function (uri, payload) {
                 if (!$rootScope.user) {
                     session.unsubscribe(localStorage['channel']);
@@ -38,7 +37,6 @@
                             }
                         }
                     }
-                    vm.gamesLoaded = true;
                     $rootScope.$apply();
                 }
             });
