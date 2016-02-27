@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e2343e40-f46c-470a-bff3-557d21a034d4" name="Default" comment="">
+    <list default="true" id="e2343e40-f46c-470a-bff3-557d21a034d4" name="Default" comment="Rejected topic system used user id.&#10;&#10;Rejected topic system used user id.&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/vendor/js/controllers/GamesCtrl.js" afterPath="$PROJECT_DIR$/Client/vendor/js/controllers/GamesCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/vendor/js/routes.js" afterPath="$PROJECT_DIR$/Client/vendor/js/routes.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/vendor/views/games.html" afterPath="$PROJECT_DIR$/Client/vendor/views/games.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/src/AppBundle/Resources/config/pubsub/routing.yml" afterPath="$PROJECT_DIR$/Server/src/AppBundle/Resources/config/pubsub/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/src/AppBundle/Topic/GameTopic.php" afterPath="$PROJECT_DIR$/Server/src/AppBundle/Topic/GameTopic.php" />
     </list>
     <ignored path="Diploma.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,11 +29,11 @@
       <file leaf-file-name="GamesCtrl.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Client/vendor/js/controllers/GamesCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3814774">
-              <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.7723005">
+              <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
               <folding>
-                <element signature="e#1998#2751#0" expanded="false" />
-                <element signature="e#2785#3653#0" expanded="false" />
+                <element signature="e#2073#2826#0" expanded="false" />
+                <element signature="e#2860#3728#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -128,8 +125,8 @@
       <file leaf-file-name="games.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Client/vendor/views/games.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-39.23077">
-              <caret line="60" column="75" selection-start-line="60" selection-start-column="75" selection-end-line="60" selection-end-column="75" />
+            <state vertical-scroll-proportion="-24.538462">
+              <caret line="54" column="16" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -208,9 +205,9 @@
         <option value="$PROJECT_DIR$/Server/src/AppBundle/DataFixtures/ORM/CardData.php" />
         <option value="$PROJECT_DIR$/Client/vendor/js/helpers/accountHelper.js" />
         <option value="$PROJECT_DIR$/Client/vendor/js/routes.js" />
-        <option value="$PROJECT_DIR$/Client/vendor/views/games.html" />
         <option value="$PROJECT_DIR$/Server/src/AppBundle/Topic/GameTopic.php" />
         <option value="$PROJECT_DIR$/Server/src/AppBundle/Resources/config/pubsub/routing.yml" />
+        <option value="$PROJECT_DIR$/Client/vendor/views/games.html" />
         <option value="$PROJECT_DIR$/Client/vendor/js/controllers/GamesCtrl.js" />
       </list>
     </option>
@@ -576,7 +573,13 @@
       <option name="project" value="LOCAL" />
       <updated>1456565343050</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Rejected topic system used user id.&#10;&#10;Rejected topic system used user id.&#10;">
+      <created>1456568445119</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1456568445119</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -589,7 +592,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39826304" sideWeight="0.52177066" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4304979" sideWeight="0.4722222" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49896264" sideWeight="0.46879536" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49896264" sideWeight="0.46879536" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -626,7 +629,8 @@
     <MESSAGE value="Current version.&#10;&#10;Resolved problebs with merge." />
     <MESSAGE value="Added promises to routing.&#10;&#10;Added promises to routing (/games and /actual_game).&#10;" />
     <MESSAGE value="Refactored routes page.&#10;&#10;Refactored routes page." />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored routes page.&#10;&#10;Refactored routes page." />
+    <MESSAGE value="Rejected topic system used user id.&#10;&#10;Rejected topic system used user id.&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rejected topic system used user id.&#10;&#10;Rejected topic system used user id.&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -990,14 +994,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/vendor/views/games.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-39.23077">
-          <caret line="60" column="75" selection-start-line="60" selection-start-column="75" selection-end-line="60" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Client/vendor/js/helpers/accountHelper.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1030,13 +1026,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Client/vendor/views/games.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-24.538462">
+          <caret line="54" column="16" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Client/vendor/js/controllers/GamesCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3814774">
-          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.7723005">
+          <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
           <folding>
-            <element signature="e#1998#2751#0" expanded="false" />
-            <element signature="e#2785#3653#0" expanded="false" />
+            <element signature="e#2073#2826#0" expanded="false" />
+            <element signature="e#2860#3728#0" expanded="false" />
           </folding>
         </state>
       </provider>

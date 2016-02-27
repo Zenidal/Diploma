@@ -9,6 +9,7 @@
     function GamesCtrl(NotificationService, GameService, PATHS, $rootScope, $location, $http) {
         var vm = this;
 
+        vm.gamesLoaded = false;
         vm.createdGames = [];
         vm.myGame = null;
         vm.createGame = createGame;
@@ -37,6 +38,7 @@
                             }
                         }
                     }
+                    vm.gamesLoaded = true;
                     $rootScope.$apply();
                 }
             });
