@@ -21,6 +21,10 @@ services:
         class: AppBundle\Topic\GameTopic
         arguments: [ @doctrine.orm.entity_manager ]
 
+    app.topic_actual_game_service:
+        class: AppBundle\Topic\ActualGameTopic
+        arguments: [ @doctrine.orm.entity_manager ]
+
     app.rpc_game_service:
         class: AppBundle\RPC\GameService
         arguments: [ @doctrine.orm.entity_manager ]

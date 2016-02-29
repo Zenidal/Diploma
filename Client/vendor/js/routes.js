@@ -36,6 +36,7 @@ diplomaApp.config(['$routeProvider', '$httpProvider', function ($routeProvider, 
         .when('/actual_game',
             {
                 templateUrl: 'vendor/views/gameTable.html',
+                controller: 'ActualGameCtrl as vm',
                 resolve: {
                     isUser: isUser,
                     isGameExists: ['$http', '$location', 'NotificationService', 'PATHS', '$q', function ($http, $location, NotificationService, PATHS, $q) {

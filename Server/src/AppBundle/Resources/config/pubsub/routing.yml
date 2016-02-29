@@ -3,6 +3,11 @@ game_topic:
     handler:
         callback: 'game.topic' #related to the getName() of your topic
 
+actual_game_topic:
+    channel: actual_game/channel
+    handler:
+        callback: 'actual_game.topic' #related to the getName() of your topic
+
 game_rpc:
     channel: game/{method}
     handler:

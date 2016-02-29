@@ -17,23 +17,22 @@
 
         vm.webSocket = WS.connect(PATHS.SOCKET_PATH);
         vm.webSocket.on("socket/connect", function (session) {
-            localStorage['channel'] = 'app/channel';
-            session.subscribe(localStorage['channel'], function (uri, payload) {
+            var channel = 'app/channel';
+            session.subscribe(channel, function (uri, payload) {
                 if (!$rootScope.user) {
-                    session.unsubscribe(localStorage['channel']);
-                    delete localStorage['channel'];
+                    session.unsubscribe(channel);
                 }
                 if (payload.games) {
                     vm.createdGames = [];
-                    for(var i = 0; i < payload.games.length; i++) {
+                    for (var i = 0; i < payload.games.length; i++) {
                         if ($rootScope.user && payload.games[i].creator) {
                             if (payload.games[i].creator.id != $rootScope.user.id) {
                                 vm.createdGames.push(payload.games[i]);
                             } else {
                                 vm.myGame = payload.games[i];
                                 if (vm.myGame.visitor && vm.myGame.visitor.username) {
+                                    session.unsubscribe(channel);
                                     $location.path("/actual_game");
-                                    vm.webSocket.off();
                                 }
                             }
                         }
