@@ -47,3 +47,7 @@ acceptGame:
 checkActualGame:
     pattern:     /checkGame
     defaults: { _controller: AppBundle:Game:checkActualGame }
+
+getAction:
+    pattern:    /game
+    defaults: { _controller: AppBundle:Game:game }

@@ -106,22 +106,22 @@ input {
 }
 
 .my-score {
-    color: red;
-    border-bottom: 2px solid rgb(240, 173, 78);
-    border-left: 2px solid rgb(240, 173, 78);
-    border-right: 2px solid rgb(240, 173, 78);
-    border-bottom-left-radius: 200%;
-    border-bottom-right-radius: 200%;
-    background-color: black;
-}
-
-.opponent-score {
     color: green;
     border-top: 2px solid rgb(240, 173, 78);
     border-left: 2px solid rgb(240, 173, 78);
     border-right: 2px solid rgb(240, 173, 78);
     border-top-left-radius: 200%;
     border-top-right-radius: 200%;
+    background-color: black;
+}
+
+.opponent-score {
+    color: red;
+    border-bottom: 2px solid rgb(240, 173, 78);
+    border-left: 2px solid rgb(240, 173, 78);
+    border-right: 2px solid rgb(240, 173, 78);
+    border-bottom-left-radius: 200%;
+    border-bottom-right-radius: 200%;
     background-color: black;
 }
 
@@ -139,6 +139,7 @@ input {
     border: 2px solid rgb(240, 173, 78);
     border-radius: 2px;
     margin-bottom: 5px;
+    height: 70px;
 }
 
 .cards-line {
@@ -159,6 +160,40 @@ input {
     display: inline-block;
     margin-right: 5px;
     vertical-align: top;
+    width: 100px;
+    text-align: center;
+    background-color: yellowgreen;
+    height: 100%;
+    border: 4px green solid;
+    border-radius: 5px;
+}
+
+.card-name {
+    width: 100%;
+}
+
+.card-power {
+    width: 100%;
+    font-size: 200%;
+}
+
+.card-unique {
+    background-color: brown !important;
+}
+
+.card-melee{
+    background-image: url('../pictures/melee_sword.png');
+    background-size: 100% 100%;
+}
+
+.card-range{
+    background-image: url('../pictures/range.png');
+    background-size: 100% 100%;
+}
+
+.card-siege{
+    background-image: url('../pictures/siege.png');
+    background-size: 100% 100%;
 }
 
 .realized-cards {
@@ -176,6 +211,13 @@ input {
     display: inline-block;
     margin-right: 3px;
     vertical-align: top;
+    width: 50px;
+    font-size: 5pt;
+    text-align: center;
+    background-color: yellowgreen;
+    height: 100%;
+    border: 2px green solid;
+    border-radius: 2px;
 }
 
 .army-type {

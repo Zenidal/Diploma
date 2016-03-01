@@ -48,6 +48,17 @@ diplomaApp.config(['$routeProvider', '$httpProvider', function ($routeProvider, 
                                 return $q.reject();
                             }
                         }).promise;
+                    }],
+                    game: ['$q', '$http', 'PATHS', function ($q, $http, PATHS) {
+                        return $http({
+                            method: 'GET',
+                            url: PATHS.SERVER_PATH + '/game'
+                        }).then(function successCallback(response) {
+                            return response.data.game ? response.data.game : null;
+                        }, function errorCallback(response) {
+                            NotificationService.addErrorMessage(response.data.errorMessage);
+                            return $q.reject.promise;
+                        });
                     }]
                 }
             })

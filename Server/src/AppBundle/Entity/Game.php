@@ -41,6 +41,11 @@ class Game
     private $name;
 
     /**
+     * @ORM\Column(type="text")
+     */
+    private $json;
+
+    /**
      * Get id
      *
      * @return integer
@@ -117,5 +122,28 @@ class Game
     public function getName()
     {
         return $this->name;
+    }
+
+    /**
+     * Set json
+     *
+     * @param string $json
+     * @return Game
+     */
+    public function setJson($json)
+    {
+        $this->json = $json;
+
+        return $this;
+    }
+
+    /**
+     * Get json
+     *
+     * @return string 
+     */
+    public function getJson()
+    {
+        return $this->json;
     }
 }

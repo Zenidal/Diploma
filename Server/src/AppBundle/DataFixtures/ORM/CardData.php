@@ -245,13 +245,6 @@ class CardData
 		],
 
 	    //spy
-		[
-			'name'       => 'Spy1',
-			'power'      => '1',
-			'isUnique'   => false,
-			'attackType' => self::SIEGE_ATTACK,
-			'ability'    => null
-		],
 	];
 
 	/**

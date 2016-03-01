@@ -2,61 +2,94 @@
     <div class="row">
         <div class="table-part col-lg-12 col-md-12 col-xs-12">
             <div class="cards-line">
-                <div id="blank{{n}}" ng-repeat="n in [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]" class="card-blank">
-                    <a ng-href="vendor/pictures/cards/skoyataelli/barklay.jpg" rel="lightbox">
-                        <img ng-src="vendor/pictures/cards/skoyataelli/barklay.jpg">
-                    </a>
+                <div id="blank{{card.id}}" ng-repeat="card in vm.cards" class="card-blank"
+                     ng-class="{ 'card-unique': card.isUnique, 'card-melee': card.attackType == 1, 'card-range': card.attackType == 2, 'card-siege': card.attackType == 3}">
+                    <div class="card-name">{{card.name}}</div>
+                    <div class="card-power">{{card.power}}</div>
                 </div>
             </div>
             <div class="my-part">
                 <div class="table-line">
-                    <div class="army-power">7</div>
+                    <div class="army-power">{{vm.powers.player1.attack1}}</div>
                     <div class="gain"></div>
                     <div class="army-type melee-type"></div>
-                </div>
-                <div class="table-line">
-                    <div class="army-power">23</div>
-                    <div class="gain"></div>
-                    <div class="army-type range-type"></div>
-                    <div class="realized-cards">
-                        <div ng-repeat="n in [1,2,3,4,5,6,7,8,9,10,11,12]" class="realized-card-blank">
-                            <a ng-href="vendor/pictures/cards/niljfgaard/assire.jpg" rel="lightbox">
-                                <img ng-src="vendor/pictures/cards/niljfgaard/assire.jpg">
-                            </a>
+                    <div class="realized-cards target">
+                        <div ng-repeat="card in vm.realizedCards1" class="realized-card-blank"
+                             ng-if="card.attackType == 1"
+                             ng-class="{ 'card-unique': card.isUnique, 'card-melee': card.attackType == 1, 'card-range': card.attackType == 2, 'card-siege': card.attackType == 3}">
+                            <div class="card-name">{{card.name}}</div>
+                            <div class="card-power">{{card.power}}</div>
                         </div>
                     </div>
                 </div>
                 <div class="table-line">
-                    <div class="army-power">4</div>
+                    <div class="army-power">{{vm.powers.player1.attack2}}</div>
+                    <div class="gain"></div>
+                    <div class="army-type range-type"></div>
+                    <div class="realized-cards target">
+                        <div ng-repeat="card in vm.realizedCards1" class="realized-card-blank"
+                             ng-if="card.attackType == 2"
+                             ng-class="{ 'card-unique': card.isUnique, 'card-melee': card.attackType == 1, 'card-range': card.attackType == 2, 'card-siege': card.attackType == 3}">
+                            <div class="card-name">{{card.name}}</div>
+                            <div class="card-power">{{card.power}}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-line">
+                    <div class="army-power">{{vm.powers.player1.attack3}}</div>
                     <div class="gain" style="background-color: wheat"></div>
                     <div class="army-type siege-type"></div>
+                    <div class="realized-cards target">
+                        <div ng-repeat="card in vm.realizedCards1" class="realized-card-blank"
+                             ng-if="card.attackType == 3"
+                             ng-class="{ 'card-unique': card.isUnique, 'card-melee': card.attackType == 1, 'card-range': card.attackType == 2, 'card-siege': card.attackType == 3}">
+                            <div class="card-name">{{card.name}}</div>
+                            <div class="card-power">{{card.power}}</div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="score">
-                <div class="opponent-score">75</div>
-                <div class="my-score">34</div>
+                <div class="my-score">{{vm.powers.player1.total}}</div>
+                <div class="opponent-score">{{vm.powers.player2.total}}</div>
             </div>
             <div class="opponent-part">
                 <div class="table-line">
-                    <div class="army-power">36</div>
+                    <div class="army-power">{{vm.powers.player2.attack1}}</div>
                     <div class="gain"></div>
                     <div class="army-type siege-type"></div>
+                    <div class="realized-cards">
+                        <div ng-repeat="card in vm.realizedCards2" class="realized-card-blank"
+                             ng-if="card.attackType == 3"
+                             ng-class="{ 'card-unique': card.isUnique, 'card-melee': card.attackType == 1, 'card-range': card.attackType == 2, 'card-siege': card.attackType == 3}">
+                            <div class="card-name">{{card.name}}</div>
+                            <div class="card-power">{{card.power}}</div>
+                        </div>
+                    </div>
                 </div>
                 <div class="table-line">
-                    <div class="army-power">25</div>
+                    <div class="army-power">{{vm.powers.player2.attack2}}</div>
                     <div class="gain" style="background-color: wheat"></div>
                     <div class="army-type range-type"></div>
+                    <div class="realized-cards">
+                        <div ng-repeat="card in vm.realizedCards2" class="realized-card-blank"
+                             ng-if="card.attackType == 2"
+                             ng-class="{ 'card-unique': card.isUnique, 'card-melee': card.attackType == 1, 'card-range': card.attackType == 2, 'card-siege': card.attackType == 3}">
+                            <div class="card-name">{{card.name}}</div>
+                            <div class="card-power">{{card.power}}</div>
+                        </div>
+                    </div>
                 </div>
                 <div class="table-line">
-                    <div class="army-power">14</div>
+                    <div class="army-power">{{vm.powers.player2.attack3}}</div>
                     <div class="gain"></div>
                     <div class="army-type melee-type"></div>
                     <div class="realized-cards">
-                        <div ng-repeat="n in [1,2,3,4,5,6,7,8,9,10,11]"
-							 class="realized-card-blank">
-                            <a ng-href="vendor/pictures/cards//monstry/bes.jpg" rel="lightbox">
-                                <img ng-src="vendor/pictures/cards/monstry/bes.jpg">
-                            </a>
+                        <div ng-repeat="card in vm.realizedCards2" class="realized-card-blank"
+                             ng-if="card.attackType == 1"
+                             ng-class="{ 'card-unique': card.isUnique, 'card-melee': card.attackType == 1, 'card-range': card.attackType == 2, 'card-siege': card.attackType == 3}">
+                            <div class="card-name">{{card.name}}</div>
+                            <div class="card-power">{{card.power}}</div>
                         </div>
                     </div>
                 </div>
@@ -64,21 +97,3 @@
         </div>
     </div>
 </div>
-
-<script>
-	$(document).ready(function () {
-		$('.realized-cards').sortable({
-			items: '.realized-cards:even'
-		});
-
-		$('.cards-line').sortable({
-			receive: function (event, ui) {
-				ui.item.removeClass('realized-card-blank');
-				ui.item.addClass('card-blank');
-			},
-			sort: function (event, ui) {
-			},
-			connectWith: '.realized-cards'
-		});
-	});
-</script>
