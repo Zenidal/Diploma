@@ -4,6 +4,7 @@ namespace AppBundle\Topic;
 
 use AppBundle\Entity\Game;
 use AppBundle\Helper\CardHelper;
+use AppBundle\Helper\GameHelper;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\EntityNotFoundException;
 use Gos\Bundle\WebSocketBundle\Topic\TopicInterface;
@@ -102,6 +103,32 @@ class ActualGameTopic implements TopicInterface
                 $topic->broadcast(
                     [
                         'msg' => $ex->getMessage(),
+                    ]
+                );
+            }
+        }
+        if ($event['event'] && $event['event'] == 'pass') {
+            $gameHelper = new GameHelper();
+            $passResult = $gameHelper->pass($this->em, $event['userId'], $event['gameId']);
+            if ($passResult['result'] == GameHelper::PASSED_SUCCESSFULLY) {
+                /** @var Game $game */
+                $game = $passResult['data'];
+                $gameArray = array(
+                    'id' => $game->getId(),
+                    'name' => $game->getName(),
+                    'visitorId' => $game->getVisitor()->getId(),
+                    'creatorId' => $game->getCreator()->getId(),
+                    'json' => $game->getJson()
+                );
+                $topic->broadcast(
+                    [
+                        'msg' => ['game' => $gameArray]
+                    ]
+                );
+            } else if ($passResult['result'] == GameHelper::PASSED_UNSUCCESSFULLY) {
+                $topic->broadcast(
+                    [
+                        'msg' => 'You can not pass.',
                     ]
                 );
             }

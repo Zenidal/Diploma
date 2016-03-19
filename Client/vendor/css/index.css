@@ -2,6 +2,68 @@ body {
     background-image: url("../pictures/background9.jpg");
 }
 
+.gain-active {
+    background-color: wheat;
+}
+
+.pass-button {
+    position: absolute;
+    left: 20px;
+}
+
+.opponent-pass {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 80px;
+}
+
+.my-rounds .round {
+    background-image: url('../pictures/default-raund.png');
+    background-size: 100% 100%;
+}
+
+.opponent-rounds .round {
+    background-image: url('../pictures/default-raund.png');
+    background-size: 100% 100%;
+}
+
+.opponent-rounds .win-round {
+    background-image: url('../pictures/opponent-raund.png');
+    background-size: 100% 100%;
+}
+
+.my-rounds .win-round {
+    background-image: url('../pictures/my-raund.png');
+    background-size: 100% 100%;
+}
+
+.rounds {
+    width: 100%;
+    height: 70px;
+}
+
+.round {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+
+.turn {
+    margin-left: 10px;
+    display: inline-block;
+    font-size: 55px;
+    vertical-align: super;
+    margin-right: 10px;
+}
+
+.my-rounds {
+    display: inline-block;
+}
+
+.opponent-rounds {
+    display: inline-block;
+}
+
 input {
     max-width: 100%;
 }
@@ -181,17 +243,17 @@ input {
     background-color: brown !important;
 }
 
-.card-melee{
+.card-melee {
     background-image: url('../pictures/melee_sword.png');
     background-size: 100% 100%;
 }
 
-.card-range{
+.card-range {
     background-image: url('../pictures/range.png');
     background-size: 100% 100%;
 }
 
-.card-siege{
+.card-siege {
     background-image: url('../pictures/siege.png');
     background-size: 100% 100%;
 }

@@ -79,7 +79,15 @@ class CardHelper
                     }
                 }
             }
-            $gameField[Gamehelper::MOVE_FIELD] = $gameField[Gamehelper::MOVE_FIELD] == Gamehelper::CREATOR ? Gamehelper::VISITOR : Gamehelper::CREATOR;
+            if ($prefix == GameHelper::CREATOR) {
+                if (!$gameField[Gamehelper::VISITOR . 'Passed']) {
+                    $gameField[Gamehelper::MOVE_FIELD] = $gameField[Gamehelper::MOVE_FIELD] == Gamehelper::CREATOR ? Gamehelper::VISITOR : Gamehelper::CREATOR;
+                }
+            } elseif ($prefix == GameHelper::VISITOR) {
+                if (!$gameField[Gamehelper::CREATOR . 'Passed']) {
+                    $gameField[Gamehelper::MOVE_FIELD] = $gameField[Gamehelper::MOVE_FIELD] == Gamehelper::CREATOR ? Gamehelper::VISITOR : Gamehelper::CREATOR;
+                }
+            }
             $game->setJson(json_encode($gameField));
             $this->em->flush();
             return array(

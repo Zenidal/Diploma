@@ -1,9 +1,28 @@
 <div class="game-table">
-    <div ng-if="vm.myTurn" class="text-center text-primary">
-        <h1>My turn</h1>
+    <div ng-if="vm.resultMessage" class="text-center turn">
+        {{vm.resultMessage}}
     </div>
-    <div ng-if="!vm.myTurn" class="text-center text-primary">
-        <h1>Opponent turn</h1>
+    <div ng-if="!vm.resultMessage" class="text-center rounds">
+        <button ng-if="vm.myTurn && !vm.iPassed" type="button" class="btn btn-danger btn-lg pass-button" ng-click="vm.pass()">Pass</button>
+        <div class="my-rounds">
+            <div class="round" ng-class="{'win-round': vm.creator ? (vm.game.json.creatorWon > 0) : (vm.game.json.visitorWon > 0)}"></div>
+            <div class="round" ng-class="{'win-round': vm.creator ? (vm.game.json.creatorWon > 1) : (vm.game.json.visitorWon > 1)}"></div>
+        </div>
+        <div class="turn">
+            <div ng-if="vm.myTurn">
+                MY TURN
+            </div>
+            <div ng-if="!vm.myTurn && !vm.iPassed">
+                OPPONENT TURN
+            </div>
+            <div ng-if="vm.iPassed">
+                I PASSED
+            </div>
+        </div>
+        <div class="opponent-rounds">
+            <div class="round" ng-class="{'win-round': vm.visitor ? (vm.game.json.creatorWon > 0) : (vm.game.json.visitorWon > 0)}"></div>
+            <div class="round" ng-class="{'win-round': vm.visitor ? (vm.game.json.creatorWon > 1) : (vm.game.json.visitorWon > 1)}"></div>
+        </div>
     </div>
     <div class="row">
         <div class="table-part col-lg-12 col-md-12 col-xs-12">
@@ -53,7 +72,7 @@
                     <div class="army-power">{{vm.creator ? vm.game.json.power.creator.attack3 :
                         vm.game.json.power.visitor.attack3}}
                     </div>
-                    <div class="gain" style="background-color: wheat"></div>
+                    <div class="gain"></div>
                     <div class="army-type siege-type"></div>
                     <div class="realized-cards target">
                         <div ng-repeat="card in vm.creator ? vm.game.json.creatorRealizedCards : vm.game.json.visitorRealizedCards"
@@ -95,7 +114,7 @@
                     <div class="army-power">{{vm.creator ? vm.game.json.power.visitor.attack2 :
                         vm.game.json.power.creator.attack2}}
                     </div>
-                    <div class="gain" style="background-color: wheat"></div>
+                    <div class="gain"></div>
                     <div class="army-type range-type"></div>
                     <div class="realized-cards">
                         <div ng-repeat="card in vm.creator ?  vm.game.json.visitorRealizedCards : vm.game.json.creatorRealizedCards"
@@ -125,7 +144,10 @@
                 </div>
             </div>
             <div class="cards-line">
-                <div ng-repeat="card in vm.creator ? vm.game.json.visitorCards : vm.game.json.creatorCards"
+                <div ng-if="vm.opponentPassed" class="opponent-pass">
+                    PASS
+                </div>
+                <div ng-if="!vm.opponentPassed" ng-repeat="card in vm.creator ? vm.game.json.visitorCards : vm.game.json.creatorCards"
                      class="card-blank back-side">
                 </div>
             </div>
