@@ -10,7 +10,7 @@ use Doctrine\ORM\Query;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use AppBundle\Helpers;
+use AppBundle\Helper;
 
 class GameController extends Controller
 {
@@ -23,9 +23,6 @@ class GameController extends Controller
 
         /** @var UserRepository $userRepository */
         $userRepository = $em->getRepository('AppBundle\Entity\User');
-
-        /** @var GameRepository $gameRepository */
-        $gameRepository = $em->getRepository('AppBundle\Entity\Game');
 
         /** @var User $user */
         $user = $userRepository->loadUserByUsername($this->getUser()->getUsername());
@@ -77,7 +74,7 @@ class GameController extends Controller
                 $em->flush();
             }
             $game->setVisitor($user);
-            $game->setJson(Helpers\GameJsonGenerator::generate($em));
+            $game->setJson(Helper\GameHelper::generate($em));
             $user->setVisitedGame($game);
             $em->flush();
 

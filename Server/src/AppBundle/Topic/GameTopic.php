@@ -4,7 +4,7 @@ namespace AppBundle\Topic;
 
 use AppBundle\Entity\Game;
 use AppBundle\Entity\User;
-use AppBundle\Helpers\GameToArrayConverter;
+use AppBundle\Helper\GameToArrayConverter;
 use AppBundle\Security\ApiKeyUserProvider;
 use Doctrine\ORM\EntityManager;
 use Gos\Bundle\WebSocketBundle\Topic\TopicInterface;

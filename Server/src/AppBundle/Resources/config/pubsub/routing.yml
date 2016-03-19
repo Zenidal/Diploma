@@ -1,17 +1,20 @@
 game_topic:
     channel: app/channel
     handler:
-        callback: 'game.topic' #related to the getName() of your topic
+        callback: 'game.topic'
 
 actual_game_topic:
-    channel: actual_game/channel
+    channel: actual_game/{gameId}
     handler:
-        callback: 'actual_game.topic' #related to the getName() of your topic
+        callback: 'actual_game.topic'
+    requirements:
+        gameId:
+            pattern: "\d+"
 
 game_rpc:
     channel: game/{method}
     handler:
-        callback: 'game.rpc' #related to the getName() or your RPC service
+        callback: 'game.rpc'
     requirements:
         method:
-            pattern: "[a-z_]+" #accept all valid regex, don't put delimiters !
+            pattern: "[a-z_]+"

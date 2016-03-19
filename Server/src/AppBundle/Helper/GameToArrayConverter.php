@@ -1,6 +1,6 @@
 <?php
 
-namespace AppBundle\Helpers;
+namespace AppBundle\Helper;
 
 use AppBundle\Entity\Game;
 

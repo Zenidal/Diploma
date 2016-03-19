@@ -1,8 +1,16 @@
 <div class="game-table">
+    <div ng-if="vm.myTurn" class="text-center text-primary">
+        <h1>My turn</h1>
+    </div>
+    <div ng-if="!vm.myTurn" class="text-center text-primary">
+        <h1>Opponent turn</h1>
+    </div>
     <div class="row">
         <div class="table-part col-lg-12 col-md-12 col-xs-12">
-            <div class="cards-line">
-                <div id="blank{{card.id}}" ng-repeat="card in vm.cards" class="card-blank"
+            <div id="cards-line" class="cards-line">
+                <div id="blank{{card.id}}"
+                     ng-repeat="card in vm.creator ? vm.game.json.creatorCards : vm.game.json.visitorCards"
+                     class="card-blank"
                      ng-class="{ 'card-unique': card.isUnique, 'card-melee': card.attackType == 1, 'card-range': card.attackType == 2, 'card-siege': card.attackType == 3}">
                     <div class="card-name">{{card.name}}</div>
                     <div class="card-power">{{card.power}}</div>
@@ -10,11 +18,14 @@
             </div>
             <div class="my-part">
                 <div class="table-line">
-                    <div class="army-power">{{vm.powers.player1.attack1}}</div>
+                    <div class="army-power">{{vm.creator ? vm.game.json.power.creator.attack1 :
+                        vm.game.json.power.visitor.attack1}}
+                    </div>
                     <div class="gain"></div>
                     <div class="army-type melee-type"></div>
                     <div class="realized-cards target">
-                        <div ng-repeat="card in vm.realizedCards1" class="realized-card-blank"
+                        <div ng-repeat="card in vm.creator ? vm.game.json.creatorRealizedCards : vm.game.json.visitorRealizedCards"
+                             class="realized-card-blank"
                              ng-if="card.attackType == 1"
                              ng-class="{ 'card-unique': card.isUnique, 'card-melee': card.attackType == 1, 'card-range': card.attackType == 2, 'card-siege': card.attackType == 3}">
                             <div class="card-name">{{card.name}}</div>
@@ -23,11 +34,14 @@
                     </div>
                 </div>
                 <div class="table-line">
-                    <div class="army-power">{{vm.powers.player1.attack2}}</div>
+                    <div class="army-power">{{vm.creator ? vm.game.json.power.creator.attack2 :
+                        vm.game.json.power.visitor.attack2}}
+                    </div>
                     <div class="gain"></div>
                     <div class="army-type range-type"></div>
                     <div class="realized-cards target">
-                        <div ng-repeat="card in vm.realizedCards1" class="realized-card-blank"
+                        <div ng-repeat="card in vm.creator ? vm.game.json.creatorRealizedCards : vm.game.json.visitorRealizedCards"
+                             class="realized-card-blank"
                              ng-if="card.attackType == 2"
                              ng-class="{ 'card-unique': card.isUnique, 'card-melee': card.attackType == 1, 'card-range': card.attackType == 2, 'card-siege': card.attackType == 3}">
                             <div class="card-name">{{card.name}}</div>
@@ -36,11 +50,14 @@
                     </div>
                 </div>
                 <div class="table-line">
-                    <div class="army-power">{{vm.powers.player1.attack3}}</div>
+                    <div class="army-power">{{vm.creator ? vm.game.json.power.creator.attack3 :
+                        vm.game.json.power.visitor.attack3}}
+                    </div>
                     <div class="gain" style="background-color: wheat"></div>
                     <div class="army-type siege-type"></div>
                     <div class="realized-cards target">
-                        <div ng-repeat="card in vm.realizedCards1" class="realized-card-blank"
+                        <div ng-repeat="card in vm.creator ? vm.game.json.creatorRealizedCards : vm.game.json.visitorRealizedCards"
+                             class="realized-card-blank"
                              ng-if="card.attackType == 3"
                              ng-class="{ 'card-unique': card.isUnique, 'card-melee': card.attackType == 1, 'card-range': card.attackType == 2, 'card-siege': card.attackType == 3}">
                             <div class="card-name">{{card.name}}</div>
@@ -50,16 +67,23 @@
                 </div>
             </div>
             <div class="score">
-                <div class="my-score">{{vm.powers.player1.total}}</div>
-                <div class="opponent-score">{{vm.powers.player2.total}}</div>
+                <div class="my-score">{{vm.creator ? vm.game.json.power.creator.attack4 :
+                    vm.game.json.power.visitor.attack4}}
+                </div>
+                <div class="opponent-score">{{vm.creator ? vm.game.json.power.visitor.attack4 :
+                    vm.game.json.power.creator.attack4}}
+                </div>
             </div>
             <div class="opponent-part">
                 <div class="table-line">
-                    <div class="army-power">{{vm.powers.player2.attack1}}</div>
+                    <div class="army-power">{{vm.creator ? vm.game.json.power.visitor.attack3 :
+                        vm.game.json.power.creator.attack3}}
+                    </div>
                     <div class="gain"></div>
                     <div class="army-type siege-type"></div>
                     <div class="realized-cards">
-                        <div ng-repeat="card in vm.realizedCards2" class="realized-card-blank"
+                        <div ng-repeat="card in vm.creator ? vm.game.json.visitorRealizedCards : vm.game.json.creatorRealizedCards"
+                             class="realized-card-blank"
                              ng-if="card.attackType == 3"
                              ng-class="{ 'card-unique': card.isUnique, 'card-melee': card.attackType == 1, 'card-range': card.attackType == 2, 'card-siege': card.attackType == 3}">
                             <div class="card-name">{{card.name}}</div>
@@ -68,11 +92,14 @@
                     </div>
                 </div>
                 <div class="table-line">
-                    <div class="army-power">{{vm.powers.player2.attack2}}</div>
+                    <div class="army-power">{{vm.creator ? vm.game.json.power.visitor.attack2 :
+                        vm.game.json.power.creator.attack2}}
+                    </div>
                     <div class="gain" style="background-color: wheat"></div>
                     <div class="army-type range-type"></div>
                     <div class="realized-cards">
-                        <div ng-repeat="card in vm.realizedCards2" class="realized-card-blank"
+                        <div ng-repeat="card in vm.creator ?  vm.game.json.visitorRealizedCards : vm.game.json.creatorRealizedCards"
+                             class="realized-card-blank"
                              ng-if="card.attackType == 2"
                              ng-class="{ 'card-unique': card.isUnique, 'card-melee': card.attackType == 1, 'card-range': card.attackType == 2, 'card-siege': card.attackType == 3}">
                             <div class="card-name">{{card.name}}</div>
@@ -81,17 +108,25 @@
                     </div>
                 </div>
                 <div class="table-line">
-                    <div class="army-power">{{vm.powers.player2.attack3}}</div>
+                    <div class="army-power">{{vm.creator ? vm.game.json.power.visitor.attack1 :
+                        vm.game.json.power.creator.attack1}}
+                    </div>
                     <div class="gain"></div>
                     <div class="army-type melee-type"></div>
                     <div class="realized-cards">
-                        <div ng-repeat="card in vm.realizedCards2" class="realized-card-blank"
+                        <div ng-repeat="card in vm.creator ?  vm.game.json.visitorRealizedCards : vm.game.json.creatorRealizedCards"
+                             class="realized-card-blank"
                              ng-if="card.attackType == 1"
                              ng-class="{ 'card-unique': card.isUnique, 'card-melee': card.attackType == 1, 'card-range': card.attackType == 2, 'card-siege': card.attackType == 3}">
                             <div class="card-name">{{card.name}}</div>
                             <div class="card-power">{{card.power}}</div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="cards-line">
+                <div ng-repeat="card in vm.creator ? vm.game.json.visitorCards : vm.game.json.creatorCards"
+                     class="card-blank back-side">
                 </div>
             </div>
         </div>

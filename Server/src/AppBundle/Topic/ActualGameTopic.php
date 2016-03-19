@@ -3,12 +3,10 @@
 namespace AppBundle\Topic;
 
 use AppBundle\Entity\Game;
-use AppBundle\Entity\User;
-use AppBundle\Helpers\GameToArrayConverter;
-use AppBundle\Security\ApiKeyUserProvider;
+use AppBundle\Helper\CardHelper;
 use Doctrine\ORM\EntityManager;
+use Doctrine\ORM\EntityNotFoundException;
 use Gos\Bundle\WebSocketBundle\Topic\TopicInterface;
-use Gos\Bundle\WebSocketBundle\Topic\TopicPeriodicTimerInterface;
 use Gos\Bundle\WebSocketBundle\Topic\TopicPeriodicTimerTrait;
 use Ratchet\ConnectionInterface;
 use Ratchet\Wamp\Topic;
@@ -16,6 +14,15 @@ use Gos\Bundle\WebSocketBundle\Router\WampRequest;
 
 class ActualGameTopic implements TopicInterface
 {
+    /**
+     * @var EntityManager
+     */
+    protected $em;
+
+    public function __construct(EntityManager $em)
+    {
+        $this->em = $em;
+    }
 
     /**
      * @param  ConnectionInterface $connection
@@ -25,7 +32,7 @@ class ActualGameTopic implements TopicInterface
     public function onSubscribe(ConnectionInterface $connection, Topic $topic, WampRequest $request)
     {
         //this will broadcast the message to ALL subscribers of this topic.
-        $topic->broadcast(['msg' => $connection->resourceId." has joined ".$topic->getId()]);
+        $topic->broadcast(['msg' => $connection->resourceId . " has joined " . $topic->getId()]);
     }
 
     /**
@@ -40,7 +47,7 @@ class ActualGameTopic implements TopicInterface
     public function onUnSubscribe(ConnectionInterface $connection, Topic $topic, WampRequest $request)
     {
         //this will broadcast the message to ALL subscribers of this topic.
-        $topic->broadcast(['msg' => $connection->resourceId." has left ".$topic->getId()]);
+        $topic->broadcast(['msg' => $connection->resourceId . " has left " . $topic->getId()]);
     }
 
     /**
@@ -57,19 +64,54 @@ class ActualGameTopic implements TopicInterface
      */
     public function onPublish(
         ConnectionInterface $connection, Topic $topic, WampRequest $request, $event, array $exclude, array $eligible
-    ) {
+    )
+    {
+        if ($event['event'] && $event['event'] == 'move') {
+            $cardHelper = new CardHelper($this->em);
+            try {
+                $moveResult = $cardHelper->moveCard($event['userId'], $event['gameId'], $event['cardId']);
+                if ($moveResult['result'] == CardHelper::MOVED_SUCCESSFULLY) {
+                    /** @var Game $game */
+                    $game = $moveResult['data'];
+                    $gameArray = array(
+                        'id' => $game->getId(),
+                        'name' => $game->getName(),
+                        'visitorId' => $game->getVisitor()->getId(),
+                        'creatorId' => $game->getCreator()->getId(),
+                        'json' => $game->getJson()
+                    );
+                    $topic->broadcast(
+                        [
+                            'msg' => ['game' => $gameArray]
+                        ]
+                    );
+                } else if ($moveResult['result'] == CardHelper::MOVED_FAIL_BY_TURN) {
+                    $topic->broadcast(
+                        [
+                            'msg' => 'Not your turn.',
+                        ]
+                    );
+                } else {
+                    $topic->broadcast(
+                        [
+                            'msg' => 'Error.',
+                        ]
+                    );
+                }
+            } catch (EntityNotFoundException $ex) {
+                $topic->broadcast(
+                    [
+                        'msg' => $ex->getMessage(),
+                    ]
+                );
+            }
+        }
         /*
             $topic->getId() will contain the FULL requested uri, so you can proceed based on that
 
             if ($topic->getId() === 'game/channel/shout')
                //shout something to all subs.
         */
-
-        $topic->broadcast(
-            [
-                'msg' => $event,
-            ]
-        );
     }
 
     /**
