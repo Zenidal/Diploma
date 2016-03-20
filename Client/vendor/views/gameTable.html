@@ -1,28 +1,33 @@
 <div class="game-table">
     <div ng-if="vm.resultMessage" class="text-center turn">
         {{vm.resultMessage}}
+        <a ng-href="#/games">Go to games</a>
     </div>
     <div ng-if="!vm.resultMessage" class="text-center rounds">
-        <button ng-if="vm.myTurn && !vm.iPassed" type="button" class="btn btn-danger btn-lg pass-button" ng-click="vm.pass()">Pass</button>
+        <div ng-class="{'pass-active': vm.iPassed}" class="turn pass">
+            <div ng-if="vm.myTurn && !vm.iPassed" class="pass-button" ng-click="vm.pass()"></div>
+        </div>
         <div class="my-rounds">
-            <div class="round" ng-class="{'win-round': vm.creator ? (vm.game.json.creatorWon > 0) : (vm.game.json.visitorWon > 0)}"></div>
-            <div class="round" ng-class="{'win-round': vm.creator ? (vm.game.json.creatorWon > 1) : (vm.game.json.visitorWon > 1)}"></div>
+            <div class="round"
+                 ng-class="{'win-round': vm.creator ? (vm.game.json.creatorWon > 0) : (vm.game.json.visitorWon > 0)}"></div>
+            <div class="round"
+                 ng-class="{'win-round': vm.creator ? (vm.game.json.creatorWon > 1) : (vm.game.json.visitorWon > 1)}"></div>
         </div>
         <div class="turn">
             <div ng-if="vm.myTurn">
                 MY TURN
             </div>
-            <div ng-if="!vm.myTurn && !vm.iPassed">
+            <div ng-if="!vm.myTurn">
                 OPPONENT TURN
-            </div>
-            <div ng-if="vm.iPassed">
-                I PASSED
             </div>
         </div>
         <div class="opponent-rounds">
-            <div class="round" ng-class="{'win-round': vm.visitor ? (vm.game.json.creatorWon > 0) : (vm.game.json.visitorWon > 0)}"></div>
-            <div class="round" ng-class="{'win-round': vm.visitor ? (vm.game.json.creatorWon > 1) : (vm.game.json.visitorWon > 1)}"></div>
+            <div class="round"
+                 ng-class="{'win-round': vm.visitor ? (vm.game.json.creatorWon > 0) : (vm.game.json.visitorWon > 0)}"></div>
+            <div class="round"
+                 ng-class="{'win-round': vm.visitor ? (vm.game.json.creatorWon > 1) : (vm.game.json.visitorWon > 1)}"></div>
         </div>
+        <div ng-class="{'pass-active': vm.opponentPassed}" class="turn pass"></div>
     </div>
     <div class="row">
         <div class="table-part col-lg-12 col-md-12 col-xs-12">
@@ -144,10 +149,7 @@
                 </div>
             </div>
             <div class="cards-line">
-                <div ng-if="vm.opponentPassed" class="opponent-pass">
-                    PASS
-                </div>
-                <div ng-if="!vm.opponentPassed" ng-repeat="card in vm.creator ? vm.game.json.visitorCards : vm.game.json.creatorCards"
+                <div ng-repeat="card in vm.creator ? vm.game.json.visitorCards : vm.game.json.creatorCards"
                      class="card-blank back-side">
                 </div>
             </div>

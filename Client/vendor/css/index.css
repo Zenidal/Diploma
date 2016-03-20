@@ -7,14 +7,28 @@ body {
 }
 
 .pass-button {
-    position: absolute;
-    left: 20px;
+    width: 100%;
+    height: 100%;
+    border-radius: 13px;
 }
 
-.opponent-pass {
-    text-align: center;
-    vertical-align: middle;
-    font-size: 80px;
+.pass-button:hover {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.pass {
+    background-image: url('../pictures/pass.png');
+    background-size: 100% 100%;
+    height: 55px;
+    width: 100px;
+    background-color: gray;
+    vertical-align: sub !important;
+    border-radius: 20px;
+    border: 6px solid black;
+}
+
+.pass-active {
+    background-color: #00ee00;
 }
 
 .my-rounds .round {

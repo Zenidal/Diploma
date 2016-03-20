@@ -1,187 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e2343e40-f46c-470a-bff3-557d21a034d4" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/ballista.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/ballista2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/bjyanka.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/boec_sinih_polosok.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/detmoljd.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/diykstra.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/esterad.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/filippa.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/foljtest1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/foljtest_2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/foljtest_3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/foljtest_4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/katapuljta.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/keyra.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/lekarj.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/master.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/osadnaya_bashnya.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/osadnyy.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/osadnyy_master.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/pehotinec_redanskiy.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/pehtura.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/pehtura2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/pehtura3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/princ_stennis.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/redanskiy_pehotinec.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/rubayly.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/sabrina.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/sheala.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/sheldon.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/taler.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/trebushet.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/trebushet2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/vernon_roshe.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/yan.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/yarpen.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/korolevstva_severa/zigfrid.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/baba.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/bes.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/draug.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/elementalj_ognya.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/elementalj_zemli.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/endriaga.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/garguljya.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/garpiya.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/garpiyaya.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/glavoglaz.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/glavoglaz1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/glavoglaz_ogromnyy.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/glavoglazopyatj.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/grifon.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/gulj.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/gulj2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/guljka.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/igosha.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/imlerih.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/kayran.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/ledyanoy_velikan.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/leshiy.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/lider1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/lider_2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/lider_3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/lider_4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/morovaya_deva.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/naker.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/naker_2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/naker_3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/pugach.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/tumannik.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/vampir1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/vampir_2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/vampiry_2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/vampiry_3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/vasilisk.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/vedjma_kuharka.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/vedjma_pryaha.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/vedjma_sheptuha.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/villohvost.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/viverna.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/monstry/volkolak.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/neytraljnye_karty/chuchelo.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/neytraljnye_karty/ciri.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/neytraljnye_karty/drakon_ubiyca.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/neytraljnye_karty/emielj.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/neytraljnye_karty/geraljt.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/neytraljnye_karty/kaznj.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/neytraljnye_karty/livenj.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/neytraljnye_karty/lyutik.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/neytraljnye_karty/mgla.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/neytraljnye_karty/moroz.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/neytraljnye_karty/rog.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/neytraljnye_karty/tainstvennyy_eljf.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/neytraljnye_karty/triss.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/neytraljnye_karty/vesemir.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/neytraljnye_karty/yasnoe_nebo.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/neytraljnye_karty/yennifer.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/neytraljnye_karty/zoltan.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/aljbryh.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/assire.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/brigada_impera.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/chudoluchnik.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/cintiya.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/fringiliya.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/kagyropyatj.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/kavaleriya.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/leto.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/lider_1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/lider_2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/lider_3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/lider_4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/luchnik.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/menno.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/morteyzen.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/morvran.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/ospodd.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/podderzhka.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/podderzhka_2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/poslannik.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/poslannika.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/putt.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/raynfarn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/renualjd.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/saper.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/sgnivshaya_petrariya.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/shilyard.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/skorp.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/skorp2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/stefan.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/svirs.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/tibor.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/vangemar.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/vattje.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/niljfgaard/vreemde.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/barklay.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/brigada.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/dennis_kranmer.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/dobrovolec.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/dobrovoljcyy.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/eitne.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/fila.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/gavenkerc.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/ida.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/iorvet.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/izengrim.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/kadet.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/kiaran.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/krasnolyud.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/lekarj.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/lekarj_.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/lekarj_2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/lider_1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/lider_2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/lider_3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/lider_4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/luchnik.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/mehakamskie_dobrovoljcy.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/mehakamskie_dobrovoljcy2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/mehakamskie_dobrovoljcy3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/miljva.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/podderzhka.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/podderzhka2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/riordayin.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/sae.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/sledopyt.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/sledopyt2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/sledopytnaglyy.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/toruvjelj.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/vrihedd.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/yaevinn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/zastrelj4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/zastreljw.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/zastreljщik.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/zastreljщik_krasnolyud.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/vendor/pictures/cards/skoyataelli/zastreljщikk.jpg" afterPath="" />
+    <list default="true" id="e2343e40-f46c-470a-bff3-557d21a034d4" name="Default" comment="Start test version.&#10;&#10;Start test version.&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/vendor/css/index.css" afterPath="$PROJECT_DIR$/Client/vendor/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/vendor/js/controllers/ActualGameCtrl.js" afterPath="$PROJECT_DIR$/Client/vendor/js/controllers/ActualGameCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/vendor/js/controllers/GamesCtrl.js" afterPath="$PROJECT_DIR$/Client/vendor/js/controllers/GamesCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/vendor/js/routes.js" afterPath="$PROJECT_DIR$/Client/vendor/js/routes.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/vendor/views/gameTable.html" afterPath="$PROJECT_DIR$/Client/vendor/views/gameTable.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/src/AppBundle/Helper/CardHelper.php" afterPath="$PROJECT_DIR$/Server/src/AppBundle/Helper/CardHelper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/src/AppBundle/Helper/GameHelper.php" afterPath="$PROJECT_DIR$/Server/src/AppBundle/Helper/GameHelper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/src/AppBundle/Topic/ActualGameTopic.php" afterPath="$PROJECT_DIR$/Server/src/AppBundle/Topic/ActualGameTopic.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/src/AppBundle/Entity/Game.php" afterPath="$PROJECT_DIR$/Server/src/AppBundle/Entity/Game.php" />
     </list>
     <ignored path="Diploma.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -207,17 +33,37 @@
         <entry file="file://$PROJECT_DIR$/Client/vendor/js/controllers/ActualGameCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="131" column="13" selection-start-line="131" selection-start-column="13" selection-end-line="131" selection-end-column="13" />
+              <caret line="116" column="24" selection-start-line="116" selection-start-column="24" selection-end-line="116" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ActualGameTopic.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GamesCtrl.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Client/vendor/js/controllers/GamesCtrl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="94" column="74" selection-start-line="94" selection-start-column="74" selection-end-line="94" selection-end-column="74" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameTopic.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/Topic/GameTopic.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="8.6603775">
+              <caret line="43" column="41" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ActualGameTopic.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/Topic/ActualGameTopic.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.923077">
-              <caret line="72" column="18" selection-start-line="72" selection-start-column="18" selection-end-line="72" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.2901099">
+              <caret line="66" column="45" selection-start-line="66" selection-start-column="45" selection-end-line="66" selection-end-column="45" />
               <folding>
                 <element signature="e#35#61#0#PHP" expanded="true" />
               </folding>
@@ -225,43 +71,94 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gameTable.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Client/vendor/views/gameTable.html">
+      <file leaf-file-name="GameController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/Controller/GameController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="67.65385">
-              <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Client/vendor/css/index.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.0722892">
-              <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameHelper.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/Helper/GameHelper.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2901099">
-              <caret line="162" column="9" selection-start-line="162" selection-start-column="9" selection-end-line="162" selection-end-column="9" />
+            <state vertical-scroll-proportion="-9.5">
+              <caret line="154" column="50" selection-start-line="154" selection-start-column="50" selection-end-line="154" selection-end-column="50" />
               <folding>
-                <element signature="e#36#62#0#PHP" expanded="true" />
+                <element signature="e#7031#8311#0#PHP" expanded="false" />
+                <marker date="1458478529223" expanded="true" signature="444:8313" placeholder="{...}" />
+                <marker date="1458478529223" expanded="false" signature="500:1529" placeholder="{...}" />
+                <marker date="1458478529223" expanded="true" signature="1028:1426" placeholder="..." />
+                <marker date="1458478529223" expanded="false" signature="1568:3125" placeholder="{...}" />
+                <marker date="1458478529223" expanded="true" signature="2160:2263" placeholder="..." />
+                <marker date="1458478529223" expanded="true" signature="2331:2440" placeholder="..." />
+                <marker date="1458478529223" expanded="true" signature="2500:3014" placeholder="..." />
+                <marker date="1458478529223" expanded="true" signature="2543:2734" placeholder="..." />
+                <marker date="1458478529223" expanded="false" signature="3181:4275" placeholder="{...}" />
+                <marker date="1458478529223" expanded="true" signature="3774:4172" placeholder="..." />
+                <marker date="1458478529223" expanded="false" signature="4313:5460" placeholder="{...}" />
+                <marker date="1458478529223" expanded="true" signature="4903:4921" placeholder="..." />
+                <marker date="1458478529223" expanded="true" signature="4946:4972" placeholder="..." />
+                <marker date="1458478529223" expanded="true" signature="4994:5022" placeholder="..." />
+                <marker date="1458478529223" expanded="true" signature="5047:5098" placeholder="..." />
+                <marker date="1458478529223" expanded="true" signature="5123:5150" placeholder="..." />
+                <marker date="1458478529223" expanded="true" signature="5179:5204" placeholder="..." />
+                <marker date="1458478529223" expanded="true" signature="5297:5380" placeholder="..." />
+                <marker date="1458478529223" expanded="true" signature="5505:6852" placeholder="{...}" />
+                <marker date="1458478529223" expanded="true" signature="6055:6080" placeholder="..." />
+                <marker date="1458478529223" expanded="true" signature="6106:6132" placeholder="..." />
+                <marker date="1458478529223" expanded="true" signature="6158:6184" placeholder="..." />
+                <marker date="1458478529223" expanded="true" signature="6206:6234" placeholder="..." />
+                <marker date="1458478529223" expanded="true" signature="6256:6284" placeholder="..." />
+                <marker date="1458478529223" expanded="true" signature="6306:6359" placeholder="..." />
+                <marker date="1458478529223" expanded="true" signature="6381:6434" placeholder="..." />
+                <marker date="1458478529223" expanded="true" signature="6456:6482" placeholder="..." />
+                <marker date="1458478529223" expanded="true" signature="6506:6532" placeholder="..." />
+                <marker date="1458478529223" expanded="true" signature="6562:6709" placeholder="..." />
+                <marker date="1458478529223" expanded="true" signature="6580:6695" placeholder="..." />
+                <marker date="1458478529223" expanded="true" signature="6839:6852" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CardHelper.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/Helper/CardHelper.php">
+      <file leaf-file-name="routes.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Client/vendor/js/routes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-24.538462">
-              <caret line="91" column="26" selection-start-line="91" selection-start-column="26" selection-end-line="91" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="48" column="52" selection-start-line="48" selection-start-column="52" selection-end-line="48" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gameTable.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Client/vendor/views/gameTable.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.9615384">
+              <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameToArrayConverter.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/Helper/GameToArrayConverter.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-15.692307">
+              <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Game.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/Entity/Game.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.115385">
+              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameHelper.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/Helper/GameHelper.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="17.76923">
+              <caret line="94" column="20" selection-start-line="94" selection-start-column="20" selection-end-line="94" selection-end-column="20" />
               <folding>
                 <element signature="e#36#62#0#PHP" expanded="true" />
               </folding>
@@ -285,7 +182,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Server/test.php" />
         <option value="$PROJECT_DIR$/Server/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/Server/app/AppKernel.php" />
         <option value="$PROJECT_DIR$/Server/src/AppBundle/RPC/GameService.php" />
@@ -305,14 +201,12 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Server/src/AppBundle/Security/ApiKeyUserProvider.php" />
         <option value="$PROJECT_DIR$/Client/vendor/js/helpers/accountHelper.js" />
-        <option value="$PROJECT_DIR$/Server/src/AppBundle/Topic/GameTopic.php" />
         <option value="$PROJECT_DIR$/Client/vendor/views/games.html" />
         <option value="$PROJECT_DIR$/../DiplomaToAntonic/miskevich-aya-11/README.md" />
         <option value="$PROJECT_DIR$/Client/vendor/js/constants/PATHS.js" />
         <option value="$PROJECT_DIR$/Server/app/config/config.yml" />
         <option value="$PROJECT_DIR$/Server/app/config/services.yml" />
         <option value="$PROJECT_DIR$/Server/app/config/routing.yml" />
-        <option value="$PROJECT_DIR$/Client/vendor/js/routes.js" />
         <option value="$PROJECT_DIR$/Client/vendor/views/game/gameTable.html" />
         <option value="$PROJECT_DIR$/Client/node_modules/jquery-ui/jquery-ui.js" />
         <option value="$PROJECT_DIR$/Server/src/AppBundle/Resources/config/pubsub/routing.yml" />
@@ -327,15 +221,18 @@
         <option value="$PROJECT_DIR$/Server/src/AppBundle/Helper/ApiKeyGenerator.php" />
         <option value="$PROJECT_DIR$/Server/src/AppBundle/Helper/CardHalper.php" />
         <option value="$PROJECT_DIR$/Server/test.txt" />
-        <option value="$PROJECT_DIR$/Client/vendor/js/controllers/GamesCtrl.js" />
-        <option value="$PROJECT_DIR$/Server/src/AppBundle/Controller/GameController.php" />
-        <option value="$PROJECT_DIR$/Server/src/AppBundle/Entity/Game.php" />
         <option value="$PROJECT_DIR$/Server/src/AppBundle/Helper/CardHelper.php" />
         <option value="$PROJECT_DIR$/Client/vendor/css/index.css" />
-        <option value="$PROJECT_DIR$/Server/src/AppBundle/Topic/ActualGameTopic.php" />
         <option value="$PROJECT_DIR$/Client/vendor/views/gameTable.html" />
-        <option value="$PROJECT_DIR$/Client/vendor/js/controllers/ActualGameCtrl.js" />
         <option value="$PROJECT_DIR$/Server/src/AppBundle/Helper/GameHelper.php" />
+        <option value="$PROJECT_DIR$/Server/src/AppBundle/Entity/Game.php" />
+        <option value="$PROJECT_DIR$/Client/vendor/js/controllers/ActualGameCtrl.js" />
+        <option value="$PROJECT_DIR$/Server/src/AppBundle/Helper/GameToArrayConverter.php" />
+        <option value="$PROJECT_DIR$/Server/src/AppBundle/Topic/GameTopic.php" />
+        <option value="$PROJECT_DIR$/Client/vendor/js/routes.js" />
+        <option value="$PROJECT_DIR$/Client/vendor/js/controllers/GamesCtrl.js" />
+        <option value="$PROJECT_DIR$/Server/src/AppBundle/Topic/ActualGameTopic.php" />
+        <option value="$PROJECT_DIR$/Server/src/AppBundle/Controller/GameController.php" />
       </list>
     </option>
   </component>
@@ -678,6 +575,86 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Diploma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Diploma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Diploma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Diploma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Diploma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Diploma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Diploma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Diploma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -852,7 +829,13 @@
       <option name="project" value="LOCAL" />
       <updated>1458388718547</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Start test version.&#10;&#10;Start test version.&#10;">
+      <created>1458402758809</created>
+      <option name="number" value="00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1458402758809</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -929,14 +912,15 @@
     <MESSAGE value="Added actual_game topic without content.&#10;&#10;Added actual_game topic without content." />
     <MESSAGE value="Added some functional to actual game page..&#10;&#10;Added some functional to actual game page: designed cards, added updating power and other.&#10;" />
     <MESSAGE value="Added stable moving functional.&#10;&#10;Added stable moving functional.&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added stable moving functional.&#10;&#10;Added stable moving functional.&#10;" />
+    <MESSAGE value="Start test version.&#10;&#10;Start test version.&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Start test version.&#10;&#10;Start test version.&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="49" />
+      <option name="time" value="50" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1161,51 +1145,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="7" selection-start-line="12" selection-start-column="11" selection-end-line="20" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/vendor/js/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="60" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/Helper/GameToArrayConverter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/vendor/js/controllers/GamesCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/Entity/Game.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/Controller/GameController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="76" column="53" selection-start-line="76" selection-start-column="53" selection-end-line="76" selection-end-column="53" />
-          <folding>
-            <element signature="e#451#1529#0#PHP" expanded="false" />
-            <element signature="e#3131#4275#0#PHP" expanded="false" />
-            <element signature="e#4281#5460#0#PHP" expanded="false" />
-            <element signature="e#5466#7025#0#PHP" expanded="false" />
-            <element signature="e#7031#8311#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1249,14 +1189,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/Topic/GameTopic.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.7272725">
-          <caret line="35" column="41" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/Controller/AuthorizationController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1282,8 +1214,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Client/vendor/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.0722892">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        <state vertical-scroll-proportion="-4.6363635">
+          <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
           <folding />
         </state>
       </provider>
@@ -1298,10 +1230,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/Entity/Game.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.115385">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/Helper/GameToArrayConverter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.692307">
+          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/vendor/js/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="48" column="52" selection-start-line="48" selection-start-column="52" selection-end-line="48" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/Helper/GameHelper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="17.76923">
+          <caret line="94" column="20" selection-start-line="94" selection-start-column="20" selection-end-line="94" selection-end-column="20" />
+          <folding>
+            <element signature="e#36#62#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Client/vendor/views/gameTable.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="67.65385">
-          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+        <state vertical-scroll-proportion="-1.9615384">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/vendor/js/controllers/GamesCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="94" column="74" selection-start-line="94" selection-start-column="74" selection-end-line="94" selection-end-column="74" />
           <folding />
         </state>
       </provider>
@@ -1309,27 +1283,66 @@
     <entry file="file://$PROJECT_DIR$/Client/vendor/js/controllers/ActualGameCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="131" column="13" selection-start-line="131" selection-start-column="13" selection-end-line="131" selection-end-column="13" />
+          <caret line="116" column="24" selection-start-line="116" selection-start-column="24" selection-end-line="116" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/Controller/GameController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.5">
+          <caret line="154" column="50" selection-start-line="154" selection-start-column="50" selection-end-line="154" selection-end-column="50" />
+          <folding>
+            <element signature="e#7031#8311#0#PHP" expanded="false" />
+            <marker date="1458478529223" expanded="true" signature="444:8313" placeholder="{...}" />
+            <marker date="1458478529223" expanded="false" signature="500:1529" placeholder="{...}" />
+            <marker date="1458478529223" expanded="true" signature="1028:1426" placeholder="..." />
+            <marker date="1458478529223" expanded="false" signature="1568:3125" placeholder="{...}" />
+            <marker date="1458478529223" expanded="true" signature="2160:2263" placeholder="..." />
+            <marker date="1458478529223" expanded="true" signature="2331:2440" placeholder="..." />
+            <marker date="1458478529223" expanded="true" signature="2500:3014" placeholder="..." />
+            <marker date="1458478529223" expanded="true" signature="2543:2734" placeholder="..." />
+            <marker date="1458478529223" expanded="false" signature="3181:4275" placeholder="{...}" />
+            <marker date="1458478529223" expanded="true" signature="3774:4172" placeholder="..." />
+            <marker date="1458478529223" expanded="false" signature="4313:5460" placeholder="{...}" />
+            <marker date="1458478529223" expanded="true" signature="4903:4921" placeholder="..." />
+            <marker date="1458478529223" expanded="true" signature="4946:4972" placeholder="..." />
+            <marker date="1458478529223" expanded="true" signature="4994:5022" placeholder="..." />
+            <marker date="1458478529223" expanded="true" signature="5047:5098" placeholder="..." />
+            <marker date="1458478529223" expanded="true" signature="5123:5150" placeholder="..." />
+            <marker date="1458478529223" expanded="true" signature="5179:5204" placeholder="..." />
+            <marker date="1458478529223" expanded="true" signature="5297:5380" placeholder="..." />
+            <marker date="1458478529223" expanded="true" signature="5505:6852" placeholder="{...}" />
+            <marker date="1458478529223" expanded="true" signature="6055:6080" placeholder="..." />
+            <marker date="1458478529223" expanded="true" signature="6106:6132" placeholder="..." />
+            <marker date="1458478529223" expanded="true" signature="6158:6184" placeholder="..." />
+            <marker date="1458478529223" expanded="true" signature="6206:6234" placeholder="..." />
+            <marker date="1458478529223" expanded="true" signature="6256:6284" placeholder="..." />
+            <marker date="1458478529223" expanded="true" signature="6306:6359" placeholder="..." />
+            <marker date="1458478529223" expanded="true" signature="6381:6434" placeholder="..." />
+            <marker date="1458478529223" expanded="true" signature="6456:6482" placeholder="..." />
+            <marker date="1458478529223" expanded="true" signature="6506:6532" placeholder="..." />
+            <marker date="1458478529223" expanded="true" signature="6562:6709" placeholder="..." />
+            <marker date="1458478529223" expanded="true" signature="6580:6695" placeholder="..." />
+            <marker date="1458478529223" expanded="true" signature="6839:6852" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/Topic/GameTopic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="8.6603775">
+          <caret line="43" column="41" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/Topic/ActualGameTopic.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.923077">
-          <caret line="72" column="18" selection-start-line="72" selection-start-column="18" selection-end-line="72" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.2901099">
+          <caret line="66" column="45" selection-start-line="66" selection-start-column="45" selection-end-line="66" selection-end-column="45" />
           <folding>
             <element signature="e#35#61#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/Helper/GameHelper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2901099">
-          <caret line="162" column="9" selection-start-line="162" selection-start-column="9" selection-end-line="162" selection-end-column="9" />
-          <folding>
-            <element signature="e#36#62#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

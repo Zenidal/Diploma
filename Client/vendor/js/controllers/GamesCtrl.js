@@ -12,28 +12,47 @@
         vm.gamesLoaded = false;
         vm.createdGames = [];
         vm.myGame = null;
+        vm.channel = 'app/channel';
         vm.createGame = createGame;
         vm.acceptGame = acceptGame;
 
         vm.webSocket = WS.connect(PATHS.SOCKET_PATH);
         vm.webSocket.on("socket/connect", function (session) {
-            var channel = 'app/channel';
-            session.subscribe(channel, function (uri, payload) {
+            session.subscribe(vm.channel, function (uri, payload) {
                 if (!$rootScope.user) {
-                    session.unsubscribe(channel);
+                    session.unsubscribe(vm.channel);
                 }
                 if (payload.games) {
                     vm.createdGames = [];
                     for (var i = 0; i < payload.games.length; i++) {
-                        if ($rootScope.user && payload.games[i].creator) {
-                            if (payload.games[i].creator.id != $rootScope.user.id) {
+                        if ($rootScope.user) {
+                            if (
+                                payload.games[i].creator
+                                && payload.games[i].creator.id != $rootScope.user.id
+                            ) {
                                 vm.createdGames.push(payload.games[i]);
                             } else {
                                 vm.myGame = payload.games[i];
-                                if (vm.myGame.visitor && vm.myGame.visitor.username) {
-                                    session.unsubscribe(channel);
-                                    $location.path("/actual_game");
-                                }
+                            }
+                            if (
+                                (
+                                    payload.games[i].creator
+                                    && payload.games[i].creator.id
+                                    && payload.games[i].visitor
+                                    && payload.games[i].visitor.id
+                                    && payload.games[i].creator.id == $rootScope.user.id
+                                )
+                                || (
+                                    payload.games[i].visitor
+                                    && payload.games[i].visitor.id
+                                    && payload.games[i].creator
+                                    && payload.games[i].creator.id
+                                    && payload.games[i].visitor.id == $rootScope.user.id
+                                )
+                            ) {
+                                session.unsubscribe(vm.channel);
+                                $location.path("/actual_game");
+                                $location.replace();
                             }
                         }
                     }
@@ -75,7 +94,7 @@
                 if (response.data.message !== undefined && response.data.message !== null) {
                     NotificationService.addMessage(response.data.message);
                     $location.path("/actual_game");
-                    vm.webSocket.off();
+                    $location.replace();
                 }
             }, function errorCallback(response) {
                 NotificationService.addErrorMessage(response.data.errorMessage);

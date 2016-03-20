@@ -17,6 +17,7 @@ diplomaApp.config(['$routeProvider', '$httpProvider', function ($routeProvider, 
                         return isActualGameExist($http, NotificationService, PATHS).then(function (isExist) {
                             if (isExist) {
                                 $location.path('/actual_game');
+                                $location.replace();
                                 return $q.reject();
                             } else {
                                 return $q.resolve();
@@ -45,6 +46,7 @@ diplomaApp.config(['$routeProvider', '$httpProvider', function ($routeProvider, 
                                 return $q.resolve();
                             } else {
                                 $location.path('/games');
+                                $location.replace();
                                 return $q.reject();
                             }
                         }).promise;
