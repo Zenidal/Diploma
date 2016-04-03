@@ -156,11 +156,9 @@ input {
 }
 
 .created-games {
-    padding-top: 20px;
-    padding-bottom: 20px;
     border: 3px solid;
     border-radius: 5px;
-    height: 400px;
+    height: 800px;
 }
 
 .created-games-list {
@@ -345,19 +343,19 @@ input {
     background-size: 100% 100%;
 }
 
-.your-games {
+.create-game {
     padding-top: 20px;
     padding-bottom: 20px;
     border: 3px solid;
     border-radius: 5px;
-    height: 400px;
+    height: 200px;
 }
 
-.your-games input {
+.create-game input {
     text-align: center;
 }
 
-.your-games-form {
+.create-game-form {
     margin-top: 10px;
 }
 
@@ -369,4 +367,21 @@ input {
     margin-bottom: 15px;
     font-size: 20pt;
     text-align: center;
+}
+
+.my-games {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 3px solid;
+    border-radius: 5px;
+    height: 600px;
+}
+
+.padding-20 {
+    padding: 20px;
+}
+
+.text-title {
+    font-size: 20px;
+    font-family: inherit;
 }

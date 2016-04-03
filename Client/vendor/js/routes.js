@@ -12,18 +12,7 @@ diplomaApp.config(['$routeProvider', '$httpProvider', function ($routeProvider, 
                 templateUrl: 'vendor/views/games.html',
                 controller: 'GamesCtrl as vm',
                 resolve: {
-                    isUser: isUser,
-                    isGameExists: ['$http', '$location', '$q', 'NotificationService', 'PATHS', function ($http, $location, $q, NotificationService, PATHS) {
-                        return isActualGameExist($http, NotificationService, PATHS).then(function (isExist) {
-                            if (isExist) {
-                                $location.path('/actual_game');
-                                $location.replace();
-                                return $q.reject();
-                            } else {
-                                return $q.resolve();
-                            }
-                        }).promise;
-                    }]
+                    isUser: isUser
                 }
             })
         .when('/profile',
@@ -34,27 +23,16 @@ diplomaApp.config(['$routeProvider', '$httpProvider', function ($routeProvider, 
                     isUser: isUser
                 }
             })
-        .when('/actual_game',
+        .when('/actualGame/:id',
             {
                 templateUrl: 'vendor/views/gameTable.html',
                 controller: 'ActualGameCtrl as vm',
                 resolve: {
                     isUser: isUser,
-                    isGameExists: ['$http', '$location', 'NotificationService', 'PATHS', '$q', function ($http, $location, NotificationService, PATHS, $q) {
-                        return isActualGameExist($http, NotificationService, PATHS).then(function (isExist) {
-                            if (isExist) {
-                                return $q.resolve();
-                            } else {
-                                $location.path('/games');
-                                $location.replace();
-                                return $q.reject();
-                            }
-                        }).promise;
-                    }],
-                    game: ['$q', '$http', 'PATHS', function ($q, $http, PATHS) {
+                    actualGame: ['$q', '$http', 'PATHS', '$route', function ($q, $http, PATHS, $route) {
                         return $http({
                             method: 'GET',
-                            url: PATHS.SERVER_PATH + '/game'
+                            url: PATHS.SERVER_PATH + '/games/' + $route.current.params.id
                         }).then(function successCallback(response) {
                             return response.data.game ? response.data.game : null;
                         }, function errorCallback(response) {

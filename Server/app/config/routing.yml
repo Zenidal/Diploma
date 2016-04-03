@@ -16,38 +16,27 @@ registrationPost:
     defaults: { _controller: AppBundle:User:registerPost }
     methods:  [POST]
 
-
 authorizePost:
     pattern:     /authorize
     defaults: { _controller: AppBundle:Authorization:authorizePost }
     methods:  [POST]
-
 
 createGameGet:
     pattern:     /createGame
     defaults: { _controller: AppBundle:Game:createGet }
     methods:  [GET]
 
-
 createGamePost:
     pattern:     /games
     defaults: { _controller: AppBundle:Game:createPost }
     methods:  [POST]
-
-indexGamesGet:
-    pattern:     /games
-    defaults: { _controller: AppBundle:Game:indexGet }
-    methods:  [GET]
 
 acceptGame:
     pattern:     /games/{id}/accept
     defaults: { _controller: AppBundle:Game:accept }
     methods:  [GET, POST]
 
-checkActualGame:
-    pattern:     /checkGame
-    defaults: { _controller: AppBundle:Game:checkActualGame }
-
-getAction:
-    pattern:    /game
+actualGame:
+    pattern:     /games/{id}
     defaults: { _controller: AppBundle:Game:game }
+    methods:  [GET, POST]

@@ -2,15 +2,10 @@
 
 namespace AppBundle\Entity;
 
-use AppBundle\Repository\RoleRepository;
-use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Validator\Constraints as Assert;
-use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Doctrine\Common\Collections\ArrayCollection;
-use Symfony\Component\Security\Core\Encoder\EncoderFactory;
-use Symfony\Component\Security\Core\Encoder\PasswordEncoderInterface;
 
 /**
  * User
@@ -52,7 +47,7 @@ class User implements UserInterface, \Serializable
 	/**
 	 * @ORM\Column(name="is_active", type="boolean")
 	 */
-	private $isActive = true;
+	private $isActive;
 
 	/**
 	 * @ORM\OneToOne(targetEntity="Token", mappedBy="user", cascade={"persist", "remove"})
@@ -60,14 +55,10 @@ class User implements UserInterface, \Serializable
 	private $token;
 
 	/**
-	 * @ORM\OneToOne(targetEntity="Game", mappedBy="visitor", cascade={"persist", "remove"})
+	 * @ORM\ManyToMany(targetEntity="Game", inversedBy="users")
+	 * @ORM\JoinTable(name="users_games")
 	 */
-	private $visitedGame;
-
-	/**
-	 * @ORM\OneToOne(targetEntity="Game", mappedBy="creator", cascade={"persist", "remove"})
-	 */
-	private $createdGame;
+	private $games;
 
 	/**
 	 * Constructor
@@ -76,6 +67,7 @@ class User implements UserInterface, \Serializable
 	{
 		$this->isActive = true;
 		$this->salt = md5(uniqid(null, true));
+		$this->games = new ArrayCollection();
 	}
 
 	/**
@@ -264,49 +256,36 @@ class User implements UserInterface, \Serializable
 		return $this->token;
 	}
 
-	/**
-	 * Set visitedGame
-	 *
-	 * @param \AppBundle\Entity\Game $visitedGame
-	 *
-	 * @return User
-	 */
-	public function setVisitedGame(\AppBundle\Entity\Game $visitedGame = null)
-	{
-		$this->visitedGame = $visitedGame;
+    /**
+     * Add games
+     *
+     * @param \AppBundle\Entity\Game $games
+     * @return User
+     */
+    public function addGame(\AppBundle\Entity\Game $games)
+    {
+        $this->games[] = $games;
 
-		return $this;
-	}
+        return $this;
+    }
 
-	/**
-	 * Get visitedGame
-	 * @return \AppBundle\Entity\Game
-	 */
-	public function getVisitedGame()
-	{
-		return $this->visitedGame;
-	}
+    /**
+     * Remove games
+     *
+     * @param \AppBundle\Entity\Game $games
+     */
+    public function removeGame(\AppBundle\Entity\Game $games)
+    {
+        $this->games->removeElement($games);
+    }
 
-	/**
-	 * Set createdGame
-	 *
-	 * @param \AppBundle\Entity\Game $createdGame
-	 *
-	 * @return User
-	 */
-	public function setCreatedGame(\AppBundle\Entity\Game $createdGame = null)
-	{
-		$this->createdGame = $createdGame;
-
-		return $this;
-	}
-
-	/**
-	 * Get createdGame
-	 * @return \AppBundle\Entity\Game
-	 */
-	public function getCreatedGame()
-	{
-		return $this->createdGame;
-	}
+    /**
+     * Get games
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getGames()
+    {
+        return $this->games;
+    }
 }

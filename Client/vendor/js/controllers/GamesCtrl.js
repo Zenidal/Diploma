@@ -11,7 +11,7 @@
 
         vm.gamesLoaded = false;
         vm.createdGames = [];
-        vm.myGame = null;
+        vm.myGames = [];
         vm.channel = 'app/channel';
         vm.createGame = createGame;
         vm.acceptGame = acceptGame;
@@ -22,37 +22,20 @@
                 if (!$rootScope.user) {
                     session.unsubscribe(vm.channel);
                 }
-                if (payload.games) {
+                if (payload.games != undefined) {
                     vm.createdGames = [];
-                    for (var i = 0; i < payload.games.length; i++) {
-                        if ($rootScope.user) {
-                            if (
-                                payload.games[i].creator
-                                && payload.games[i].creator.id != $rootScope.user.id
-                            ) {
-                                vm.createdGames.push(payload.games[i]);
-                            } else {
-                                vm.myGame = payload.games[i];
+                    vm.myGames = [];
+                    if (payload.games.length > 0) {
+                        for (var i = 0; i < payload.games.length; i++) {
+                            var myGame = false;
+                            for (var j = 0; j < payload.games[i].users.length; j++) {
+                                if (payload.games[i].users[j].id == $rootScope.user.id) {
+                                    vm.myGames.push(payload.games[i]);
+                                    myGame = true;
+                                }
                             }
-                            if (
-                                (
-                                    payload.games[i].creator
-                                    && payload.games[i].creator.id
-                                    && payload.games[i].visitor
-                                    && payload.games[i].visitor.id
-                                    && payload.games[i].creator.id == $rootScope.user.id
-                                )
-                                || (
-                                    payload.games[i].visitor
-                                    && payload.games[i].visitor.id
-                                    && payload.games[i].creator
-                                    && payload.games[i].creator.id
-                                    && payload.games[i].visitor.id == $rootScope.user.id
-                                )
-                            ) {
-                                session.unsubscribe(vm.channel);
-                                $location.path("/actual_game");
-                                $location.replace();
+                            if (!myGame) {
+                                vm.createdGames.push(payload.games[i]);
                             }
                         }
                     }
@@ -93,13 +76,11 @@
                 }
                 if (response.data.message !== undefined && response.data.message !== null) {
                     NotificationService.addMessage(response.data.message);
-                    $location.path("/actual_game");
-                    $location.replace();
                 }
             }, function errorCallback(response) {
                 NotificationService.addErrorMessage(response.data.errorMessage);
             });
-            $('#acceptGameModal').modal('hide');
+            $('#acceptGameModal' + id).modal('hide');
         }
     }
 })();

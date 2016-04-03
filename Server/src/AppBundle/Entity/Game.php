@@ -1,6 +1,7 @@
 <?php
 namespace AppBundle\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -12,6 +13,12 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Game
 {
+    function __construct()
+    {
+        $this->users = new ArrayCollection();
+        $this->isAccepted = false;
+    }
+
     /**
      * @ORM\Column(type="integer")
      * @ORM\Id
@@ -20,20 +27,9 @@ class Game
     private $id;
 
     /**
-     * @var User
-     *
-     * @ORM\OneToOne(targetEntity="User", mappedBy="creator")
-     * @ORM\JoinColumn(name="creator_id", referencedColumnName="id")
+     * @ORM\ManyToMany(targetEntity="User", mappedBy="games")
      */
-    private $creator;
-
-    /**
-     * @var User
-     *
-     * @ORM\OneToOne(targetEntity="User", mappedBy="visitor")
-     * @ORM\JoinColumn(name="visitor_id", referencedColumnName="id")
-     */
-    private $visitor;
+    private $users;
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -46,6 +42,11 @@ class Game
     private $json;
 
     /**
+     * @ORM\Column(type="text", name="is_accepted", type="boolean")
+     */
+    private $isAccepted;
+
+    /**
      * Get id
      *
      * @return integer
@@ -53,52 +54,6 @@ class Game
     public function getId()
     {
         return $this->id;
-    }
-
-    /**
-     * Set creator
-     *
-     * @param \AppBundle\Entity\User $creator
-     * @return Game
-     */
-    public function setCreator(\AppBundle\Entity\User $creator = null)
-    {
-        $this->creator = $creator;
-
-        return $this;
-    }
-
-    /**
-     * Get creator
-     *
-     * @return \AppBundle\Entity\User
-     */
-    public function getCreator()
-    {
-        return $this->creator;
-    }
-
-    /**
-     * Set visitor
-     *
-     * @param \AppBundle\Entity\User $visitor
-     * @return Game
-     */
-    public function setVisitor(\AppBundle\Entity\User $visitor = null)
-    {
-        $this->visitor = $visitor;
-
-        return $this;
-    }
-
-    /**
-     * Get visitor
-     *
-     * @return \AppBundle\Entity\User
-     */
-    public function getVisitor()
-    {
-        return $this->visitor;
     }
 
     /**
@@ -145,5 +100,61 @@ class Game
     public function getJson()
     {
         return $this->json;
+    }
+
+    /**
+     * Add users
+     *
+     * @param \AppBundle\Entity\User $users
+     * @return Game
+     */
+    public function addUser(\AppBundle\Entity\User $users)
+    {
+        $this->users[] = $users;
+
+        return $this;
+    }
+
+    /**
+     * Remove users
+     *
+     * @param \AppBundle\Entity\User $users
+     */
+    public function removeUser(\AppBundle\Entity\User $users)
+    {
+        $this->users->removeElement($users);
+    }
+
+    /**
+     * Get users
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getUsers()
+    {
+        return $this->users;
+    }
+
+    /**
+     * Set isAccepted
+     *
+     * @param boolean $isAccepted
+     * @return Game
+     */
+    public function setIsAccepted($isAccepted)
+    {
+        $this->isAccepted = $isAccepted;
+
+        return $this;
+    }
+
+    /**
+     * Get isAccepted
+     *
+     * @return boolean 
+     */
+    public function getIsAccepted()
+    {
+        return $this->isAccepted;
     }
 }

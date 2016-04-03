@@ -72,20 +72,22 @@ class ActualGameTopic implements TopicInterface
             try {
                 $moveResult = $cardHelper->moveCard($event['userId'], $event['gameId'], $event['cardId']);
                 if ($moveResult['result'] == CardHelper::MOVED_SUCCESSFULLY) {
-                    /** @var Game $game */
-                    $game = $moveResult['data'];
-                    $gameArray = array(
-                        'id' => $game->getId(),
-                        'name' => $game->getName(),
-                        'visitorId' => $game->getVisitor()->getId(),
-                        'creatorId' => $game->getCreator()->getId(),
-                        'json' => $game->getJson()
-                    );
+                    /** @var Game[] $games */
+                    $games = $this->em
+                        ->getRepository('AppBundle:Game')
+                        ->createQueryBuilder('game')
+                        ->select('game, users')
+                        ->join('game.users', 'users')
+                        ->where("game.id = {$moveResult['data']}")
+                        ->getQuery()
+                        ->getArrayResult();
+
                     $topic->broadcast(
                         [
-                            'msg' => ['game' => $gameArray]
-                        ]
-                    );
+                            'msg' => [
+                                'game' => $games[0] ? $games[0] : []
+                            ]
+                        ]);
                 } else if ($moveResult['result'] == CardHelper::MOVED_FAIL_BY_TURN) {
                     $topic->broadcast(
                         [
@@ -111,20 +113,22 @@ class ActualGameTopic implements TopicInterface
             $gameHelper = new GameHelper();
             $passResult = $gameHelper->pass($this->em, $event['userId'], $event['gameId']);
             if ($passResult['result'] == GameHelper::PASSED_SUCCESSFULLY) {
-                /** @var Game $game */
-                $game = $passResult['data'];
-                $gameArray = array(
-                    'id' => $game->getId(),
-                    'name' => $game->getName(),
-                    'visitorId' => $game->getVisitor()->getId(),
-                    'creatorId' => $game->getCreator()->getId(),
-                    'json' => $game->getJson()
-                );
+                /** @var Game[] $games */
+                $games = $this->em
+                    ->getRepository('AppBundle:Game')
+                    ->createQueryBuilder('game')
+                    ->select('game, users')
+                    ->join('game.users', 'users')
+                    ->where("game.id = {$passResult['data']}")
+                    ->getQuery()
+                    ->getArrayResult();
+
                 $topic->broadcast(
                     [
-                        'msg' => ['game' => $gameArray]
-                    ]
-                );
+                        'msg' => [
+                            'game' => $games[0] ? $games[0] : []
+                        ]
+                    ]);
             } else if ($passResult['result'] == GameHelper::PASSED_UNSUCCESSFULLY) {
                 $topic->broadcast(
                     [

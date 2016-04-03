@@ -52,59 +52,57 @@ class CardHelper
         if (!$game) {
             throw new EntityNotFoundException();
         }
-        if ($this->canMove($userId, $gameId)) {
+        if ($this->canMove($game, $userId)) {
             $prefix = $gameField[GameHelper::MOVE_FIELD];
-            for ($i = 0; $i < count($gameField[$prefix . 'Cards']); $i++) {
-                if ($gameField[$prefix . 'Cards'][$i]['id'] == $cardId) {
-                    $gameField[$prefix . 'RealizedCards'][] = $gameField[$prefix . 'Cards'][$i];
-                    switch ($gameField[$prefix . 'Cards'][$i][self::ATTACK_TYPE_FIELD]) {
+            for ($i = 0; $i < count($gameField[$prefix]['cards']); $i++) {
+                if ($gameField[$prefix]['cards'][$i]['id'] == $cardId) {
+                    $gameField[$prefix]['realizedCards'][] = $gameField[$prefix]['cards'][$i];
+                    switch ($gameField[$prefix]['cards'][$i][self::ATTACK_TYPE_FIELD]) {
                         case self::MELEE_ATTACK:
-                            $gameField[GameHelper::POWER_FIELD][$prefix][GameHelper::MELEE_POWER] += $gameField[$prefix . 'Cards'][$i][self::POWER_FIELD];
+                            $gameField[$prefix][GameHelper::POWER_FIELD][GameHelper::MELEE_POWER] += $gameField[$prefix]['cards'][$i][self::POWER_FIELD];
                             break;
                         case self::RANGE_ATTACK:
-                            $gameField[GameHelper::POWER_FIELD][$prefix][GameHelper::RANGE_POWER] += $gameField[$prefix . 'Cards'][$i][self::POWER_FIELD];
+                            $gameField[$prefix][GameHelper::POWER_FIELD][GameHelper::RANGE_POWER] += $gameField[$prefix]['cards'][$i][self::POWER_FIELD];
                             break;
                         case self::SIEGE_ATTACK:
-                            $gameField[GameHelper::POWER_FIELD][$prefix][GameHelper::SIEGE_POWER] += $gameField[$prefix . 'Cards'][$i][self::POWER_FIELD];
+                            $gameField[$prefix][GameHelper::POWER_FIELD][GameHelper::SIEGE_POWER] += $gameField[$prefix]['cards'][$i][self::POWER_FIELD];
                             break;
                     }
-                    $gameField[GameHelper::POWER_FIELD][$prefix][GameHelper::TOTAL_POWER] =
-                        $gameField[GameHelper::POWER_FIELD][$prefix][GameHelper::MELEE_POWER]
-                        + $gameField[GameHelper::POWER_FIELD][$prefix][GameHelper::RANGE_POWER]
-                        + $gameField[GameHelper::POWER_FIELD][$prefix][GameHelper::SIEGE_POWER];
+                    $gameField[$prefix][GameHelper::POWER_FIELD][GameHelper::TOTAL_POWER] =
+                        $gameField[$prefix][GameHelper::POWER_FIELD][GameHelper::MELEE_POWER]
+                        + $gameField[$prefix][GameHelper::POWER_FIELD][GameHelper::RANGE_POWER]
+                        + $gameField[$prefix][GameHelper::POWER_FIELD][GameHelper::SIEGE_POWER];
 
-                    unset($gameField[$prefix . 'Cards'][$i]);
-                    if ($gameField[$prefix . 'Cards'] && count($gameField[$prefix . 'Cards']) > 0) {
-                        sort($gameField[$prefix . 'Cards']);
+                    unset($gameField[$prefix]['cards'][$i]);
+                    if ($gameField[$prefix]['cards'] && count($gameField[$prefix]['cards']) > 0) {
+                        sort($gameField[$prefix]['cards']);
                     }
                 }
             }
-            if ($prefix == GameHelper::CREATOR) {
-                if (!$gameField[Gamehelper::VISITOR . 'Passed']) {
-                    $gameField[Gamehelper::MOVE_FIELD] = $gameField[Gamehelper::MOVE_FIELD] == Gamehelper::CREATOR ? Gamehelper::VISITOR : Gamehelper::CREATOR;
+            if ($prefix == GameHelper::USER1) {
+                if (!$gameField[Gamehelper::USER2][GameHelper::USER_PASSED]) {
+                    $gameField[Gamehelper::MOVE_FIELD] = $gameField[Gamehelper::MOVE_FIELD] == Gamehelper::USER1 ? Gamehelper::USER2 : Gamehelper::USER1;
                 }
-            } elseif ($prefix == GameHelper::VISITOR) {
-                if (!$gameField[Gamehelper::CREATOR . 'Passed']) {
-                    $gameField[Gamehelper::MOVE_FIELD] = $gameField[Gamehelper::MOVE_FIELD] == Gamehelper::CREATOR ? Gamehelper::VISITOR : Gamehelper::CREATOR;
+            } elseif ($prefix == GameHelper::USER2) {
+                if (!$gameField[Gamehelper::USER1][GameHelper::USER_PASSED]) {
+                    $gameField[Gamehelper::MOVE_FIELD] = $gameField[Gamehelper::MOVE_FIELD] == Gamehelper::USER1 ? Gamehelper::USER2 : Gamehelper::USER1;
                 }
             }
             $game->setJson(json_encode($gameField));
             $this->em->flush();
             return array(
                 'result' => self::MOVED_SUCCESSFULLY,
-                'data' => $game
+                'data' => $game->getId()
             );
         }
         return array('result' => self::MOVED_FAIL_BY_TURN);
     }
 
-    private function canMove($userId, $gameId)
+    private function canMove(Game $game, $userId)
     {
-        /** @var Game $game */
-        $game = $this->em->getRepository('AppBundle:Game')->find($gameId);
         $gameField = json_decode($game->getJson(), true);
-        if ($gameField[GameHelper::MOVE_FIELD] == Gamehelper::CREATOR && $userId == $game->getCreator()->getId() ||
-            $gameField[GameHelper::MOVE_FIELD] == Gamehelper::VISITOR && $userId == $game->getVisitor()->getId()
+        if ($gameField[GameHelper::MOVE_FIELD] == Gamehelper::USER1 && $userId == $gameField[GameHelper::USER1][GameHelper::USER_ID] ||
+            $gameField[GameHelper::MOVE_FIELD] == Gamehelper::USER2 && $userId == $gameField[GameHelper::USER2][GameHelper::USER_ID]
         ) {
             return true;
         } else {

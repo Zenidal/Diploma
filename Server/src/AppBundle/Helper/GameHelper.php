@@ -15,27 +15,25 @@ class GameHelper
     const SIEGE_POWER = 'attack3';
     const TOTAL_POWER = 'attack4';
 
-    const CREATOR = 'creator';
-    const VISITOR = 'visitor';
-    const DRAW = 'draw';
+    const USER1 = 'user1';
+    const USER2 = 'user2';
 
-    const CREATOR_PASSED = 'creatorPassed';
-    const VISITOR_PASSED = 'visitorPassed';
+    const USER_ID = 'userId';
+
+    const USER_PASSED = 'passed';
     const PASSED_SUCCESSFULLY = 'passed';
     const PASSED_UNSUCCESSFULLY = 'failed';
 
     const MOVE_FIELD = 'move';
     const POWER_FIELD = 'power';
     const ROUND_FIELD = 'round';
-    const CREATOR_WON_FIELD = 'creatorWon';
-    const VISITOR_WON_FIELD = 'visitorWon';
-    const CREATOR_REALIZED_FIELD = 'creatorRealizedCards';
-    const VISITOR_REALIZED_FIELD = 'visitorRealizedCards';
-    const CREATOR_CARDS = 'creatorCards';
-    const VISITOR_CARDS = 'visitorCards';
+    const USER_WON_FIELD = 'won';
+    const DRAW = 'draw';
+    const USER_REALIZED_FIELD = 'realizedCards';
+    const USER_CARDS = 'cards';
     const WINNER = 'winner';
 
-    public static function generate(EntityManager $em)
+    public static function generate(EntityManager $em, $user1Id, $user2Id)
     {
         $cardRepository = $em->getRepository('AppBundle:Card');
         $allCards = $cardRepository
@@ -64,30 +62,36 @@ class GameHelper
 
         $resultArray = [
             self::ROUND_FIELD => 1,
-            self::CREATOR_WON_FIELD => 0,
-            self::VISITOR_WON_FIELD => 0,
-            self::CREATOR_PASSED => false,
-            self::VISITOR_PASSED => false,
-            self::MOVE_FIELD => self::CREATOR,
-            self::POWER_FIELD => [
-                self::CREATOR => [
-                    self::MELEE_POWER => 0,
-                    self::RANGE_POWER => 0,
-                    self::SIEGE_POWER => 0,
-                    self::TOTAL_POWER => 0
+            self::MOVE_FIELD => self::USER1,
+            self::WINNER => '',
+            self::USER1 =>
+                [
+                    self::USER_ID => $user1Id,
+                    self::USER_WON_FIELD => 0,
+                    self::USER_PASSED => false,
+                    self::USER_REALIZED_FIELD => [],
+                    self::USER_CARDS => $cards1,
+                    self::POWER_FIELD => [
+                        self::MELEE_POWER => 0,
+                        self::RANGE_POWER => 0,
+                        self::SIEGE_POWER => 0,
+                        self::TOTAL_POWER => 0,
+                    ],
                 ],
-                self::VISITOR => [
-                    self::MELEE_POWER => 0,
-                    self::RANGE_POWER => 0,
-                    self::SIEGE_POWER => 0,
-                    self::TOTAL_POWER => 0
-                ]
-            ],
-            self::CREATOR_REALIZED_FIELD => [],
-            self::VISITOR_REALIZED_FIELD => [],
-            self::CREATOR_CARDS => $cards1,
-            self::VISITOR_CARDS => $cards2,
-            self::WINNER => ''
+            self::USER2 =>
+                [
+                    self::USER_ID => $user2Id,
+                    self::USER_WON_FIELD => 0,
+                    self::USER_PASSED => false,
+                    self::USER_REALIZED_FIELD => [],
+                    self::USER_CARDS => $cards2,
+                    self::POWER_FIELD => [
+                        self::MELEE_POWER => 0,
+                        self::RANGE_POWER => 0,
+                        self::SIEGE_POWER => 0,
+                        self::TOTAL_POWER => 0,
+                    ],
+                ],
         ];
         return json_encode($resultArray);
     }
@@ -107,58 +111,58 @@ class GameHelper
         }
         if ($this->canPass($game, $userId)) {
             if ($this->roundEnd($game, $userId)) {
-                if ($gameField[self::POWER_FIELD][self::CREATOR][self::TOTAL_POWER] > $gameField[self::POWER_FIELD][self::VISITOR][self::TOTAL_POWER]) {
-                    $gameField[self::CREATOR_WON_FIELD] += 1;
-                    $gameField[self::MOVE_FIELD] = self::CREATOR;
+                if ($gameField[self::USER1][self::POWER_FIELD][self::TOTAL_POWER] > $gameField[self::USER2][self::POWER_FIELD][self::TOTAL_POWER]) {
+                    $gameField[self::USER1][self::USER_WON_FIELD] += 1;
+                    $gameField[self::MOVE_FIELD] = self::USER1;
                 }
-                if ($gameField[self::POWER_FIELD][self::CREATOR][self::TOTAL_POWER] < $gameField[self::POWER_FIELD][self::VISITOR][self::TOTAL_POWER]) {
-                    $gameField[self::VISITOR_WON_FIELD] += 1;
-                    $gameField[self::MOVE_FIELD] = self::VISITOR;
+                if ($gameField[self::USER1][self::POWER_FIELD][self::TOTAL_POWER] < $gameField[self::USER2][self::POWER_FIELD][self::TOTAL_POWER]) {
+                    $gameField[self::USER2][self::USER_WON_FIELD] += 1;
+                    $gameField[self::MOVE_FIELD] = self::USER2;
                 }
-                if ($gameField[self::POWER_FIELD][self::CREATOR][self::TOTAL_POWER] == $gameField[self::POWER_FIELD][self::VISITOR][self::TOTAL_POWER]) {
-                    $gameField[self::CREATOR_WON_FIELD] += 1;
-                    $gameField[self::VISITOR_WON_FIELD] += 1;
-                    $gameField[self::MOVE_FIELD] = self::CREATOR;
+                if ($gameField[self::USER1][self::POWER_FIELD][self::TOTAL_POWER] == $gameField[self::USER2][self::POWER_FIELD][self::TOTAL_POWER]) {
+                    $gameField[self::USER1][self::USER_WON_FIELD] += 1;
+                    $gameField[self::USER2][self::USER_WON_FIELD] += 1;
+                    $gameField[self::MOVE_FIELD] = self::USER1;
                 }
                 $gameField[self::ROUND_FIELD]++;
-                $gameField[self::CREATOR_PASSED] = false;
-                $gameField[self::VISITOR_PASSED] = false;
-                $gameField[self::CREATOR_REALIZED_FIELD] = [];
-                $gameField[self::VISITOR_REALIZED_FIELD] = [];
+                $gameField[self::USER1][self::USER_PASSED] = false;
+                $gameField[self::USER2][self::USER_PASSED] = false;
+                $gameField[self::USER1][self::USER_REALIZED_FIELD] = [];
+                $gameField[self::USER2][self::USER_REALIZED_FIELD] = [];
                 $gameField[self::POWER_FIELD] = [
-                    self::CREATOR => [
+                    self::USER1 => [
                         self::MELEE_POWER => 0,
                         self::RANGE_POWER => 0,
                         self::SIEGE_POWER => 0,
                         self::TOTAL_POWER => 0
                     ],
-                    self::VISITOR => [
+                    self::USER2 => [
                         self::MELEE_POWER => 0,
                         self::RANGE_POWER => 0,
                         self::SIEGE_POWER => 0,
                         self::TOTAL_POWER => 0
                     ]
                 ];
-                if ($gameField[self::CREATOR_WON_FIELD] >= 2 || $gameField[self::VISITOR_WON_FIELD] >= 2) {
-                    if ($gameField[self::CREATOR_WON_FIELD] > $gameField[self::VISITOR_WON_FIELD]) {
-                        $gameField[self::WINNER] = self::CREATOR;
-                    } elseif ($gameField[self::CREATOR_WON_FIELD] < $gameField[self::VISITOR_WON_FIELD])
-                        $gameField[self::WINNER] = self::VISITOR;
+                if ($gameField[self::USER1][self::USER_WON_FIELD] >= 2 || $gameField[self::USER2][self::USER_WON_FIELD] >= 2) {
+                    if ($gameField[self::USER1][self::USER_WON_FIELD] > $gameField[self::USER2][self::USER_WON_FIELD]) {
+                        $gameField[self::WINNER] = self::USER1;
+                    } elseif ($gameField[self::USER1][self::USER_WON_FIELD] < $gameField[self::USER2][self::USER_WON_FIELD])
+                        $gameField[self::WINNER] = self::USER2;
                     else {
                         $gameField[self::WINNER] = self::DRAW;
                     }
                 }
             } else {
-                $prefix = $userId == $game->getCreator()->getId() ? Gamehelper::CREATOR : Gamehelper::VISITOR;
-                $opponent = $userId == $game->getCreator()->getId() ? Gamehelper::VISITOR : Gamehelper::CREATOR;
-                $gameField[$prefix . 'Passed'] = true;
+                $prefix = $userId == $gameField[GameHelper::USER1][GameHelper::USER_ID] ? Gamehelper::USER1 : Gamehelper::USER2;
+                $opponent = $userId == $gameField[GameHelper::USER1][GameHelper::USER_ID] ? Gamehelper::USER2 : Gamehelper::USER1;
+                $gameField[$prefix][self::USER_PASSED] = true;
                 $gameField[self::MOVE_FIELD] = $opponent;
             }
             $game->setJson(json_encode($gameField));
             $em->flush();
             return array(
                 'result' => self::PASSED_SUCCESSFULLY,
-                'data' => $game
+                'data' => $game->getId()
             );
         }
         return array(
@@ -171,8 +175,8 @@ class GameHelper
     function canPass(Game $game, $userId)
     {
         $gameField = json_decode($game->getJson(), true);
-        if (!$gameField[Gamehelper::CREATOR . 'Passed'] && $userId == $game->getCreator()->getId() ||
-            !$gameField[Gamehelper::VISITOR . 'Passed'] && $userId == $game->getVisitor()->getId()
+        if (!$gameField[Gamehelper::USER1][GameHelper::USER_PASSED] && $userId == $gameField[GameHelper::USER1][GameHelper::USER_ID] ||
+            !$gameField[Gamehelper::USER2][GameHelper::USER_PASSED] && $userId == $gameField[GameHelper::USER2][GameHelper::USER_ID]
         ) {
             return true;
         } else {
@@ -184,8 +188,8 @@ class GameHelper
     function roundEnd(Game $game, $userId)
     {
         $gameField = json_decode($game->getJson(), true);
-        if (!$gameField[Gamehelper::CREATOR . 'Passed'] && $gameField[Gamehelper::VISITOR . 'Passed'] && $userId == $game->getCreator()->getId() ||
-            !$gameField[Gamehelper::VISITOR . 'Passed'] && $gameField[Gamehelper::CREATOR . 'Passed'] && $userId == $game->getVisitor()->getId()
+        if (!$gameField[Gamehelper::USER1][GameHelper::USER_PASSED] && $gameField[Gamehelper::USER2][GameHelper::USER_PASSED] && $userId == $gameField[GameHelper::USER1][GameHelper::USER_ID] ||
+            !$gameField[Gamehelper::USER2][GameHelper::USER_PASSED] && $gameField[Gamehelper::USER1][GameHelper::USER_PASSED] && $userId == $gameField[GameHelper::USER2][GameHelper::USER_ID]
         ) {
             return true;
         } else {
