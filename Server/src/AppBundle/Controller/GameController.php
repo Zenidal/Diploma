@@ -112,7 +112,7 @@ class GameController extends Controller
             ->createQueryBuilder('game')
             ->select('game, users')
             ->join('game.users', 'users')
-            ->where("game.id = {$id}")
+            ->where("game.id = {$id} AND game.isEnded = 0")
             ->getQuery()
             ->getArrayResult();
         if (count($games) == 0) {
@@ -120,6 +120,9 @@ class GameController extends Controller
         }
         /** @var User[] $users */
         $users = $games[0]['users'];
+        if(count($users) < 2){
+            return $response->setContent(json_encode(['errorMessage' => 'Game not ready.']));
+        }
         foreach ($users as $user) {
             /** @var User $user */
             $userProfile = $userRepository->loadUserByUsername($this->getUser()->getUsername());

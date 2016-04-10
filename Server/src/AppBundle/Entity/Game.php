@@ -47,6 +47,11 @@ class Game
     private $isAccepted;
 
     /**
+     * @ORM\Column(type="text", name="is_ended", type="boolean")
+     */
+    private $isEnded;
+
+    /**
      * Get id
      *
      * @return integer
@@ -156,5 +161,28 @@ class Game
     public function getIsAccepted()
     {
         return $this->isAccepted;
+    }
+
+    /**
+     * Set isEnded
+     *
+     * @param boolean $isEnded
+     * @return Game
+     */
+    public function setIsEnded($isEnded)
+    {
+        $this->isEnded = $isEnded;
+
+        return $this;
+    }
+
+    /**
+     * Get isEnded
+     *
+     * @return boolean 
+     */
+    public function getIsEnded()
+    {
+        return $this->isEnded;
     }
 }

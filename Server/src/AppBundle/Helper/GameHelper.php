@@ -151,6 +151,7 @@ class GameHelper
                     else {
                         $gameField[self::WINNER] = self::DRAW;
                     }
+                    $game->setIsEnded(true);
                 }
             } else {
                 $prefix = $userId == $gameField[GameHelper::USER1][GameHelper::USER_ID] ? Gamehelper::USER1 : Gamehelper::USER2;

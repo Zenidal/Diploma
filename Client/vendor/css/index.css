@@ -159,10 +159,10 @@ input {
     border: 3px solid;
     border-radius: 5px;
     height: 800px;
+    overflow: auto;
 }
 
 .created-games-list {
-    height: 330px;
     overflow: auto;
 }
 
@@ -375,6 +375,7 @@ input {
     border: 3px solid;
     border-radius: 5px;
     height: 600px;
+    overflow: auto;
 }
 
 .padding-20 {

@@ -29,17 +29,26 @@ diplomaApp.config(['$routeProvider', '$httpProvider', function ($routeProvider, 
                 controller: 'ActualGameCtrl as vm',
                 resolve: {
                     isUser: isUser,
-                    actualGame: ['$q', '$http', 'PATHS', '$route', function ($q, $http, PATHS, $route) {
-                        return $http({
-                            method: 'GET',
-                            url: PATHS.SERVER_PATH + '/games/' + $route.current.params.id
-                        }).then(function successCallback(response) {
-                            return response.data.game ? response.data.game : null;
-                        }, function errorCallback(response) {
-                            NotificationService.addErrorMessage(response.data.errorMessage);
-                            return $q.reject.promise;
-                        });
-                    }]
+                    actualGame: ['$q', '$http', '$location', '$route', 'PATHS', 'NotificationService',
+                        function ($q, $http, $location, $route, PATHS, NotificationService) {
+                            var deferred = $q.defer();
+                            $http({
+                                method: 'GET',
+                                url: PATHS.SERVER_PATH + '/games/' + $route.current.params.id
+                            }).then(function successCallback(response) {
+                                if (response.data.errorMessage) {
+                                    NotificationService.addErrorMessage(response.data.errorMessage);
+                                    deferred.reject();
+                                    $location.path("#/games");
+                                }
+                                deferred.resolve(response.data.game ? response.data.game : null);
+                            }, function errorCallback(response) {
+                                NotificationService.addErrorMessage(response.data.errorMessage);
+                                deferred.reject();
+                                $location.path("#/games");
+                            });
+                            return deferred.promise;
+                        }]
                 }
             })
         .otherwise({

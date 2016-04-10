@@ -43,6 +43,7 @@ class GameTopic implements TopicInterface, TopicPeriodicTimerInterface
 				->createQueryBuilder('game')
 				->select('game, users')
 				->join('game.users', 'users')
+				->where('game.isEnded = 0')
 				->getQuery()
 				->getArrayResult();
 
