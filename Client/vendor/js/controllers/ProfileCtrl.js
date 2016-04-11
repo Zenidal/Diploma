@@ -4,9 +4,10 @@
     angular.module('diplomaControllers')
         .controller('ProfileCtrl', ProfileCtrl);
 
-    ProfileCtrl.$inject = ['$rootScope'];
+    ProfileCtrl.$inject = ['$rootScope', 'info'];
 
-    function ProfileCtrl($rootScope) {
+    function ProfileCtrl($rootScope, info) {
         var vm = this;
+        vm.info = info;
     }
 })();

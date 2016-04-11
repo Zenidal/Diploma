@@ -244,11 +244,13 @@ input {
 
 .card-name {
     width: 100%;
+    height: 20px;
 }
 
 .card-power {
     width: 100%;
     font-size: 200%;
+    font-weight: bold;
 }
 
 .card-unique {
@@ -385,4 +387,51 @@ input {
 .text-title {
     font-size: 20px;
     font-family: inherit;
+}
+
+.card-ability {
+    height: 40px;
+    width: 40px;
+    margin-left: 50px;
+    margin-top: 15px;
+    background-color: darkorange;
+    border-radius: 20px;
+}
+
+.card-medic {
+    background-image: url('../pictures/medic.png');
+    background-size: 100% 100%;
+}
+
+.card-bond {
+    background-image: url('../pictures/bond.png');
+    background-size: 100% 100%;
+}
+
+.card-agile {
+    background-image: url('../pictures/agile.png');
+    background-size: 100% 100%;
+}
+
+.card-morale {
+    background-image: url('../pictures/morale.png');
+    background-size: 100% 100%;
+}
+
+.card-spy {
+    background-image: url('../pictures/spy.png');
+    background-size: 100% 100%;
+}
+
+.card-muster {
+    background-image: url('../pictures/muster.png');
+    background-size: 100% 100%;
+}
+
+.card-description {
+    position: absolute;
+    width: 200px;
+    padding: 5px;
+    background-color: gray;
+    border-radius: 10px;
 }

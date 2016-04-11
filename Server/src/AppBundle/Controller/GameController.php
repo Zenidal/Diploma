@@ -90,8 +90,8 @@ class GameController extends Controller
         /** @var Game $game */
         $game = new Game();
         $game->addUser($user);
-        $em->persist($game);
         $gameName ? $game->setName($gameName) : $game->setName('Game by ' . $user->getUsername());
+        $em->persist($game);
         $user->addGame($game);
         $em->flush();
 

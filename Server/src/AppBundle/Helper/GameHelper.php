@@ -37,8 +37,9 @@ class GameHelper
     {
         $cardRepository = $em->getRepository('AppBundle:Card');
         $allCards = $cardRepository
-            ->createQueryBuilder('e')
-            ->select('e')
+            ->createQueryBuilder('card')
+            ->select('card', 'ability')
+            ->join('card.ability', 'ability')
             ->getQuery()
             ->getResult(Query::HYDRATE_ARRAY);
 

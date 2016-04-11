@@ -19,6 +19,9 @@ class CardHelper
     const BOND_ABILITY = 'bond';
     const MORALE_ABILITY = 'morale';
     const MEDIC_ABILITY = 'medic';
+    const AGILE_ABILITY = 'agile';
+    const SPY_ABILITY = 'spy';
+    const MUSTER_ABILITY = 'muster';
     const MOVED_SUCCESSFULLY = 'moved';
     const MOVED_FAIL_BY_TURN = 'opponentTurn';
 

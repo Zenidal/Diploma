@@ -42,9 +42,16 @@ class Card
     private $isUnique;
 
     /**
-     * @ORM\Column(type="integer", nullable=true)
+     * @var Ability
+     * @ORM\ManyToOne(targetEntity="Ability", inversedBy="cards",  cascade={"all"})
+     * @ORM\JoinColumn(name="ability_id", referencedColumnName="id", onDelete="CASCADE")
      */
     private $ability;
+
+    /**
+     * @ORM\Column(type="integer")
+     */
+    private $tempPower;
 
     /**
      * Get id
@@ -169,5 +176,28 @@ class Card
     public function getAbility()
     {
         return $this->ability;
+    }
+
+    /**
+     * Set tempPower
+     *
+     * @param integer $tempPower
+     * @return Card
+     */
+    public function setTempPower($tempPower)
+    {
+        $this->tempPower = $tempPower;
+
+        return $this;
+    }
+
+    /**
+     * Get tempPower
+     *
+     * @return integer 
+     */
+    public function getTempPower()
+    {
+        return $this->tempPower;
     }
 }

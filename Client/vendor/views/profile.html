@@ -1,5 +1,15 @@
 <div class="profile">
     <h1>Profile</h1>
-    <div class="form-control">Username: {{user.username}}</div>
-    <div class="form-control">Rolename: {{user.roleName}}</div>
+    <h3>User info</h3>
+    <div class="form-group">
+        <div class="form-control">Username: {{user.username}}</div>
+        <div class="form-control">Rolename: {{user.roleName}}</div>
+    </div>
+    <h3>Statistics</h3>
+    <div class="form-group">
+        <div class="form-control">Total games: {{vm.info.totalGames}}</div>
+        <div class="form-control">Total wins: {{vm.info.totalWins}}</div>
+        <div class="form-control">Total draws: {{vm.info.totalDraws}}</div>
+        <div class="form-control">Total loses: {{vm.info.totalLoses}}</div>
+    </div>
 </div>

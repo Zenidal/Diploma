@@ -20,7 +20,17 @@ diplomaApp.config(['$routeProvider', '$httpProvider', function ($routeProvider, 
                 templateUrl: 'vendor/views/profile.html',
                 controller: 'ProfileCtrl as vm',
                 resolve: {
-                    isUser: isUser
+                    isUser: isUser,
+                    info: ['$q', '$http', '$rootScope', 'PATHS', function ($q, $http, $rootScope, PATHS) {
+                        var deferred = $q.defer();
+                        $http({
+                            method: 'GET',
+                            url: PATHS.SERVER_PATH + '/users/' + $rootScope.user.id + '/profile'
+                        }).then(function successCallback(response) {
+                            deferred.resolve(response.data);
+                        });
+                        return deferred.promise;
+                    }]
                 }
             })
         .when('/actualGame/:id',

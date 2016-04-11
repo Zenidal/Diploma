@@ -3,6 +3,8 @@
 namespace AppBundle\Controller;
 
 use AppBundle\Entity\Role;
+use AppBundle\Helper\GameHelper;
+use AppBundle\Repository\UserRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 use AppBundle\Entity\User;
@@ -10,11 +12,50 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Security\Core\Encoder\EncoderFactory;
 use Symfony\Component\Security\Core\Encoder\PasswordEncoderInterface;
+use Symfony\Component\Security\Core\User\User as CoreUser;
 use Symfony\Component\Validator\ConstraintViolationList;
 use Symfony\Component\Validator\Validator;
 
 class UserController extends Controller
 {
+    public function profileAction($id)
+    {
+        $response = new Response();
+        $em = $this->getDoctrine()->getEntityManager();
+        /** @var UserRepository $userRepository */
+        $userRepository = $em->getRepository('AppBundle\Entity\User');
+        $userProfile = $userRepository->loadUserByUsername($this->getUser()->getUsername());
+        if ($id == $userProfile->getId()) {
+            $profile = $em->createQueryBuilder()
+                ->select("games, user")
+                ->from("AppBundle:User", "user")
+                ->innerJoin("user.games", "games")
+                ->where("games.isEnded = 1 AND user.id = {$id}")
+                ->getQuery()
+                ->getArrayResult()[0];
+            $totalWins = 0;
+            $totalLoses = 0;
+            $totalDraws = 0;
+            for ($i = 0; $i < count($profile['games']); $i++) {
+                $gameField = json_decode($profile['games'][$i]['json'], true);
+                if ($gameField[GameHelper::WINNER] == GameHelper::DRAW) {
+                    $totalDraws++;
+                } elseif ($gameField[$gameField[GameHelper::WINNER]][GameHelper::USER_ID] == $id) {
+                    $totalWins++;
+                } else {
+                    $totalLoses++;
+                }
+            }
+            return $response->setContent(json_encode([
+                'totalGames' => count($profile['games']),
+                'totalWins' => $totalWins,
+                'totalLoses' => $totalLoses,
+                'totalDraws' => $totalDraws,
+            ]));
+        }
+        return $response->setContent(json_encode(['message' => "Profile {$id}"]));
+    }
+
     public function registerGetAction(Request $request)
     {
         $response = new Response();

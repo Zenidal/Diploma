@@ -38,6 +38,10 @@
                      ng-class="{ 'card-unique': card.isUnique, 'card-melee': card.attackType == 1, 'card-range': card.attackType == 2, 'card-siege': card.attackType == 3}">
                     <div class="card-name">{{card.name}}</div>
                     <div class="card-power">{{card.power}}</div>
+                    <div class="card-ability" ng-if="card.ability != null"
+                         ng-class="{'card-medic': card.ability.name == 'medic', 'card-bond': card.ability.name == 'bond', 'card-agile': card.ability.name == 'agile', 'card-morale': card.ability.name == 'morale', 'card-spy': card.ability.name == 'spy', 'card-muster': card.ability.name == 'muster'}"
+                         ng-mouseover="card.showDescription = true" ng-mouseleave="card.showDescription = false"></div>
+                    <div ng-if="card.showDescription" class="card-description">{{card.ability.description}}</div>
                 </div>
             </div>
             <div class="my-part">

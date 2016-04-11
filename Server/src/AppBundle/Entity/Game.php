@@ -17,6 +17,7 @@ class Game
     {
         $this->users = new ArrayCollection();
         $this->isAccepted = false;
+        $this->isEnded = false;
     }
 
     /**

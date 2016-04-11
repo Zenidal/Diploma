@@ -1,6 +1,7 @@
 <?php
 namespace AppBundle\DataFixtures\ORM;
 
+use AppBundle\Entity\Ability;
 use AppBundle\Entity\Card;
 use Doctrine\Common\DataFixtures\FixtureInterface;
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
@@ -15,17 +16,38 @@ class LoadCardData implements FixtureInterface, OrderedFixtureInterface
 	 */
 	public function load(ObjectManager $manager)
 	{
-		$cardData = new CardData();
-		foreach($cardData->getCards() as $card) {
-			$newCard = new Card();
+		$cardAbilityData = new CardAbilityData();
+		foreach($cardAbilityData->getAbilities() as $ability) {
+			if($ability['name']){
+				$newAbility = new Ability();
+				$newAbility->setName($ability['name']);
+				$newAbility->setDescription($ability['description']);
+				foreach($ability['cards'] as $card){
+					$newCard = new Card();
 
-			$newCard->setName($card['name']);
-			$newCard->setPower($card['power']);
-			$newCard->setIsUnique($card['isUnique']);
-			$newCard->setAttackType($card['attackType']);
-			$newCard->setAbility($card['ability']);
+					$newCard->setName($card['name']);
+					$newCard->setPower($card['power']);
+					$newCard->setTempPower($card['power']);
+					$newCard->setIsUnique($card['isUnique']);
+					$newCard->setAttackType($card['attackType']);
+					$newCard->setAbility($newAbility);
 
-			$manager->persist($newCard);
+					$manager->persist($newCard);
+					$newAbility->addCard($newCard);
+				}
+			} else{
+				foreach($ability['cards'] as $card){
+					$newCard = new Card();
+
+					$newCard->setName($card['name']);
+					$newCard->setPower($card['power']);
+					$newCard->setTempPower($card['power']);
+					$newCard->setIsUnique($card['isUnique']);
+					$newCard->setAttackType($card['attackType']);
+
+					$manager->persist($newCard);
+				}
+			}
 		}
 		$manager->flush();
 	}

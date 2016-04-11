@@ -26,6 +26,7 @@
 
         //functions
         function init() {
+
             vm.socketChannel = 'actual_game/' + vm.game.id;
             vm.game.json = JSON.parse(vm.game.json);
 
