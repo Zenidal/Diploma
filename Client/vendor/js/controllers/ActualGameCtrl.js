@@ -33,6 +33,7 @@
             var webSocket = WS.connect(PATHS.SOCKET_PATH);
             webSocket.on("socket/connect", function (session) {
                 session.subscribe(vm.socketChannel, function (uri, payload) {
+                    console.log(payload);
                     if (payload.msg && payload.msg.game) {
                         vm.game = payload.msg.game;
                         vm.game.json = JSON.parse(vm.game.json);

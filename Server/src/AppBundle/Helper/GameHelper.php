@@ -30,6 +30,7 @@ class GameHelper
     const USER_WON_FIELD = 'won';
     const DRAW = 'draw';
     const USER_REALIZED_FIELD = 'realizedCards';
+    const USER_GRAVEYARD_FIELD = 'graveyard';
     const USER_CARDS = 'cards';
     const WINNER = 'winner';
 
@@ -39,7 +40,7 @@ class GameHelper
         $allCards = $cardRepository
             ->createQueryBuilder('card')
             ->select('card', 'ability')
-            ->join('card.ability', 'ability')
+            ->leftJoin('card.ability', 'ability')
             ->getQuery()
             ->getResult(Query::HYDRATE_ARRAY);
 
@@ -71,6 +72,7 @@ class GameHelper
                     self::USER_WON_FIELD => 0,
                     self::USER_PASSED => false,
                     self::USER_REALIZED_FIELD => [],
+                    self::USER_GRAVEYARD_FIELD => [],
                     self::USER_CARDS => $cards1,
                     self::POWER_FIELD => [
                         self::MELEE_POWER => 0,
@@ -85,6 +87,7 @@ class GameHelper
                     self::USER_WON_FIELD => 0,
                     self::USER_PASSED => false,
                     self::USER_REALIZED_FIELD => [],
+                    self::USER_GRAVEYARD_FIELD => [],
                     self::USER_CARDS => $cards2,
                     self::POWER_FIELD => [
                         self::MELEE_POWER => 0,
@@ -128,21 +131,23 @@ class GameHelper
                 $gameField[self::ROUND_FIELD]++;
                 $gameField[self::USER1][self::USER_PASSED] = false;
                 $gameField[self::USER2][self::USER_PASSED] = false;
+                $gameField[self::USER1][self::USER_GRAVEYARD_FIELD] =
+                    array_merge($gameField[self::USER1][self::USER_GRAVEYARD_FIELD], $gameField[self::USER1][self::USER_REALIZED_FIELD]);
+                $gameField[self::USER2][self::USER_GRAVEYARD_FIELD] =
+                    array_merge($gameField[self::USER2][self::USER_GRAVEYARD_FIELD], $gameField[self::USER2][self::USER_REALIZED_FIELD]);
                 $gameField[self::USER1][self::USER_REALIZED_FIELD] = [];
                 $gameField[self::USER2][self::USER_REALIZED_FIELD] = [];
-                $gameField[self::POWER_FIELD] = [
-                    self::USER1 => [
-                        self::MELEE_POWER => 0,
-                        self::RANGE_POWER => 0,
-                        self::SIEGE_POWER => 0,
-                        self::TOTAL_POWER => 0
-                    ],
-                    self::USER2 => [
-                        self::MELEE_POWER => 0,
-                        self::RANGE_POWER => 0,
-                        self::SIEGE_POWER => 0,
-                        self::TOTAL_POWER => 0
-                    ]
+                $gameField[self::USER1][self::POWER_FIELD] = [
+                    self::MELEE_POWER => 0,
+                    self::RANGE_POWER => 0,
+                    self::SIEGE_POWER => 0,
+                    self::TOTAL_POWER => 0
+                ];
+                $gameField[self::USER2][self::POWER_FIELD] = [
+                    self::MELEE_POWER => 0,
+                    self::RANGE_POWER => 0,
+                    self::SIEGE_POWER => 0,
+                    self::TOTAL_POWER => 0
                 ];
                 if ($gameField[self::USER1][self::USER_WON_FIELD] >= 2 || $gameField[self::USER2][self::USER_WON_FIELD] >= 2) {
                     if ($gameField[self::USER1][self::USER_WON_FIELD] > $gameField[self::USER2][self::USER_WON_FIELD]) {

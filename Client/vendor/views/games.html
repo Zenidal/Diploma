@@ -23,7 +23,8 @@
                     <div ng-if="vm.myGames != undefined" ng-repeat="myGame in vm.myGames track by myGame.id">
                         <a ng-href="#/actualGame/{{myGame.id}}" ng-class="{'disabled': myGame.users.length == 1}"
                            class="btn form-control created-game">
-                            <strong>{{myGame.users[0].username}}</strong>: {{myGame.name}}
+                            <strong>{{myGame.users[0].username}}(<strong
+                                    class="text-primary">{{myGame.id}}</strong>)</strong>: {{myGame.name}}
                         </a>
                     </div>
                     <div ng-if="vm.gamesLoaded && (!vm.myGames || vm.myGames.length == 0)"

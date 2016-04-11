@@ -7,6 +7,11 @@
         <div ng-class="{'pass-active': vm.iPassed}" class="turn pass">
             <div ng-if="vm.myTurn && !vm.iPassed" class="pass-button" ng-click="vm.pass()"></div>
         </div>
+        <div ng-if="vm.isUser1 && vm.game.json.user1.graveyard.length > 0 || vm.isUser2 && vm.game.json.user2.graveyard.length > 0"
+             class="graveyard" ng-mouseover="vm.showGraveyardDescription = true" ng-mouseleave="vm.showGraveyardDescription = false">
+            {{vm.isUser1 ? vm.game.json.user1.graveyard.length : vm.game.json.user2.graveyard.length}}
+        </div>
+        <div ng-if="vm.showGraveyardDescription" class="card-description">Graveyard</div>
         <div class="my-rounds">
             <div class="round"
                  ng-class="{'win-round': vm.isUser1 ? (vm.game.json.user1.won > 0) : (vm.game.json.user2.won > 0)}"></div>
@@ -58,6 +63,12 @@
                              ng-class="{ 'card-unique': card.isUnique, 'card-melee': card.attackType == 1, 'card-range': card.attackType == 2, 'card-siege': card.attackType == 3}">
                             <div class="card-name">{{card.name}}</div>
                             <div class="card-power">{{card.power}}</div>
+                            <div class="card-ability" ng-if="card.ability != null"
+                                 ng-class="{'card-medic': card.ability.name == 'medic', 'card-bond': card.ability.name == 'bond', 'card-agile': card.ability.name == 'agile', 'card-morale': card.ability.name == 'morale', 'card-spy': card.ability.name == 'spy', 'card-muster': card.ability.name == 'muster'}"
+                                 ng-mouseover="card.showDescription = true"
+                                 ng-mouseleave="card.showDescription = false"></div>
+                            <div ng-if="card.showDescription" class="card-description">{{card.ability.description}}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -74,6 +85,12 @@
                              ng-class="{ 'card-unique': card.isUnique, 'card-melee': card.attackType == 1, 'card-range': card.attackType == 2, 'card-siege': card.attackType == 3}">
                             <div class="card-name">{{card.name}}</div>
                             <div class="card-power">{{card.power}}</div>
+                            <div class="card-ability" ng-if="card.ability != null"
+                                 ng-class="{'card-medic': card.ability.name == 'medic', 'card-bond': card.ability.name == 'bond', 'card-agile': card.ability.name == 'agile', 'card-morale': card.ability.name == 'morale', 'card-spy': card.ability.name == 'spy', 'card-muster': card.ability.name == 'muster'}"
+                                 ng-mouseover="card.showDescription = true"
+                                 ng-mouseleave="card.showDescription = false"></div>
+                            <div ng-if="card.showDescription" class="card-description">{{card.ability.description}}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -90,6 +107,12 @@
                              ng-class="{ 'card-unique': card.isUnique, 'card-melee': card.attackType == 1, 'card-range': card.attackType == 2, 'card-siege': card.attackType == 3}">
                             <div class="card-name">{{card.name}}</div>
                             <div class="card-power">{{card.power}}</div>
+                            <div class="card-ability" ng-if="card.ability != null"
+                                 ng-class="{'card-medic': card.ability.name == 'medic', 'card-bond': card.ability.name == 'bond', 'card-agile': card.ability.name == 'agile', 'card-morale': card.ability.name == 'morale', 'card-spy': card.ability.name == 'spy', 'card-muster': card.ability.name == 'muster'}"
+                                 ng-mouseover="card.showDescription = true"
+                                 ng-mouseleave="card.showDescription = false"></div>
+                            <div ng-if="card.showDescription" class="card-description">{{card.ability.description}}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -110,12 +133,18 @@
                     <div class="gain"></div>
                     <div class="army-type siege-type"></div>
                     <div class="realized-cards">
-                        <div ng-repeat="card in vm.user1 ? vm.game.json.user2RealizedCards : vm.game.json.user1RealizedCards"
+                        <div ng-repeat="card in vm.isUser1 ? vm.game.json.user2.realizedCards : vm.game.json.user1.realizedCards"
                              class="realized-card-blank"
                              ng-if="card.attackType == 3"
                              ng-class="{ 'card-unique': card.isUnique, 'card-melee': card.attackType == 1, 'card-range': card.attackType == 2, 'card-siege': card.attackType == 3}">
                             <div class="card-name">{{card.name}}</div>
                             <div class="card-power">{{card.power}}</div>
+                            <div class="card-ability" ng-if="card.ability != null"
+                                 ng-class="{'card-medic': card.ability.name == 'medic', 'card-bond': card.ability.name == 'bond', 'card-agile': card.ability.name == 'agile', 'card-morale': card.ability.name == 'morale', 'card-spy': card.ability.name == 'spy', 'card-muster': card.ability.name == 'muster'}"
+                                 ng-mouseover="card.showDescription = true"
+                                 ng-mouseleave="card.showDescription = false"></div>
+                            <div ng-if="card.showDescription" class="card-description">{{card.ability.description}}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -132,6 +161,12 @@
                              ng-class="{ 'card-unique': card.isUnique, 'card-melee': card.attackType == 1, 'card-range': card.attackType == 2, 'card-siege': card.attackType == 3}">
                             <div class="card-name">{{card.name}}</div>
                             <div class="card-power">{{card.power}}</div>
+                            <div class="card-ability" ng-if="card.ability != null"
+                                 ng-class="{'card-medic': card.ability.name == 'medic', 'card-bond': card.ability.name == 'bond', 'card-agile': card.ability.name == 'agile', 'card-morale': card.ability.name == 'morale', 'card-spy': card.ability.name == 'spy', 'card-muster': card.ability.name == 'muster'}"
+                                 ng-mouseover="card.showDescription = true"
+                                 ng-mouseleave="card.showDescription = false"></div>
+                            <div ng-if="card.showDescription" class="card-description">{{card.ability.description}}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -148,6 +183,12 @@
                              ng-class="{ 'card-unique': card.isUnique, 'card-melee': card.attackType == 1, 'card-range': card.attackType == 2, 'card-siege': card.attackType == 3}">
                             <div class="card-name">{{card.name}}</div>
                             <div class="card-power">{{card.power}}</div>
+                            <div class="card-ability" ng-if="card.ability != null"
+                                 ng-class="{'card-medic': card.ability.name == 'medic', 'card-bond': card.ability.name == 'bond', 'card-agile': card.ability.name == 'agile', 'card-morale': card.ability.name == 'morale', 'card-spy': card.ability.name == 'spy', 'card-muster': card.ability.name == 'muster'}"
+                                 ng-mouseover="card.showDescription = true"
+                                 ng-mouseleave="card.showDescription = false"></div>
+                            <div ng-if="card.showDescription" class="card-description">{{card.ability.description}}
+                            </div>
                         </div>
                     </div>
                 </div>
