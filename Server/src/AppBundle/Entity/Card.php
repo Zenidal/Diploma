@@ -46,7 +46,7 @@ class Card
      * @ORM\ManyToOne(targetEntity="Ability", inversedBy="cards",  cascade={"all"})
      * @ORM\JoinColumn(name="ability_id", referencedColumnName="id", onDelete="CASCADE")
      */
-    private $ability;
+    private $ability ;
 
     /**
      * @ORM\Column(type="integer")

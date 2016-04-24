@@ -1,6 +1,7 @@
 <?php
 namespace AppBundle\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -12,6 +13,12 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Game
 {
+    function __construct()
+    {
+        $this->users = new ArrayCollection();
+        $this->isAccepted = false;
+    }
+
     /**
      * @ORM\Column(type="integer")
      * @ORM\Id
@@ -20,25 +27,29 @@ class Game
     private $id;
 
     /**
-     * @var User
-     *
-     * @ORM\OneToOne(targetEntity="User", mappedBy="creator")
-     * @ORM\JoinColumn(name="creator_id", referencedColumnName="id")
+     * @ORM\ManyToMany(targetEntity="User", mappedBy="games")
      */
-    private $creator;
+    private $users;
 
     /**
-     * @var User
-     *
-     * @ORM\OneToOne(targetEntity="User", mappedBy="visitor")
-     * @ORM\JoinColumn(name="visitor_id", referencedColumnName="id")
-     */
-    private $visitor;
-
-    /**
-     * @ORM\Column(type="string", length=50)
+     * @ORM\Column(type="string", length=255)
      */
     private $name;
+
+    /**
+     * @ORM\Column(type="text", nullable=true)
+     */
+    private $json;
+
+    /**
+     * @ORM\Column(type="text", name="is_accepted", type="boolean")
+     */
+    private $isAccepted;
+
+    /**
+     * @ORM\Column(type="text", name="is_ended", type="boolean")
+     */
+    private $isEnded;
 
     /**
      * Get id
@@ -51,48 +62,127 @@ class Game
     }
 
     /**
-     * Set creator
+     * Set name
      *
-     * @param \AppBundle\Entity\User $creator
+     * @param string $name
      * @return Game
      */
-    public function setCreator(\AppBundle\Entity\User $creator = null)
+    public function setName($name)
     {
-        $this->creator = $creator;
+        $this->name = $name;
 
         return $this;
     }
 
     /**
-     * Get creator
+     * Get name
      *
-     * @return \AppBundle\Entity\User
+     * @return string 
      */
-    public function getCreator()
+    public function getName()
     {
-        return $this->creator;
+        return $this->name;
     }
 
     /**
-     * Set visitor
+     * Set json
      *
-     * @param \AppBundle\Entity\User $visitor
+     * @param string $json
      * @return Game
      */
-    public function setVisitor(\AppBundle\Entity\User $visitor = null)
+    public function setJson($json)
     {
-        $this->visitor = $visitor;
+        $this->json = $json;
 
         return $this;
     }
 
     /**
-     * Get visitor
+     * Get json
      *
-     * @return \AppBundle\Entity\User
+     * @return string 
      */
-    public function getVisitor()
+    public function getJson()
     {
-        return $this->visitor;
+        return $this->json;
+    }
+
+    /**
+     * Add users
+     *
+     * @param \AppBundle\Entity\User $users
+     * @return Game
+     */
+    public function addUser(\AppBundle\Entity\User $users)
+    {
+        $this->users[] = $users;
+
+        return $this;
+    }
+
+    /**
+     * Remove users
+     *
+     * @param \AppBundle\Entity\User $users
+     */
+    public function removeUser(\AppBundle\Entity\User $users)
+    {
+        $this->users->removeElement($users);
+    }
+
+    /**
+     * Get users
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getUsers()
+    {
+        return $this->users;
+    }
+
+    /**
+     * Set isAccepted
+     *
+     * @param boolean $isAccepted
+     * @return Game
+     */
+    public function setIsAccepted($isAccepted)
+    {
+        $this->isAccepted = $isAccepted;
+
+        return $this;
+    }
+
+    /**
+     * Get isAccepted
+     *
+     * @return boolean 
+     */
+    public function getIsAccepted()
+    {
+        return $this->isAccepted;
+    }
+
+    /**
+     * Set isEnded
+     *
+     * @param boolean $isEnded
+     * @return Game
+     */
+    public function setIsEnded($isEnded)
+    {
+        $this->isEnded = $isEnded;
+
+        return $this;
+    }
+
+    /**
+     * Get isEnded
+     *
+     * @return boolean 
+     */
+    public function getIsEnded()
+    {
+        return $this->isEnded;
     }
 }

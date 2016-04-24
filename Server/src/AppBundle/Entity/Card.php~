@@ -26,7 +26,7 @@ class Card
     private $power;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="string", length=255)
      */
     private $name;
 
@@ -42,14 +42,21 @@ class Card
     private $isUnique;
 
     /**
-     * @ORM\Column(type="integer", nullable=true)
+     * @var Ability
+     * @ORM\ManyToOne(targetEntity="Ability", inversedBy="cards",  cascade={"all"})
+     * @ORM\JoinColumn(name="ability_id", referencedColumnName="id", onDelete="CASCADE")
      */
     private $ability;
 
     /**
+     * @ORM\Column(type="integer")
+     */
+    private $tempPower;
+
+    /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -72,7 +79,7 @@ class Card
     /**
      * Get power
      *
-     * @return integer 
+     * @return integer
      */
     public function getPower()
     {
@@ -95,7 +102,7 @@ class Card
     /**
      * Get name
      *
-     * @return integer 
+     * @return integer
      */
     public function getName()
     {
@@ -118,7 +125,7 @@ class Card
     /**
      * Get attackType
      *
-     * @return integer 
+     * @return integer
      */
     public function getAttackType()
     {
@@ -141,7 +148,7 @@ class Card
     /**
      * Get isUnique
      *
-     * @return boolean 
+     * @return boolean
      */
     public function getIsUnique()
     {
@@ -164,7 +171,7 @@ class Card
     /**
      * Get ability
      *
-     * @return integer 
+     * @return integer
      */
     public function getAbility()
     {
