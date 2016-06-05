@@ -226,7 +226,7 @@ class CardAbilityData
         ],
         [
             'name' => CardHelper::AGILE_ABILITY,
-            'description' => 'Can be placed in either the Close Combat or Ranged rows. May not move once the card has been placed.',
+            'description' => 'Random place in lines.',
             'cards' => [
                 [
                     'name' => 'Weak universal',
@@ -394,6 +394,132 @@ class CardAbilityData
                     'power' => '10',
                     'isUnique' => true,
                     'attackType' => CardHelper::RANGE_ATTACK,
+
+                ],
+            ]
+        ],
+        [
+            'name' => CardHelper::BAD_WEATHER_ABILITY,
+            'description' => 'Decreases units to 1.',
+            'cards' => [
+                //melee
+                [
+                    'name' => 'Frost',
+                    'power' => '0',
+                    'isUnique' => true,
+                    'attackType' => CardHelper::MELEE_ATTACK,
+
+                ],
+                [
+                    'name' => 'Frost',
+                    'power' => '0',
+                    'isUnique' => true,
+                    'attackType' => CardHelper::MELEE_ATTACK,
+
+                ],
+                [
+                    'name' => 'Frost',
+                    'power' => '0',
+                    'isUnique' => true,
+                    'attackType' => CardHelper::MELEE_ATTACK,
+
+                ],
+                //range
+                [
+                    'name' => 'Fog',
+                    'power' => '0',
+                    'isUnique' => true,
+                    'attackType' => CardHelper::RANGE_ATTACK,
+
+                ],
+                [
+                    'name' => 'Fog',
+                    'power' => '0',
+                    'isUnique' => true,
+                    'attackType' => CardHelper::RANGE_ATTACK,
+
+                ],
+                [
+                    'name' => 'Fog',
+                    'power' => '0',
+                    'isUnique' => true,
+                    'attackType' => CardHelper::RANGE_ATTACK,
+
+                ],
+                //siege
+                [
+                    'name' => 'Rain',
+                    'power' => '0',
+                    'isUnique' => true,
+                    'attackType' => CardHelper::SIEGE_ATTACK,
+
+                ],
+                [
+                    'name' => 'Rain',
+                    'power' => '0',
+                    'isUnique' => true,
+                    'attackType' => CardHelper::SIEGE_ATTACK,
+
+                ],
+                [
+                    'name' => 'Rain',
+                    'power' => '0',
+                    'isUnique' => true,
+                    'attackType' => CardHelper::SIEGE_ATTACK,
+
+                ],
+            ]
+        ],
+        [
+            'name' => CardHelper::GOOD_WEATHER_ABILITY,
+            'description' => 'Removes all weather effects.',
+            'cards' => [
+                [
+                    'name' => 'Clear Sky',
+                    'power' => '0',
+                    'isUnique' => true,
+                    'attackType' => CardHelper::WITHOUT_ATTACK,
+
+                ],
+                [
+                    'name' => 'Clear Sky',
+                    'power' => '0',
+                    'isUnique' => true,
+                    'attackType' => CardHelper::WITHOUT_ATTACK,
+
+                ],
+                [
+                    'name' => 'Clear Sky',
+                    'power' => '0',
+                    'isUnique' => true,
+                    'attackType' => CardHelper::WITHOUT_ATTACK,
+
+                ],
+            ]
+        ],
+        [
+            'name' => CardHelper::HORN_ABILITY,
+            'description' => 'Dual power units in random line.',
+            'cards' => [
+                [
+                    'name' => 'Commander’s Horn',
+                    'power' => '0',
+                    'isUnique' => true,
+                    'attackType' => CardHelper::WITHOUT_ATTACK,
+
+                ],
+                [
+                    'name' => 'Commander’s Horn',
+                    'power' => '0',
+                    'isUnique' => true,
+                    'attackType' => CardHelper::WITHOUT_ATTACK,
+
+                ],
+                [
+                    'name' => 'Commander’s Horn',
+                    'power' => '0',
+                    'isUnique' => true,
+                    'attackType' => CardHelper::WITHOUT_ATTACK,
 
                 ],
             ]

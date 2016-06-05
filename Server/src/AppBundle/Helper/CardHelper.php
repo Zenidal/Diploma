@@ -18,12 +18,16 @@ class CardHelper
     const MELEE_ATTACK = 1;
     const RANGE_ATTACK = 2;
     const SIEGE_ATTACK = 3;
+    const WITHOUT_ATTACK = -1;
     const BOND_ABILITY = 'bond';
     const MORALE_ABILITY = 'morale';
     const MEDIC_ABILITY = 'medic';
     const AGILE_ABILITY = 'agile';
     const SPY_ABILITY = 'spy';
     const MUSTER_ABILITY = 'muster';
+    const BAD_WEATHER_ABILITY = 'bad_weather';
+    const GOOD_WEATHER_ABILITY = 'good_weather';
+    const HORN_ABILITY = 'horn';
     const MOVED_SUCCESSFULLY = 'moved';
     const MOVED_FAIL_BY_TURN = 'opponentTurn';
 
@@ -115,36 +119,99 @@ class CardHelper
                                 $gameField[$prefix]['realizedCards'] = array_merge($gameField[$prefix]['realizedCards'], $generatedCards);
                                 break;
                             case self::MEDIC_ABILITY:
-                                $healedCardNumber = rand(0, count($gameField[$prefix]['graveyard']) - 1);
-                                $healedCard = $gameField[$prefix]['graveyard'][$healedCardNumber];
-                                $healedCard['ability'] = null;
-                                $gameField[$prefix]['realizedCards'][] = $healedCard;
-                                switch ($healedCard[self::ATTACK_TYPE_FIELD]) {
-                                    case self::MELEE_ATTACK:
-                                        $gameField[$prefix][GameHelper::POWER_FIELD][GameHelper::MELEE_POWER] += $healedCard[self::POWER_FIELD];
-                                        break;
-                                    case self::RANGE_ATTACK:
-                                        $gameField[$prefix][GameHelper::POWER_FIELD][GameHelper::RANGE_POWER] += $healedCard[self::POWER_FIELD];
-                                        break;
-                                    case self::SIEGE_ATTACK:
-                                        $gameField[$prefix][GameHelper::POWER_FIELD][GameHelper::SIEGE_POWER] += $healedCard[self::POWER_FIELD];
-                                        break;
+                                if (count($gameField[$prefix]['graveyard'])) {
+                                    $healedCardNumber = rand(0, count($gameField[$prefix]['graveyard']) - 1);
+                                    $healedCard = $gameField[$prefix]['graveyard'][$healedCardNumber];
+                                    $healedCard['ability'] = null;
+                                    $gameField[$prefix]['realizedCards'][] = $healedCard;
+                                    switch ($healedCard[self::ATTACK_TYPE_FIELD]) {
+                                        case self::MELEE_ATTACK:
+                                            $gameField[$prefix][GameHelper::POWER_FIELD][GameHelper::MELEE_POWER] += $healedCard[self::POWER_FIELD];
+                                            break;
+                                        case self::RANGE_ATTACK:
+                                            $gameField[$prefix][GameHelper::POWER_FIELD][GameHelper::RANGE_POWER] += $healedCard[self::POWER_FIELD];
+                                            break;
+                                        case self::SIEGE_ATTACK:
+                                            $gameField[$prefix][GameHelper::POWER_FIELD][GameHelper::SIEGE_POWER] += $healedCard[self::POWER_FIELD];
+                                            break;
+                                    }
+                                    unset($gameField[$prefix]['graveyard'][$healedCardNumber]);
+                                    sort($gameField[$prefix]['graveyard']);
                                 }
-                                unset($gameField[$prefix]['graveyard'][$healedCardNumber]);
-                                sort($gameField[$prefix]['graveyard']);
+                                break;
+                            case self::BAD_WEATHER_ABILITY:
+                                for ($yod = 0; $yod < count($gameField[$prefix]['realizedCards']); $yod++) {
+                                    if ($gameField[$prefix]['realizedCards'][$yod][self::ATTACK_TYPE_FIELD] == $gameField[$prefix]['cards'][$i][self::ATTACK_TYPE_FIELD]) {
+                                        if (!$gameField[$prefix]['realizedCards'][$yod]['isUnique']) {
+                                            $gameField[$prefix]['realizedCards'][$yod][self::TEMP_POWER_FIELD] = 1;
+                                        }
+                                    }
+                                }
+                                for ($yod = 0; $yod < count($gameField[$opponent]['realizedCards']); $yod++) {
+                                    if ($gameField[$opponent]['realizedCards'][$yod][self::ATTACK_TYPE_FIELD] == $gameField[$prefix]['cards'][$i][self::ATTACK_TYPE_FIELD]) {
+                                        if (!$gameField[$opponent]['realizedCards'][$yod]['isUnique']) {
+                                            $gameField[$opponent]['realizedCards'][$yod][self::TEMP_POWER_FIELD] = 1;
+                                        }
+                                    }
+                                }
+                                $gameField[$opponent]['realizedCards'][] = $gameField[$prefix]['cards'][$i];
                                 break;
                         }
-                        $gameField[$prefix]['realizedCards'][] = $gameField[$prefix]['cards'][$i];
-                        switch ($gameField[$prefix]['cards'][$i][self::ATTACK_TYPE_FIELD]) {
-                            case self::MELEE_ATTACK:
-                                $gameField[$prefix][GameHelper::POWER_FIELD][GameHelper::MELEE_POWER] += $gameField[$prefix]['cards'][$i][self::TEMP_POWER_FIELD];
-                                break;
-                            case self::RANGE_ATTACK:
-                                $gameField[$prefix][GameHelper::POWER_FIELD][GameHelper::RANGE_POWER] += $gameField[$prefix]['cards'][$i][self::TEMP_POWER_FIELD];
-                                break;
-                            case self::SIEGE_ATTACK:
-                                $gameField[$prefix][GameHelper::POWER_FIELD][GameHelper::SIEGE_POWER] += $gameField[$prefix]['cards'][$i][self::TEMP_POWER_FIELD];
-                                break;
+                        if ($gameField[$prefix]['cards'][$i]['ability']['name'] == CardHelper::AGILE_ABILITY) {
+                            $types = array(self::MELEE_ATTACK, self::RANGE_ATTACK, self::SIEGE_ATTACK);
+                            $gameField[$prefix]['cards'][$i][self::ATTACK_TYPE_FIELD] = $types[rand(0, count($types) - 1)];
+                            switch ($gameField[$prefix]['cards'][$i][self::ATTACK_TYPE_FIELD]) {
+                                case self::MELEE_ATTACK:
+                                    $gameField[$prefix][GameHelper::POWER_FIELD][GameHelper::MELEE_POWER] += $gameField[$prefix]['cards'][$i][self::TEMP_POWER_FIELD];
+                                    break;
+                                case self::RANGE_ATTACK:
+                                    $gameField[$prefix][GameHelper::POWER_FIELD][GameHelper::RANGE_POWER] += $gameField[$prefix]['cards'][$i][self::TEMP_POWER_FIELD];
+                                    break;
+                                case self::SIEGE_ATTACK:
+                                    $gameField[$prefix][GameHelper::POWER_FIELD][GameHelper::SIEGE_POWER] += $gameField[$prefix]['cards'][$i][self::TEMP_POWER_FIELD];
+                                    break;
+                            }
+                            $gameField[$prefix]['realizedCards'][] = $gameField[$prefix]['cards'][$i];
+                        } elseif ($gameField[$prefix]['cards'][$i]['ability']['name'] == CardHelper::HORN_ABILITY) {
+                            $types = array(self::MELEE_ATTACK, self::RANGE_ATTACK, self::SIEGE_ATTACK);
+                            $hornTarget = $types[rand(0, count($types) - 1)];
+                            $gameField[$prefix]['cards'][$i][self::ATTACK_TYPE_FIELD] = $hornTarget;
+                            for ($yod = 0; $yod < count($gameField[$prefix]['realizedCards']); $yod++) {
+                                if ($gameField[$prefix]['realizedCards'][$yod][self::ATTACK_TYPE_FIELD] == $hornTarget) {
+                                    if (!$gameField[$prefix]['realizedCards'][$yod]['isUnique']) {
+                                        $gameField[$prefix]['realizedCards'][$yod][self::TEMP_POWER_FIELD] *= 2;
+                                    }
+                                }
+                            }
+                            $gameField[$prefix]['realizedCards'][] = $gameField[$prefix]['cards'][$i];
+                        } elseif ($gameField[$prefix]['cards'][$i]['ability']['name'] == CardHelper::GOOD_WEATHER_ABILITY) {
+                            for ($yod = 0; $yod < count($gameField[$prefix]['realizedCards']); $yod++) {
+                                if ($gameField[$prefix]['realizedCards'][$yod][self::ATTACK_TYPE_FIELD] == $gameField[$prefix]['cards'][$i][self::ATTACK_TYPE_FIELD]) {
+                                    if (!$gameField[$prefix]['realizedCards'][$yod]['isUnique']) {
+                                        $gameField[$prefix]['realizedCards'][$yod][self::TEMP_POWER_FIELD] = $gameField[$prefix]['realizedCards'][$yod][self::POWER_FIELD];
+                                    }
+                                }
+                            }
+                            for ($yod2 = 0; $yod2 < count($gameField[$opponent]['realizedCards']); $yod2++) {
+                                if ($gameField[$opponent]['realizedCards'][$yod2][self::ATTACK_TYPE_FIELD] == $gameField[$prefix]['cards'][$i][self::ATTACK_TYPE_FIELD]) {
+                                    if (!$gameField[$opponent]['realizedCards'][$yod2]['isUnique']) {
+                                        $gameField[$opponent]['realizedCards'][$yod2][self::TEMP_POWER_FIELD] = $gameField[$prefix]['cards'][$i][self::POWER_FIELD];
+                                    }
+                                }
+                            }
+                        } else {
+                            switch ($gameField[$prefix]['cards'][$i][self::ATTACK_TYPE_FIELD]) {
+                                case self::MELEE_ATTACK:
+                                    $gameField[$prefix][GameHelper::POWER_FIELD][GameHelper::MELEE_POWER] += $gameField[$prefix]['cards'][$i][self::TEMP_POWER_FIELD];
+                                    break;
+                                case self::RANGE_ATTACK:
+                                    $gameField[$prefix][GameHelper::POWER_FIELD][GameHelper::RANGE_POWER] += $gameField[$prefix]['cards'][$i][self::TEMP_POWER_FIELD];
+                                    break;
+                                case self::SIEGE_ATTACK:
+                                    $gameField[$prefix][GameHelper::POWER_FIELD][GameHelper::SIEGE_POWER] += $gameField[$prefix]['cards'][$i][self::TEMP_POWER_FIELD];
+                                    break;
+                            }
+                            $gameField[$prefix]['realizedCards'][] = $gameField[$prefix]['cards'][$i];
                         }
                     }
                     $gameField[$prefix][GameHelper::POWER_FIELD][GameHelper::TOTAL_POWER] =
