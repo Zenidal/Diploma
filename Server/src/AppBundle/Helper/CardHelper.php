@@ -114,6 +114,25 @@ class CardHelper
                                 $generatedCards = $this->getMusterCards($gameField, $gameField[$prefix]['cards'][$i]);
                                 $gameField[$prefix]['realizedCards'] = array_merge($gameField[$prefix]['realizedCards'], $generatedCards);
                                 break;
+                            case self::MEDIC_ABILITY:
+                                $healedCardNumber = rand(0, count($gameField[$prefix]['graveyard']) - 1);
+                                $healedCard = $gameField[$prefix]['graveyard'][$healedCardNumber];
+                                $healedCard['ability'] = null;
+                                $gameField[$prefix]['realizedCards'][] = $healedCard;
+                                switch ($healedCard[self::ATTACK_TYPE_FIELD]) {
+                                    case self::MELEE_ATTACK:
+                                        $gameField[$prefix][GameHelper::POWER_FIELD][GameHelper::MELEE_POWER] += $healedCard[self::POWER_FIELD];
+                                        break;
+                                    case self::RANGE_ATTACK:
+                                        $gameField[$prefix][GameHelper::POWER_FIELD][GameHelper::RANGE_POWER] += $healedCard[self::POWER_FIELD];
+                                        break;
+                                    case self::SIEGE_ATTACK:
+                                        $gameField[$prefix][GameHelper::POWER_FIELD][GameHelper::SIEGE_POWER] += $healedCard[self::POWER_FIELD];
+                                        break;
+                                }
+                                unset($gameField[$prefix]['graveyard'][$healedCardNumber]);
+                                sort($gameField[$prefix]['graveyard']);
+                                break;
                         }
                         $gameField[$prefix]['realizedCards'][] = $gameField[$prefix]['cards'][$i];
                         switch ($gameField[$prefix]['cards'][$i][self::ATTACK_TYPE_FIELD]) {
@@ -190,7 +209,6 @@ class CardHelper
             ->getResult(Query::HYDRATE_ARRAY);
 
         $diffuse = $this->cards_diff($allCards, $usedCards);
-        file_put_contents('log.txt', count($diffuse));
         $result = [];
         for ($i = 0; $i < $count; $i++) {
             $numberInList = rand(0, count($diffuse) - 1);
@@ -212,7 +230,6 @@ class CardHelper
             ->getResult(Query::HYDRATE_ARRAY);
 
         $diffuse = $this->cards_diff($allCards, $usedCards);
-        file_put_contents('log.txt', count($diffuse));
         $result = [];
         for ($i = 0; $i < count($diffuse); $i++) {
             if ($diffuse[$i]['name'] == $musterCard['name']) {

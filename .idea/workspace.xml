@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e2343e40-f46c-470a-bff3-557d21a034d4" name="Default" comment="">
+    <list default="true" id="e2343e40-f46c-470a-bff3-557d21a034d4" name="Default" comment="Added muster and fixed others abilities.&#10;&#10;Added muster and fixed others abilities.&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/src/AppBundle/Helper/CardHelper.php" afterPath="$PROJECT_DIR$/Server/src/AppBundle/Helper/CardHelper.php" />
     </list>
@@ -58,8 +58,8 @@
       <file leaf-file-name="CardHelper.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/Helper/CardHelper.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.26674235">
-              <caret line="195" column="53" selection-start-line="195" selection-start-column="53" selection-end-line="195" selection-end-column="53" />
+            <state vertical-scroll-proportion="0.38251987">
+              <caret line="111" column="38" selection-start-line="111" selection-start-column="38" selection-end-line="111" selection-end-column="38" />
               <folding>
                 <element signature="e#36#62#0#PHP" expanded="true" />
               </folding>
@@ -777,7 +777,13 @@
       <option name="project" value="LOCAL" />
       <updated>1465128541008</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Added muster and fixed others abilities.&#10;&#10;Added muster and fixed others abilities.&#10;">
+      <created>1465131668213</created>
+      <option name="number" value="00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1465131668213</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -841,7 +847,8 @@
     <MESSAGE value="Fixed power output.&#10;&#10;Fixed power output.&#10;" />
     <MESSAGE value="Added spy and bound cards.&#10;&#10;Added spy and bound cards.&#10;" />
     <MESSAGE value="Added morale ability.&#10;&#10;Added morale ability." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added morale ability.&#10;&#10;Added morale ability." />
+    <MESSAGE value="Added muster and fixed others abilities.&#10;&#10;Added muster and fixed others abilities.&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added muster and fixed others abilities.&#10;&#10;Added muster and fixed others abilities.&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1193,8 +1200,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Server/src/AppBundle/Helper/CardHelper.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26674235">
-          <caret line="195" column="53" selection-start-line="195" selection-start-column="53" selection-end-line="195" selection-end-column="53" />
+        <state vertical-scroll-proportion="0.38251987">
+          <caret line="111" column="38" selection-start-line="111" selection-start-column="38" selection-end-line="111" selection-end-column="38" />
           <folding>
             <element signature="e#36#62#0#PHP" expanded="true" />
           </folding>
