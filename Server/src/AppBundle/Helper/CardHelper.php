@@ -101,6 +101,14 @@ class CardHelper
                                 }
                                 $gameField[$prefix]['cards'][$i][self::TEMP_POWER_FIELD] *= $counter;
                                 break;
+                            case self::MORALE_ABILITY:
+                                for ($yod = 0; $yod < count($gameField[$prefix]['realizedCards']); $yod++) {
+                                    if ($gameField[$prefix]['realizedCards'][$yod][self::ATTACK_TYPE_FIELD] == $gameField[$prefix]['cards'][$i][self::ATTACK_TYPE_FIELD]) {
+                                        if (!$gameField[$prefix]['realizedCards'][$yod]['isUnique']) {
+                                            $gameField[$prefix]['realizedCards'][$yod][self::TEMP_POWER_FIELD]++;
+                                        }
+                                    }
+                                }
                         }
                         $gameField[$prefix]['realizedCards'][] = $gameField[$prefix]['cards'][$i];
                         switch ($gameField[$prefix]['cards'][$i][self::ATTACK_TYPE_FIELD]) {
