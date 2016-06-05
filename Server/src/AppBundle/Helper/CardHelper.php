@@ -81,7 +81,7 @@ class CardHelper
                     } else {
                         switch ($gameField[$prefix]['cards'][$i]['ability']['name']) {
                             case self::BOND_ABILITY:
-                                $counter = 1;
+                                $counter = 0;
                                 for ($yod = 0; $yod < count($gameField[$prefix]['realizedCards']); $yod++) {
                                     if ($gameField[$prefix]['realizedCards'][$yod]['name'] == $gameField[$prefix]['cards'][$i]['name']) {
                                         $gameField[$prefix]['realizedCards'][$yod][self::TEMP_POWER_FIELD] *= 2;
@@ -99,7 +99,7 @@ class CardHelper
                                         }
                                     }
                                 }
-                                $gameField[$prefix]['cards'][$i][self::TEMP_POWER_FIELD] *= $counter;
+                                $gameField[$prefix]['cards'][$i][self::TEMP_POWER_FIELD] *= pow(2, $counter);
                                 break;
                             case self::MORALE_ABILITY:
                                 for ($yod = 0; $yod < count($gameField[$prefix]['realizedCards']); $yod++) {
@@ -109,6 +109,11 @@ class CardHelper
                                         }
                                     }
                                 }
+                                break;
+                            case self::MUSTER_ABILITY:
+                                $generatedCards = $this->getMusterCards($gameField, $gameField[$prefix]['cards'][$i]);
+                                $gameField[$prefix]['realizedCards'] = array_merge($gameField[$prefix]['realizedCards'], $generatedCards);
+                                break;
                         }
                         $gameField[$prefix]['realizedCards'][] = $gameField[$prefix]['cards'][$i];
                         switch ($gameField[$prefix]['cards'][$i][self::ATTACK_TYPE_FIELD]) {
@@ -184,13 +189,52 @@ class CardHelper
             ->getQuery()
             ->getResult(Query::HYDRATE_ARRAY);
 
-        $diffuse = array_diff(array_map('serialize', $usedCards), array_map('serialize', $allCards));
+        $diffuse = $this->cards_diff($allCards, $usedCards);
+        file_put_contents('log.txt', count($diffuse));
         $result = [];
         for ($i = 0; $i < $count; $i++) {
             $numberInList = rand(0, count($diffuse) - 1);
-            $result[] = $allCards[$numberInList];
-            unset($allCards[$numberInList]);
-            sort($allCards);
+            $result[] = $diffuse[$numberInList];
+            unset($diffuse[$numberInList]);
+            sort($diffuse);
+        }
+        return $result;
+    }
+
+    private function getMusterCards($gameField, $musterCard)
+    {
+        $usedCards = array_merge($gameField['user1']['cards'], $gameField['user2']['cards'], $gameField['user1']['realizedCards'], $gameField['user2']['realizedCards'], $gameField['user1']['graveyard'], $gameField['user2']['graveyard']);
+        $allCards = $this->em->getRepository('AppBundle:Card')
+            ->createQueryBuilder('card')
+            ->select('card', 'ability')
+            ->leftJoin('card.ability', 'ability')
+            ->getQuery()
+            ->getResult(Query::HYDRATE_ARRAY);
+
+        $diffuse = $this->cards_diff($allCards, $usedCards);
+        file_put_contents('log.txt', count($diffuse));
+        $result = [];
+        for ($i = 0; $i < count($diffuse); $i++) {
+            if ($diffuse[$i]['name'] == $musterCard['name']) {
+                $result[] = $diffuse[$i];
+            }
+        }
+        return $result;
+    }
+
+    private function cards_diff($arr1, $arr2)
+    {
+        $result = [];
+        foreach ($arr1 as $item1) {
+            $inArray = false;
+            foreach ($arr2 as $item2) {
+                if ($item1['id'] == $item2['id']) {
+                    $inArray = true;
+                }
+            }
+            if (!$inArray) {
+                $result[] = $item1;
+            }
         }
         return $result;
     }
